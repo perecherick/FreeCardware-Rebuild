@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://cxenut4xwsept"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_rs7wx"]
+[ext_resource type="Resource" uid="uid://dgp6j3pott22g" path="res://tres/events/event_choices/hardware_choice_accept.tres" id="2_4g3ie"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_vgqf0"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_gvhnj"]
+[ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="3_rchon"]
+[ext_resource type="Texture2D" uid="uid://c0csjwe1r7jvn" path="res://img/events/hardware/tile000.png" id="3_ts1fq"]
+[ext_resource type="Texture2D" uid="uid://cojkdb0v85tpf" path="res://img/events/hardware/tile001.png" id="4_kdeoe"]
+[ext_resource type="Texture2D" uid="uid://rdxmjk73dvj7" path="res://img/events/hardware/tile002.png" id="5_4g3ie"]
+[ext_resource type="Resource" uid="uid://bnc3uv3vev66r" path="res://tres/events/event_effects/hardware_random.tres" id="5_rchon"]
+[ext_resource type="Texture2D" uid="uid://bydtchdyc1ecq" path="res://img/events/hardware/tile003.png" id="6_rchon"]
+[ext_resource type="Texture2D" uid="uid://ddfvxny61ln8s" path="res://img/events/hardware/tile004.png" id="7_k8kwh"]
+[ext_resource type="Texture2D" uid="uid://4kjslvd4522a" path="res://img/events/hardware/tile005.png" id="8_3fbcc"]
+[ext_resource type="Texture2D" uid="uid://bjoo41y8pkpsx" path="res://img/events/hardware/tile006.png" id="9_cordo"]
+[ext_resource type="Texture2D" uid="uid://cjs1lbw23jvuu" path="res://img/events/hardware/tile007.png" id="10_vo6ny"]
+[ext_resource type="Texture2D" uid="uid://brdbhxqoe2qp6" path="res://img/events/hardware/tile008.png" id="11_1pwka"]
+[ext_resource type="Texture2D" uid="uid://rnsta46ikate" path="res://img/events/hardware/tile009.png" id="12_7t8a6"]
+[ext_resource type="Texture2D" uid="uid://b45h48ywuekb3" path="res://img/events/hardware/tile010.png" id="13_hcj60"]
+[ext_resource type="Texture2D" uid="uid://cm0yr0eortuso" path="res://img/events/hardware/tile011.png" id="14_1jhbb"]
+[ext_resource type="Texture2D" uid="uid://deu61pl73ncr4" path="res://img/events/hardware/tile012.png" id="15_n3n8v"]
+[ext_resource type="Texture2D" uid="uid://b5rg5i17rcou2" path="res://img/events/hardware/tile013.png" id="16_4uw6i"]
+
+[resource]
+script = ExtResource("3_gvhnj")
+id = &"hardware_step_0"
+text = "TID_HARDWARE_DESC"
+frames = Array[Texture2D]([ExtResource("3_ts1fq"), ExtResource("4_kdeoe"), ExtResource("5_4g3ie"), ExtResource("6_rchon"), ExtResource("7_k8kwh"), ExtResource("8_3fbcc"), ExtResource("9_cordo"), ExtResource("10_vo6ny"), ExtResource("11_1pwka"), ExtResource("12_7t8a6"), ExtResource("13_hcj60"), ExtResource("14_1jhbb"), ExtResource("15_n3n8v"), ExtResource("16_4uw6i")])
+effects = Array[ExtResource("2_vgqf0")]([ExtResource("5_rchon")])
+choices = Array[ExtResource("1_rs7wx")]([ExtResource("2_4g3ie"), ExtResource("3_rchon")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

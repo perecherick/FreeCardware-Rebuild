@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://ddu85vo6ohkg7"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_mhocl"]
+
+[resource]
+script = ExtResource("1_mhocl")
+id = "brace"
+name = "TID_BRACE"
+description = "TID_BRACE_DESC"
+color = "aqua"
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

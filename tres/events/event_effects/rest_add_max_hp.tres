@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ChangeStats" format=3 uid="uid://b6ooor3d1n0ny"]
+
+[ext_resource type="Script" uid="uid://bexy0uk3qygd0" path="res://gd/event/event_effects/change_stats.gd" id="1_8cvfu"]
+
+[resource]
+script = ExtResource("1_8cvfu")
+max_hp = 5
+current_hp = 5
+metadata/_custom_type_script = "uid://bexy0uk3qygd0"

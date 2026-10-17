@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ApplyEnemyEffect" format=3 uid="uid://blv6s1u0qedqd"]
+
+[ext_resource type="Resource" uid="uid://cx0vuj1dy7qtp" path="res://tres/enemies/effects/bound.tres" id="1_2olxv"]
+[ext_resource type="Script" uid="uid://b3dr863gyclqw" path="res://gd/cards/card_effects/apply_enemy_effects.gd" id="2_ih8ct"]
+
+[resource]
+script = ExtResource("2_ih8ct")
+effect = ExtResource("1_2olxv")
+duration = 21
+duration_from_spent_energy = true
+metadata/_custom_type_script = "uid://b3dr863gyclqw"

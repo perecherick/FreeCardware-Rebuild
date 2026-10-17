@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SaveEventValues" format=3 uid="uid://bqsekf7fsmm6o"]
+
+[ext_resource type="Script" uid="uid://cygrw05godm6h" path="res://gd/event/event_effects/save_event_values.gd" id="1_qfy1a"]
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="2_nfkbe"]
+[ext_resource type="Resource" uid="uid://debwajeb7tmkx" path="res://tres/events/event_stringname/clothes.tres" id="3_u3yhn"]
+[ext_resource type="Resource" uid="uid://dg22yi7nfp7ls" path="res://tres/events/event_stringname/panties.tres" id="4_8081l"]
+
+[resource]
+script = ExtResource("1_qfy1a")
+values = Array[ExtResource("2_nfkbe")]([ExtResource("3_u3yhn"), ExtResource("4_8081l")])
+metadata/_custom_type_script = "uid://cygrw05godm6h"

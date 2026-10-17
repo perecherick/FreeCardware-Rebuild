@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://qs7y83r41gcq"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_fcfob"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_n0cd0"]
+[ext_resource type="Resource" uid="uid://dohp8cp1vulbl" path="res://tres/events/event_step/tentacle_hole_step_0.tres" id="3_rp1nf"]
+[ext_resource type="Resource" uid="uid://b2ssa0idftdux" path="res://tres/events/event_step/tentacle_hole_step_1.tres" id="4_3iah6"]
+[ext_resource type="Resource" uid="uid://cumnsp1xbni1k" path="res://tres/events/event_step/tentacle_hole_step_2.tres" id="5_vta0a"]
+[ext_resource type="Resource" uid="uid://cbux0vpbiwvfu" path="res://tres/events/event_step/tentacle_hole_step_3.tres" id="6_gll0f"]
+[ext_resource type="Resource" uid="uid://csljf6aurfefn" path="res://tres/events/event_step/tentacle_hole_step_4.tres" id="7_bou1d"]
+[ext_resource type="Resource" uid="uid://bxitobjr35r6u" path="res://tres/events/event_step/tentacle_hole_step_5.tres" id="8_ywhxe"]
+[ext_resource type="Resource" uid="uid://462ipal0b5vw" path="res://tres/events/event_step/tentacle_hole_step_relax_0.tres" id="9_6acr1"]
+[ext_resource type="Resource" uid="uid://dv5l63o8x1tcj" path="res://tres/events/event_step/tentacle_hole_step_sleep_0.tres" id="10_estye"]
+[ext_resource type="Resource" uid="uid://beabkxcy1s4qs" path="res://tres/events/event_step/tentacle_hole_step_sleep_1.tres" id="11_d5873"]
+
+[resource]
+script = ExtResource("1_fcfob")
+id = &"tentacle_hole"
+steps = Array[ExtResource("2_n0cd0")]([ExtResource("3_rp1nf"), ExtResource("4_3iah6"), ExtResource("5_vta0a"), ExtResource("6_gll0f"), ExtResource("7_bou1d"), ExtResource("8_ywhxe"), ExtResource("9_6acr1"), ExtResource("10_estye"), ExtResource("11_d5873")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

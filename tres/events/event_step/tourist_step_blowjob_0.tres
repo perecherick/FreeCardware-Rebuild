@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://buktuhipqsejc"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_3wity"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_vspki"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_5hx3i"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_1jwgy"]
+[ext_resource type="Texture2D" uid="uid://bxjgepsuc2a80" path="res://img/events/tourist/tourist_sprite/tile000.png" id="4_udap7"]
+[ext_resource type="Texture2D" uid="uid://eqijiu5kus2f" path="res://img/events/tourist/tourist_sprite/tile001.png" id="5_lkqx1"]
+[ext_resource type="Texture2D" uid="uid://b1x8ol2ik5gbl" path="res://img/events/tourist/tourist_sprite/tile002.png" id="6_bc8ql"]
+[ext_resource type="Texture2D" uid="uid://cgx6meuj8haqr" path="res://img/events/tourist/tourist_sprite/tile003.png" id="7_acjxi"]
+[ext_resource type="Texture2D" uid="uid://qxkyfqniwsec" path="res://img/events/tourist/tourist_sprite/tile004.png" id="8_6p0pf"]
+[ext_resource type="Texture2D" uid="uid://6ofih2a6m2tt" path="res://img/events/tourist/tourist_sprite/tile005.png" id="9_jf2pg"]
+[ext_resource type="Texture2D" uid="uid://b1rgdrr3iyxol" path="res://img/events/tourist/tourist_sprite/tile006.png" id="10_k6rli"]
+[ext_resource type="Texture2D" uid="uid://cx4onfalsoiyx" path="res://img/events/tourist/tourist_sprite/tile007.png" id="11_i4yv7"]
+[ext_resource type="Texture2D" uid="uid://xe1ks763hb75" path="res://img/events/tourist/tourist_sprite/tile008.png" id="12_mjral"]
+[ext_resource type="Texture2D" uid="uid://cm2uumfd6yot1" path="res://img/events/tourist/tourist_sprite/tile009.png" id="13_0m3ye"]
+[ext_resource type="Texture2D" uid="uid://cr11sqmigxpp7" path="res://img/events/tourist/tourist_sprite/tile010.png" id="14_7t6bm"]
+[ext_resource type="Texture2D" uid="uid://cdl3f6dxbnc2n" path="res://img/events/tourist/tourist_sprite/tile011.png" id="15_a3je6"]
+[ext_resource type="Texture2D" uid="uid://bcj6wlcnp710r" path="res://img/events/tourist/tourist_sprite/tile012.png" id="16_3f3sj"]
+[ext_resource type="Texture2D" uid="uid://be03ib8gsb7we" path="res://img/events/tourist/tourist_sprite/tile013.png" id="17_o65gq"]
+[ext_resource type="Texture2D" uid="uid://dnwlfsnna2el0" path="res://img/events/tourist/tourist_sprite/tile014.png" id="18_2tqoi"]
+[ext_resource type="Texture2D" uid="uid://7bvvrfu54x88" path="res://img/events/tourist/tourist_sprite/tile015.png" id="19_kndfw"]
+[ext_resource type="Texture2D" uid="uid://cs0bwttgtffx0" path="res://img/events/tourist/tourist_sprite/tile016.png" id="20_wxi42"]
+[ext_resource type="Texture2D" uid="uid://88e5wrjm673j" path="res://img/events/tourist/tourist_sprite/tile017.png" id="21_0acpp"]
+[ext_resource type="Texture2D" uid="uid://bpbbtn5vd4hsj" path="res://img/events/tourist/tourist_sprite/tile018.png" id="22_isrpk"]
+[ext_resource type="Texture2D" uid="uid://drfhqw2ubqjk2" path="res://img/events/tourist/tourist_sprite/tile019.png" id="23_jy1w6"]
+[ext_resource type="Texture2D" uid="uid://bqlx0uruedh3" path="res://img/events/tourist/tourist_sprite/tile020.png" id="24_cistr"]
+[ext_resource type="Texture2D" uid="uid://beq2v2l3kvrbw" path="res://img/events/tourist/tourist_sprite/tile021.png" id="25_lj4ao"]
+[ext_resource type="Texture2D" uid="uid://dqg4qt74775a" path="res://img/events/tourist/tourist_sprite/tile022.png" id="26_q8pds"]
+[ext_resource type="Texture2D" uid="uid://cx28fp1tpjorj" path="res://img/events/tourist/tourist_sprite/tile023.png" id="27_nb1bm"]
+[ext_resource type="Texture2D" uid="uid://dtb1uck66bmvg" path="res://img/events/tourist/tourist_sprite/tile024.png" id="28_7aj64"]
+[ext_resource type="Texture2D" uid="uid://dud0julg0xxnf" path="res://img/events/tourist/tourist_sprite/tile025.png" id="29_oe1ej"]
+[ext_resource type="Texture2D" uid="uid://dg3h8o0t8bjr" path="res://img/events/tourist/tourist_sprite/tile026.png" id="30_i8dru"]
+
+[resource]
+script = ExtResource("4_1jwgy")
+id = &"tourist_step_blowjob_0"
+text = "TID_BLOWJOB_0"
+frames = Array[Texture2D]([ExtResource("4_udap7"), ExtResource("5_lkqx1"), ExtResource("6_bc8ql"), ExtResource("7_acjxi"), ExtResource("8_6p0pf"), ExtResource("9_jf2pg"), ExtResource("10_k6rli"), ExtResource("11_i4yv7"), ExtResource("12_mjral"), ExtResource("13_0m3ye"), ExtResource("14_7t6bm"), ExtResource("15_a3je6"), ExtResource("16_3f3sj"), ExtResource("17_o65gq"), ExtResource("18_2tqoi"), ExtResource("19_kndfw"), ExtResource("20_wxi42"), ExtResource("21_0acpp"), ExtResource("22_isrpk"), ExtResource("23_jy1w6"), ExtResource("24_cistr"), ExtResource("25_lj4ao"), ExtResource("26_q8pds"), ExtResource("27_nb1bm"), ExtResource("28_7aj64"), ExtResource("29_oe1ej"), ExtResource("30_i8dru")])
+next_step = &"tourist_step_blowjob_1"
+metadata/_custom_type_script = "uid://d023vifri6y0k"

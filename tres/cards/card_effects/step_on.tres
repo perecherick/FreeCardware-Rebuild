@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ApplyEnemyEffect" format=3 uid="uid://b48jdid3ua02c"]
+
+[ext_resource type="Resource" uid="uid://4iqymiafujsk" path="res://tres/enemies/effects/horny.tres" id="1_3b8e2"]
+[ext_resource type="Script" uid="uid://b3dr863gyclqw" path="res://gd/cards/card_effects/apply_enemy_effects.gd" id="1_e0uou"]
+
+[resource]
+script = ExtResource("1_e0uou")
+effect = ExtResource("1_3b8e2")
+duration = 2
+metadata/_custom_type_script = "uid://b3dr863gyclqw"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EffectData" format=3 uid="uid://4iqymiafujsk"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_emeu7"]
+
+[resource]
+script = ExtResource("1_emeu7")
+id = "horny"
+name = "TID_HORNY"
+color = "white"
+duration_mode = 1
+default_duration = 1
+stacks_change_per_turn = 1
+metadata/_custom_type_script = "uid://b42lcmpk0fand"

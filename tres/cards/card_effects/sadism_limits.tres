@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="LimitEffect" format=3 uid="uid://be4kvbnwq4fmf"]
+
+[ext_resource type="Script" uid="uid://clwkrjr85wnnv" path="res://gd/cards/card_effects/limits.gd" id="1_1dhi1"]
+
+[resource]
+script = ExtResource("1_1dhi1")
+max_damage = 45
+metadata/_custom_type_script = "uid://clwkrjr85wnnv"

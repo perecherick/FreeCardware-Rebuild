@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ClothesChange" format=3 uid="uid://06qptvtrrdkn"]
+
+[ext_resource type="Script" uid="uid://bncpl2rtee4e7" path="res://gd/event/event_effects/clothes_change.gd" id="1_tfd0j"]
+
+[resource]
+script = ExtResource("1_tfd0j")
+strip_panties = true
+remove_clothes = true
+metadata/_custom_type_script = "uid://bncpl2rtee4e7"

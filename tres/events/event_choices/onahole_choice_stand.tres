@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://dmlknoily8sm7"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_vw3ik"]
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="2_4y2qc"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_tq7uc"]
+[ext_resource type="Resource" uid="uid://c4jcyehnw1jk3" path="res://tres/events/event_effects/onahole_add_random_lp.tres" id="4_4y2qc"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="4_pgblk"]
+
+[resource]
+script = ExtResource("4_pgblk")
+text = "TID_STAND_IN_LINE"
+next_step = &"onahole_step_1"
+effects = Array[ExtResource("3_tq7uc")]([ExtResource("4_4y2qc")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

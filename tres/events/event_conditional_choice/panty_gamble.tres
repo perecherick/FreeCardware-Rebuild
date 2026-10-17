@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventConditionalStep" format=3 uid="uid://xb4mtajveoue"]
+
+[ext_resource type="Resource" uid="uid://ckrqgr4mmf2f2" path="res://tres/events/event_conditions/has_panties.tres" id="1_nasol"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_yjil3"]
+
+[resource]
+script = ExtResource("1_yjil3")
+condition = ExtResource("1_nasol")
+next_step = &"panty_gamble_step_1"
+metadata/_custom_type_script = "uid://b5lem4i7qg8w4"

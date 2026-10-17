@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://g6jjli24r0om"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_hof2i"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_8uwkr"]
+[ext_resource type="Resource" uid="uid://yuqnkaxxhi8u" path="res://tres/cards/card_effects/clean_self.tres" id="2_vx5we"]
+[ext_resource type="Resource" uid="uid://bklgsx3flirwb" path="res://tres/cards/card_effects/clean_self_remove_cum.tres" id="3_c77e1"]
+[ext_resource type="Texture2D" uid="uid://bffggome4f6a8" path="res://img/cards/card/clean_self.png" id="3_h3fgb"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_vx5we"]
+
+[resource]
+script = ExtResource("2_8uwkr")
+id = "clean_self"
+name = "TID_CLEAN_SELF_NAME"
+img = ExtResource("3_h3fgb")
+description = "TID_CLEAN_SELF_DESC"
+hover_description = "TID_CLEAN_SELF_HOVER_DESC"
+energy_cost = 1
+lp = 3
+hp = 6
+card_cost = 50
+exhaust = true
+card_effects = Array[ExtResource("1_hof2i")]([ExtResource("2_vx5we"), ExtResource("3_c77e1")])
+misc = true
+card_type = 3
+target_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

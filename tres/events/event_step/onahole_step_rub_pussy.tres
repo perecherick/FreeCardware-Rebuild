@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://q75qtu5atnsd"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_1lqsv"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_xyvr1"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_j86tx"]
+[ext_resource type="Resource" uid="uid://c3cmfby5agiw5" path="res://tres/events/event_effects/orgasm.tres" id="3_xyvr1"]
+
+[resource]
+script = ExtResource("3_j86tx")
+id = &"onahole_step_rub_pussy"
+text = "TID_START_RUBBING"
+loop = false
+next_step = &"onahole_step_orgasming_0"
+effects = Array[ExtResource("2_xyvr1")]([ExtResource("3_xyvr1")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

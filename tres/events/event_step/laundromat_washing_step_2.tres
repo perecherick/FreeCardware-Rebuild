@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://c8threajjx5fh"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_0n02j"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_i8tw7"]
+[ext_resource type="Resource" uid="uid://btqm83vojtcqc" path="res://tres/events/event_effects/laundromat_random_washing.tres" id="3_in40y"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_roakc"]
+[ext_resource type="Texture2D" uid="uid://b56ap3eo8y6j" path="res://img/events/laundromat/washing.png" id="4_c2q33"]
+[ext_resource type="Resource" uid="uid://cs8bqh4vbffp5" path="res://tres/events/event_effects/clean_from_cum.tres" id="4_in40y"]
+
+[resource]
+script = ExtResource("3_roakc")
+id = &"laundromat_washing_step_2"
+text = "TID_WASHING_2"
+frames = Array[Texture2D]([ExtResource("4_c2q33")])
+loop = false
+next_step = &"laundromat_washing_step_3"
+effects = Array[ExtResource("2_i8tw7")]([ExtResource("3_in40y"), ExtResource("4_in40y")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://bluvfg56l0vus"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_87683"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_hu4uq"]
+[ext_resource type="Resource" uid="uid://djnfvqkgtl4i6" path="res://tres/events/event_step/charging_station_buy_beads_step_0.tres" id="3_ag66u"]
+[ext_resource type="Resource" uid="uid://d3ofbqgr8ua2q" path="res://tres/events/event_step/charging_station_buy_beads_step_1.tres" id="4_ruodx"]
+[ext_resource type="Resource" uid="uid://bj7jfd3f0m0wo" path="res://tres/events/event_step/charging_station_buy_beads_step_2.tres" id="5_hycjx"]
+[ext_resource type="Resource" uid="uid://nf0bhgaxtqhb" path="res://tres/events/event_step/charging_station_buy_beads_step_3.tres" id="6_r16xn"]
+[ext_resource type="Resource" uid="uid://bthngfc5n6iy2" path="res://tres/events/event_step/charging_station_buy_beads_step_4.tres" id="7_44tbp"]
+[ext_resource type="Resource" uid="uid://ciqfacs3k4cve" path="res://tres/events/event_step/charging_station_hack_step_0.tres" id="8_imkp8"]
+[ext_resource type="Resource" uid="uid://cvyu432ercrwd" path="res://tres/events/event_step/charging_station_hack_step_1.tres" id="9_4aj7y"]
+[ext_resource type="Resource" uid="uid://cfllxnqnmp25g" path="res://tres/events/event_step/charging_station_remove_card_step_0.tres" id="10_osk05"]
+[ext_resource type="Resource" uid="uid://bv1qdwqp2jj6t" path="res://tres/events/event_step/charging_station_remove_card_step_1.tres" id="11_hmpih"]
+[ext_resource type="Resource" uid="uid://cnr0hccwv7ycd" path="res://tres/events/event_step/charging_station_step_0.tres" id="12_dp12d"]
+
+[resource]
+script = ExtResource("1_87683")
+id = &"charging_station"
+steps = Array[ExtResource("2_hu4uq")]([ExtResource("12_dp12d"), ExtResource("3_ag66u"), ExtResource("4_ruodx"), ExtResource("5_hycjx"), ExtResource("6_r16xn"), ExtResource("7_44tbp"), ExtResource("8_imkp8"), ExtResource("9_4aj7y"), ExtResource("10_osk05"), ExtResource("11_hmpih")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

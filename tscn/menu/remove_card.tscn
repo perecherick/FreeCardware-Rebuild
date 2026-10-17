@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://d0bptx4btfwra"]
+
+[ext_resource type="Script" uid="uid://cgu1iysd3pvc0" path="res://gd/remove_card.gd" id="1_rcrd7"]
+[ext_resource type="PackedScene" uid="uid://dg4uitjqffpta" path="res://tscn/cards/card.tscn" id="2_1tcdm"]
+
+[node name="RemoveCard" type="Control" unique_id=579480327]
+z_index = 4095
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rcrd7")
+card_scene = ExtResource("2_1tcdm")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1200243430]
+layout_mode = 0
+offset_right = 1300.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.6627451)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1777606039]
+layout_mode = 0
+offset_right = 1300.0
+offset_bottom = 1033.0
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" unique_id=1949225944]
+custom_minimum_size = Vector2(1300, 1033)
+layout_mode = 2
+theme_override_constants/margin_top = 145
+theme_override_constants/margin_bottom = 90
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer" unique_id=2007494534]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 110
+theme_override_constants/v_separation = 65
+columns = 4

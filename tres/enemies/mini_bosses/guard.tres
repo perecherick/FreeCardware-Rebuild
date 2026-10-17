@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://bx5dabiqjrq77"]
+
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="1_3rc1v"]
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_bqnhc"]
+[ext_resource type="Script" uid="uid://coasviibakvjg" path="res://gd/enemy/enemy_data.gd" id="2_3rc1v"]
+[ext_resource type="Texture2D" uid="uid://ccvgmr28n1g2n" path="res://img/enemies/mini_bosses/guard.png" id="3_n4owo"]
+[ext_resource type="Resource" uid="uid://16c4h6eevava" path="res://tres/moves/general_moves/guard/guard_shoot.tres" id="4_bqnhc"]
+[ext_resource type="Resource" uid="uid://d2yeaj0csbof" path="res://tres/moves/general_moves/guard/sex.tres" id="4_e654k"]
+[ext_resource type="Resource" uid="uid://qe4563hv8ncu" path="res://tres/moves/general_moves/guard/sex_intend.tres" id="5_e654k"]
+[ext_resource type="Resource" uid="uid://bo8avkc4hop04" path="res://tres/moves/general_moves/guard/guard_shoot_sex.tres" id="6_e654k"]
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="6_gko7s"]
+
+[sub_resource type="Resource" id="Resource_idgvd"]
+script = ExtResource("6_gko7s")
+pp = 8
+self_pp = 4
+sex_value = 1
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_mkug2"]
+script = ExtResource("1_3rc1v")
+intent = "TID_THRUST"
+actions = Array[ExtResource("6_gko7s")]([SubResource("Resource_idgvd")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_gg1x4"]
+script = ExtResource("6_gko7s")
+pp = 6
+self_pp = 3
+sex_value = 1
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_pqbp4"]
+script = ExtResource("1_3rc1v")
+intent = "TID_THRUST"
+actions = Array[ExtResource("6_gko7s")]([SubResource("Resource_gg1x4")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_r1bb6"]
+script = ExtResource("6_gko7s")
+damage = 3
+exit_sex = true
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_rwk2x"]
+script = ExtResource("1_3rc1v")
+intent = "TID_EXIT_SEX"
+actions = Array[ExtResource("6_gko7s")]([SubResource("Resource_r1bb6")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[resource]
+script = ExtResource("2_3rc1v")
+id = "guard"
+name = "TID_GUARD"
+texture = ExtResource("3_n4owo")
+type = 2
+max_hp = 70
+starting_hp = 70
+max_pp = 65
+move_list = Array[ExtResource("1_3rc1v")]([ExtResource("4_bqnhc"), ExtResource("5_e654k")])
+enemy_initiated_sex_moves = Array[ExtResource("1_3rc1v")]([ExtResource("4_e654k")])
+player_initiated_sex_moves = Array[ExtResource("1_3rc1v")]([SubResource("Resource_mkug2"), SubResource("Resource_pqbp4"), SubResource("Resource_rwk2x")])
+player_orgasm_moves = Array[ExtResource("1_3rc1v")]([ExtResource("6_e654k")])
+metadata/_custom_type_script = "uid://coasviibakvjg"

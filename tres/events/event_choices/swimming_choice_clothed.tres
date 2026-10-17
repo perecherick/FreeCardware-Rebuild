@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://brwkjmiel25b5"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_iy4f7"]
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="2_k3u4c"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_f7ylp"]
+[ext_resource type="Resource" uid="uid://dgfg7f22h748f" path="res://tres/events/event_conditions/condition_has_clothes.tres" id="3_k3u4c"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="4_g0gkv"]
+[ext_resource type="Resource" uid="uid://cekvbnbqxrut5" path="res://tres/events/event_effects/add_7_lp.tres" id="5_f7ylp"]
+
+[resource]
+script = ExtResource("4_g0gkv")
+text = "TID_SWIM_CLOTHED"
+next_step = &"swimming_step_clothed"
+conditions = Array[ExtResource("2_k3u4c")]([ExtResource("3_k3u4c")])
+effects = Array[ExtResource("3_f7ylp")]([ExtResource("5_f7ylp")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

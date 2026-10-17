@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SexData" format=3 uid="uid://buptudrg1al1r"]
+
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="1_5vtc6"]
+
+[resource]
+script = ExtResource("1_5vtc6")
+id = &"dragon_sex"
+sex_type = 1
+metadata/_custom_type_script = "uid://c0l5rrxqmaadr"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://4d050h1vo73s"]
+
+[ext_resource type="Texture2D" uid="uid://c38witwupuxds" path="res://img/cards/card/touch.png" id="1_r6qcb"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_r8isl"]
+
+[resource]
+script = ExtResource("1_r8isl")
+id = "touch"
+name = "TID_TOUCH_NAME"
+img = ExtResource("1_r6qcb")
+description = "TID_TOUCH_DESC"
+energy_cost = 1
+pp = 5
+lp = 1
+pleasure = true
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

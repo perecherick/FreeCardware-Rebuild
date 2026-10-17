@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://cbux0vpbiwvfu"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_mwigs"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_rm0jb"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_wa7l3"]
+[ext_resource type="Texture2D" uid="uid://de3wbdpom4o2f" path="res://img/events/tentacle_hole/tentacle_inside.png" id="4_qgg3v"]
+[ext_resource type="Resource" uid="uid://dtyj5a588d6ro" path="res://tres/events/event_effects/add_30_lp.tres" id="4_rm0jb"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="5_0dt3g"]
+
+[resource]
+script = ExtResource("5_0dt3g")
+id = &"tentacle_hole_step_3"
+text = "TID_STRUGGLE_1"
+frames = Array[Texture2D]([ExtResource("4_qgg3v")])
+loop = false
+next_step = &"tentacle_hole_step_4"
+effects = Array[ExtResource("3_wa7l3")]([ExtResource("4_rm0jb")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

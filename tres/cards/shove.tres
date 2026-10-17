@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://c3cb3x8syb8nh"]
+
+[ext_resource type="Texture2D" uid="uid://d0vbreamc475o" path="res://img/cards/card/shove.png" id="1_c44p3"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_syo3y"]
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_w6eva"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="4_r0l11"]
+
+[resource]
+script = ExtResource("1_syo3y")
+id = "shove"
+name = "TID_SHOVE_NAME"
+img = ExtResource("1_c44p3")
+description = "TID_SHOVE_DESC"
+energy_cost = 1
+card_cost = 50
+sex_state_change = -3
+misc = true
+card_type = 3
+target_type = 2
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

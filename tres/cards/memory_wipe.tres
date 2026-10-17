@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dgsiwk3lusvcy"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_aqd0m"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_sm472"]
+[ext_resource type="Texture2D" uid="uid://c2wsxff3ainta" path="res://img/cards/card/wipe_memory.png" id="2_wd1al"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_wd1al"]
+
+[resource]
+script = ExtResource("2_sm472")
+id = "memory_wipe"
+name = "TID_MEMORY_WIPE_NAME"
+img = ExtResource("2_wd1al")
+description = "TID_MEMORY_WIPE_DESC"
+energy_cost = 1
+lp = -7
+card_cost = 50
+misc = true
+card_type = 3
+target_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

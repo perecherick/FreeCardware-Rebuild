@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://cesebvvti1kvs"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_7gpox"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_33ssv"]
+[ext_resource type="Resource" uid="uid://dt5kwr6rio76e" path="res://tres/events/event_choices/laundromat_choice_on_the_ground.tres" id="2_g14ff"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_27tk5"]
+[ext_resource type="Resource" uid="uid://piqkvfg6mhpw" path="res://tres/events/event_choices/laundromat_choice_in_a_locker.tres" id="3_w4wu1"]
+[ext_resource type="Resource" uid="uid://cj7r62kmaoy7x" path="res://tres/events/event_choices/laundromat_nevermind.tres" id="4_assik"]
+[ext_resource type="Resource" uid="uid://06qptvtrrdkn" path="res://tres/events/event_effects/fully_undress.tres" id="6_xaw22"]
+[ext_resource type="Texture2D" uid="uid://dvtf3rbswaqf6" path="res://img/events/laundromat/laundromat.png" id="7_2hcoh"]
+
+[resource]
+script = ExtResource("3_27tk5")
+id = &"laundromat_washing_step_0"
+text = "TID_WASHING_0"
+frames = Array[Texture2D]([ExtResource("7_2hcoh")])
+loop = false
+effects = Array[ExtResource("2_33ssv")]([ExtResource("6_xaw22")])
+choices = Array[ExtResource("1_7gpox")]([ExtResource("2_g14ff"), ExtResource("3_w4wu1"), ExtResource("4_assik")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

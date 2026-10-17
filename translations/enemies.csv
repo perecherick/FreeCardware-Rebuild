@@ -1,0 +1,5 @@
+keys,en,ja,zh,es,ko,ru,de
+TID_SUCK_GUARD_DESC,Increases enemy PP by {pp} and player LP by {lp},敵の快楽値を{pp}増加させプレイヤーの欲情値を{lp}増加させる,使敌人的快感值增加{pp}并使玩家的欲望值增加{lp},Aumenta los PP del enemigo en {pp} y los PL del jugador en {lp},적의 쾌락 수치를 {pp} 증가시키고 플레이어의 욕정 수치를 {lp} 증가시킵니다,Увеличивает ОН врага на {pp} и ОВ игрока на {lp},Erhöht die GP des Gegners um {pp} und die LP des Spielers um {lp}
+TID_SHOOT,SHOT,発砲,射击,DISPARO,발사,ВЫСТРЕЛ,SCHUSS
+TID_PUSH_AGAINST_WALL,WALL PIN,壁への押し付け,压在墙上,ACORRALAMIENTO,벽에 밀어붙이기,ПРИЖАТИЕ К СТЕНЕ,WANDFIXIERUNG
+TID_GUARD_SEX,SEX,セックス,性爱,SEXO,섹스,СЕКС,SEX

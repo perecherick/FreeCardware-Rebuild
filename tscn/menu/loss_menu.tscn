@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://b7eg62ki23733"]
+
+[ext_resource type="Script" uid="uid://f66ae08xik0h" path="res://gd/loss_menu.gd" id="1_ah2vh"]
+[ext_resource type="Texture2D" uid="uid://ch7800ajdteb5" path="res://img/main/game over.png" id="1_ssdy8"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="2_f1028"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cme8h"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="LossMenu" type="Control" unique_id=358882749]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ah2vh")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1749144327]
+z_index = -1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 352.0
+offset_bottom = 240.0
+scale = Vector2(4, 4)
+texture = ExtResource("1_ssdy8")
+
+[node name="Button" type="Button" parent="." unique_id=1851123213]
+layout_mode = 0
+offset_left = 940.0
+offset_top = 775.0
+offset_right = 1264.0
+offset_bottom = 828.0
+theme_override_fonts/font = ExtResource("2_f1028")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_cme8h")
+text = "TID_MAIN_MENU"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

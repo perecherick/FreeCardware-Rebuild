@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://j5u0r6a2qbxi"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_udh2e"]
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="2_u13jw"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_bi5or"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="4_huju8"]
+[ext_resource type="Resource" uid="uid://3pcllhom67w7" path="res://tres/events/event_effects/cum_drink_random_sip.tres" id="4_u13jw"]
+
+[resource]
+script = ExtResource("4_huju8")
+text = "TID_ANOTHER_SIP"
+next_step = &"cum_drink_another_sip"
+effects = Array[ExtResource("3_bi5or")]([ExtResource("4_u13jw")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

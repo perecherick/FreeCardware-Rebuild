@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://cpbape3bsf40g"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_cickt"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_bw52x"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_drb3m"]
+[ext_resource type="Texture2D" uid="uid://b17jmoofya3wy" path="res://img/events/panty_gamble/gremlin.png" id="4_bw52x"]
+[ext_resource type="Resource" uid="uid://dr8g4w2syythn" path="res://tres/events/event_effects/panty_gamble_reward_roll.tres" id="4_drb3m"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_idhq8"]
+
+[resource]
+script = ExtResource("4_idhq8")
+id = &"panty_gamble_step_reward"
+text = "TID_GAMBLE_REWARD"
+frames = Array[Texture2D]([ExtResource("4_bw52x")])
+effects = Array[ExtResource("3_drb3m")]([ExtResource("4_drb3m")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

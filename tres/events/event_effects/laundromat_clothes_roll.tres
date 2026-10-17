@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="LaundromatClothes" format=3 uid="uid://b44ceayd1mxb3"]
+
+[ext_resource type="Script" uid="uid://bnn67ngs2e4yd" path="res://gd/event/event_effects/laundromat_clothes.gd" id="1_ajff0"]
+
+[resource]
+script = ExtResource("1_ajff0")
+metadata/_custom_type_script = "uid://bnn67ngs2e4yd"

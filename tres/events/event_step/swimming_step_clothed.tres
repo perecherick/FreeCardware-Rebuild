@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://dufa4k20rtd08"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_ynghj"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_ondyv"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_casie"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_eufb1"]
+[ext_resource type="Texture2D" uid="uid://c7wxsdxxm4pxi" path="res://img/events/swimming/swim_clothes.png" id="4_ondyv"]
+
+[resource]
+script = ExtResource("4_eufb1")
+id = &"swimming_step_clothed"
+text = "TID_SWIMMING_CLOHTED"
+frames = Array[Texture2D]([ExtResource("4_ondyv")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

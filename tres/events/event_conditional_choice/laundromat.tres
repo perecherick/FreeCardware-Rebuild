@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventConditionalStep" format=3 uid="uid://cymjnwadnq781"]
+
+[ext_resource type="Resource" uid="uid://mbydbnw7vqow" path="res://tres/events/event_conditions/condition_nude.tres" id="1_076ye"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_pf3pd"]
+
+[resource]
+script = ExtResource("1_pf3pd")
+condition = ExtResource("1_076ye")
+next_step = &"laundromat_washing_step_1"
+metadata/_custom_type_script = "uid://b5lem4i7qg8w4"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://bi8vcmrcmimq"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_17y2g"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_cflxu"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_4qxol"]
+[ext_resource type="Resource" uid="uid://cnwumibg8vxsh" path="res://tres/events/event_effects/earn_40_gold.tres" id="4_6walw"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_rsg6y"]
+[ext_resource type="Resource" uid="uid://6b16sesajsjx" path="res://tres/events/event_effects/torn_clothes.tres" id="5_qljab"]
+[ext_resource type="Texture2D" uid="uid://deh07oysluu8w" path="res://img/events/streaming_room/fall.png" id="6_cgusn"]
+
+[resource]
+script = ExtResource("4_rsg6y")
+id = &"streaming_room_step_silly_torn"
+text = "TID_SILLY_FALL"
+frames = Array[Texture2D]([ExtResource("6_cgusn")])
+loop = false
+effects = Array[ExtResource("3_4qxol")]([ExtResource("4_6walw"), ExtResource("5_qljab")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

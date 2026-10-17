@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventConditionalStep" format=3 uid="uid://1842074j8f1u"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_7q775"]
+[ext_resource type="Resource" uid="uid://bcicnidbppeyw" path="res://tres/events/event_conditions/has_gooner.tres" id="1_yac4d"]
+
+[resource]
+script = ExtResource("1_7q775")
+condition = ExtResource("1_yac4d")
+next_step = &"onahole_step_rub_pussy_gooner"
+metadata/_custom_type_script = "uid://b5lem4i7qg8w4"

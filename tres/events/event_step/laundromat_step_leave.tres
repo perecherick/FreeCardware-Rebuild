@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://dn7bu3jknooud"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_d7e27"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_d6iib"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_4lm12"]
+[ext_resource type="Texture2D" uid="uid://dvtf3rbswaqf6" path="res://img/events/laundromat/laundromat.png" id="3_d6iib"]
+
+[resource]
+script = ExtResource("3_4lm12")
+id = &"laundromat_step_leave"
+text = "TID_LAUNDROMAT_LEAVE"
+frames = Array[Texture2D]([ExtResource("3_d6iib")])
+loop = false
+metadata/_custom_type_script = "uid://d023vifri6y0k"

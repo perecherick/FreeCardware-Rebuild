@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StringNamePair" format=3 uid="uid://06f3dh82la48"]
+
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="1_isqme"]
+
+[resource]
+script = ExtResource("1_isqme")
+key = &"panty_gamble_flip"
+value = &"tails"
+metadata/_custom_type_script = "uid://ctxp58gvugpnr"

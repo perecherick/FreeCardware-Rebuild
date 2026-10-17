@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cbqjj0j4b16ab"]
+
+[ext_resource type="Texture2D" uid="uid://in4wajchcubg" path="res://img/cards/card/suck_guard.png" id="1_8ue80"]
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_718ub"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_718ub"]
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="2_dxt14"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_87upq"]
+[ext_resource type="Resource" uid="uid://cuwq4vsel8ykr" path="res://tres/sex/blowjob.tres" id="5_ikfi2"]
+
+[sub_resource type="Resource" id="Resource_txmad"]
+script = ExtResource("2_718ub")
+id = "suck_guard"
+name = "TID_SUCK_GUARD_NAME"
+img = ExtResource("1_8ue80")
+description = "TID_SUCK_GUARD_DESC"
+energy_cost = 1
+pp = 8
+lp = 4
+sex_state_change = 1
+pleasure = true
+sex = true
+card_type = 2
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"
+
+[resource]
+script = ExtResource("2_dxt14")
+pp = 4
+self_pp = 2
+sex_value = 2
+sex_type = ExtResource("5_ikfi2")
+card_to_add = SubResource("Resource_txmad")
+cards_count = 3
+metadata/_custom_type_script = "uid://bh106js5jebrk"

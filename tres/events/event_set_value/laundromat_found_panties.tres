@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SetEventValue" format=3 uid="uid://bde1sy0k2un7q"]
+
+[ext_resource type="Script" uid="uid://b817wdnfiblhn" path="res://gd/event/event_effects/set_event_values.gd" id="1_l28pe"]
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="2_cpyu6"]
+[ext_resource type="Resource" uid="uid://8r83meuwadtp" path="res://tres/events/event_stringname/laundromat_found_panties.tres" id="3_cpyu6"]
+
+[resource]
+script = ExtResource("1_l28pe")
+values = Array[ExtResource("2_cpyu6")]([ExtResource("3_cpyu6")])
+metadata/_custom_type_script = "uid://b817wdnfiblhn"

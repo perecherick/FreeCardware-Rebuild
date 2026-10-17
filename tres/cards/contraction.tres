@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://7omts42xup4h"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_i8tne"]
+[ext_resource type="Resource" uid="uid://duy5iy8hi226b" path="res://tres/cards/card_effects/contraction.tres" id="2_s3wix"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_y3cg0"]
+[ext_resource type="Texture2D" uid="uid://oglefld1dsr5" path="res://img/cards/card/contraction.png" id="3_4dg65"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_s3wix"]
+
+[resource]
+script = ExtResource("2_y3cg0")
+id = "contraction"
+name = "TID_CONTRACTION_NAME"
+img = ExtResource("3_4dg65")
+description = "TID_CONTRACTION_DESC"
+hover_description = "TID_CONTRACTION_HOVER_DESC"
+pp = 2
+card_effects = Array[ExtResource("1_i8tne")]([ExtResource("2_s3wix")])
+pleasure = true
+card_type = 2
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

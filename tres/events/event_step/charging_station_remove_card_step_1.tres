@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://bv1qdwqp2jj6t"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_03cfs"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_c0n4o"]
+[ext_resource type="Resource" uid="uid://1gmwekl8ofyr" path="res://tres/events/event_effects/open_remove_card_menu.tres" id="3_c0n4o"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_l7e8l"]
+
+[resource]
+script = ExtResource("3_l7e8l")
+id = &"charging_station_remove_card_step_1"
+text = "TID_REMOVE_CARD_1"
+loop = false
+effects = Array[ExtResource("2_c0n4o")]([ExtResource("3_c0n4o")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

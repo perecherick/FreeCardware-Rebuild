@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RandomEventEffect" format=3 uid="uid://btqm83vojtcqc"]
+
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="1_opjl2"]
+[ext_resource type="Script" uid="uid://4d070gtwhlo0" path="res://gd/event/event_effects/random_effect.gd" id="2_2ur7f"]
+[ext_resource type="Resource" uid="uid://dq6thy1m7041f" path="res://tres/events/event_effects/heal_10.tres" id="2_qffry"]
+[ext_resource type="Resource" uid="uid://khifr1tj5l0s" path="res://tres/events/event_effects/reduce_10_lp.tres" id="3_coxie"]
+
+[resource]
+script = ExtResource("2_2ur7f")
+effect_list = Array[ExtResource("1_opjl2")]([ExtResource("2_qffry"), ExtResource("3_coxie")])
+text_list = Array[StringName]([&"heal", &"reduce_lp"])
+metadata/_custom_type_script = "uid://4d070gtwhlo0"

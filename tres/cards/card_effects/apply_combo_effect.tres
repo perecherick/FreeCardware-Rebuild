@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ApplyHardware" format=3 uid="uid://dgo10faej5sdw"]
+
+[ext_resource type="Resource" uid="uid://bk3o48gibs5s6" path="res://tres/hardware/combo.tres" id="1_3o478"]
+[ext_resource type="Script" uid="uid://cp5r2ubl3a8fl" path="res://gd/cards/card_effects/apply_hardware.gd" id="1_vt5va"]
+
+[resource]
+script = ExtResource("1_vt5va")
+hardware = ExtResource("1_3o478")
+metadata/_custom_type_script = "uid://cp5r2ubl3a8fl"

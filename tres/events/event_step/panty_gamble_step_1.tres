@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://cp4s54osidpxh"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_qnm38"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_4h1x4"]
+[ext_resource type="Resource" uid="uid://b20eneueqpfvl" path="res://tres/events/event_choices/panty_gamble_choice_to_gamble.tres" id="2_fhavr"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_2b15o"]
+[ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="3_im4db"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_08naw"]
+[ext_resource type="Resource" uid="uid://de1ow7kw1qh2t" path="res://tres/events/event_effects/panty_gamble_flip.tres" id="6_g82su"]
+[ext_resource type="Texture2D" uid="uid://b17jmoofya3wy" path="res://img/events/panty_gamble/gremlin.png" id="7_pnv67"]
+
+[resource]
+script = ExtResource("4_08naw")
+id = &"panty_gamble_step_1"
+text = "TID_ASK_FOR_GAMBLE"
+frames = Array[Texture2D]([ExtResource("7_pnv67")])
+loop = false
+effects = Array[ExtResource("3_2b15o")]([ExtResource("6_g82su")])
+choices = Array[ExtResource("1_qnm38")]([ExtResource("2_fhavr"), ExtResource("3_im4db")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

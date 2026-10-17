@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://dbm32iq64uivr"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_l186r"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_dwpq6"]
+[ext_resource type="Script" uid="uid://coasviibakvjg" path="res://gd/enemy/enemy_data.gd" id="3_4aufq"]
+[ext_resource type="Resource" uid="uid://tpa5e5u6r0h3" path="res://tres/moves/general_moves/general_move_pleasure_0.tres" id="3_onwl0"]
+[ext_resource type="Resource" uid="uid://dnqhyc5524u4r" path="res://tres/moves/general_moves/general_move_pleasure_1.tres" id="4_um68r"]
+[ext_resource type="Texture2D" uid="uid://5tpudfhau62" path="res://img/enemies/default/fallen_girl.png" id="5_um68r"]
+
+[resource]
+script = ExtResource("3_4aufq")
+id = "fallen_girl"
+name = "TID_FALLEN_GIRL"
+texture = ExtResource("5_um68r")
+max_hp = 28
+starting_hp = 28
+max_pp = 40
+move_list = Array[ExtResource("2_dwpq6")]([ExtResource("3_onwl0"), ExtResource("4_um68r")])
+metadata/_custom_type_script = "uid://coasviibakvjg"

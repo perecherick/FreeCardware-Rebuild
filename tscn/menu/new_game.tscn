@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://bspekfcp4blnp"]
+
+[ext_resource type="Script" uid="uid://cnbk0ki8b2xhq" path="res://gd/new_game.gd" id="1_3dy4d"]
+[ext_resource type="Texture2D" uid="uid://cnqbbhty5bqom" path="res://img/game_modes/normal_run.png" id="1_wgl7j"]
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="2_3dy4d"]
+[ext_resource type="Texture2D" uid="uid://c31yh4t60dqxn" path="res://img/game_modes/pure_run.png" id="3_v5c68"]
+[ext_resource type="Texture2D" uid="uid://cjlrmyskqxrp3" path="res://img/game_modes/lewd_run.png" id="4_io42r"]
+
+[node name="NewGame" type="Control" unique_id=638646986]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3dy4d")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=527426925]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="GameModes" type="HBoxContainer" parent="." unique_id=1686590248]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 349.0
+offset_top = 302.0
+offset_right = 1571.0
+offset_bottom = 778.0
+theme_override_constants/separation = 35
+
+[node name="NormalButtons" type="VBoxContainer" parent="GameModes" unique_id=783979500]
+layout_mode = 2
+metadata/run_dif = "normal"
+
+[node name="NormalRun" type="TextureButton" parent="GameModes/NormalButtons" unique_id=1840802368]
+layout_mode = 2
+focus_mode = 0
+texture_normal = ExtResource("1_wgl7j")
+
+[node name="NormalBtn" type="Button" parent="GameModes/NormalButtons" unique_id=851021126]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3dy4d")
+theme_override_font_sizes/font_size = 50
+text = "NORMAL_RUN"
+
+[node name="PureButtons" type="VBoxContainer" parent="GameModes" unique_id=684763912]
+layout_mode = 2
+metadata/run_dif = "pure"
+
+[node name="PureRun" type="TextureButton" parent="GameModes/PureButtons" unique_id=1122333416]
+layout_mode = 2
+focus_mode = 0
+texture_normal = ExtResource("3_v5c68")
+
+[node name="PureBtn" type="Button" parent="GameModes/PureButtons" unique_id=1975559871]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3dy4d")
+theme_override_font_sizes/font_size = 50
+text = "PURE_RUN"
+
+[node name="LewdButtons" type="VBoxContainer" parent="GameModes" unique_id=378747952]
+layout_mode = 2
+metadata/run_dif = "lewd"
+
+[node name="LewdRun" type="TextureButton" parent="GameModes/LewdButtons" unique_id=1693974342]
+layout_mode = 2
+focus_mode = 0
+texture_normal = ExtResource("4_io42r")
+
+[node name="LewdBtn" type="Button" parent="GameModes/LewdButtons" unique_id=127753384]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3dy4d")
+theme_override_font_sizes/font_size = 50
+text = "LEWD_RUN"
+
+[connection signal="visibility_changed" from="GameModes/LewdButtons/LewdBtn" to="." method="_on_visibility_changed"]

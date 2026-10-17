@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://b01anmr7grt1n"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_ypks7"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_vrhnw"]
+[ext_resource type="Resource" uid="uid://cxenut4xwsept" path="res://tres/events/event_step/hardware_step_0.tres" id="3_vrhnw"]
+
+[resource]
+script = ExtResource("1_ypks7")
+id = &"hardware"
+steps = Array[ExtResource("2_vrhnw")]([ExtResource("3_vrhnw")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

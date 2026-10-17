@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bwp0bnx3tf553"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_sxfil"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_pduog"]
+[ext_resource type="Resource" uid="uid://b48jdid3ua02c" path="res://tres/cards/card_effects/step_on.tres" id="2_qjit2"]
+[ext_resource type="Texture2D" uid="uid://bu36lr5owcs7u" path="res://img/cards/card/step_on.png" id="3_obhgd"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_qjit2"]
+
+[resource]
+script = ExtResource("2_pduog")
+id = "step_on"
+name = "TID_STEP_ON_NAME"
+img = ExtResource("3_obhgd")
+description = "TID_STEP_ON_DESC"
+energy_cost = 1
+damage = 4
+pp = 2
+card_cost = 75
+card_effects = Array[ExtResource("1_sxfil")]([ExtResource("2_qjit2")])
+attack = true
+pleasure = true
+misc = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

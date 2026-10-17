@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ReverseLewdnessDamageEffect" format=3 uid="uid://cn610lgwu7cvt"]
+
+[ext_resource type="Script" uid="uid://dbly22h42v5oy" path="res://gd/cards/card_effects/reduce_damage.gd" id="1_tc76j"]
+
+[resource]
+script = ExtResource("1_tc76j")
+lewdness_per_damage_loss = 1
+min_damage = 5
+metadata/_custom_type_script = "uid://dbly22h42v5oy"

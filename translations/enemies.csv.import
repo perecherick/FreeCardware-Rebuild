@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://fhj0odg0qnpx"
+
+[deps]
+
+files=["res://translations/enemies.en.translation", "res://translations/enemies.ja.translation", "res://translations/enemies.zh.translation", "res://translations/enemies.es.translation", "res://translations/enemies.ko.translation", "res://translations/enemies.ru.translation", "res://translations/enemies.de.translation"]
+
+source_file="res://translations/enemies.csv"
+dest_files=["res://translations/enemies.en.translation", "res://translations/enemies.ja.translation", "res://translations/enemies.zh.translation", "res://translations/enemies.es.translation", "res://translations/enemies.ko.translation", "res://translations/enemies.ru.translation", "res://translations/enemies.de.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

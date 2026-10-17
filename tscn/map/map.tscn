@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bjnoxjoct56vy"]
+
+[ext_resource type="Script" uid="uid://b34n0qiwg2hqn" path="res://gd/map/map.gd" id="1_hmqnh"]
+[ext_resource type="Script" uid="uid://cx0cqmy0bcxbe" path="res://gd/map/map_generation.gd" id="2_5nmkn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ms13n"]
+bg_color = Color(0.28235295, 0.21568628, 0.5411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u6dbn"]
+bg_color = Color(0.4, 0.54509807, 0.9490196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i0sol"]
+bg_color = Color(0.49019608, 0.2627451, 0.4392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye4lt"]
+bg_color = Color(0.29803923, 0.39215687, 0.7294118, 1)
+
+[sub_resource type="ImageTexture" id="ImageTexture_flwjc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_flwjc"]
+bg_color = Color(0.28235295, 0.21568628, 0.5411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hwjit"]
+bg_color = Color(0.4, 0.54509807, 0.9490196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0j4ha"]
+bg_color = Color(0.49019608, 0.2627451, 0.4392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1jyhv"]
+bg_color = Color(0.29803923, 0.39215687, 0.7294118, 1)
+border_width_left = 8
+border_color = Color(0.29803923, 0.39215687, 0.7294118, 1)
+
+[sub_resource type="Theme" id="Theme_cme8h"]
+/styles/grabber = SubResource("StyleBoxFlat_ms13n")
+/styles/grabber_highlight = SubResource("StyleBoxFlat_u6dbn")
+/styles/grabber_pressed = SubResource("StyleBoxFlat_i0sol")
+/styles/scroll = SubResource("StyleBoxFlat_ye4lt")
+VScrollBar/icons/decrement = SubResource("ImageTexture_flwjc")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_flwjc")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_flwjc")
+VScrollBar/icons/increment = SubResource("ImageTexture_flwjc")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_flwjc")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_flwjc")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_flwjc")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_hwjit")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_0j4ha")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_1jyhv")
+
+[node name="Map" type="Control" unique_id=849083837]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_hmqnh")
+
+[node name="MapGenerator" type="Node" parent="." unique_id=1576718248]
+script = ExtResource("2_5nmkn")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=974888487]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 1264.0
+offset_bottom = 1048.0
+color = Color(0.08627451, 0.05882353, 0.18039216, 1)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1798676651]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = 44.0
+offset_right = 1264.0
+offset_bottom = 1048.0
+theme = SubResource("Theme_cme8h")
+
+[node name="Locations" type="Container" parent="ScrollContainer" unique_id=2043680215]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Lines" type="Line2D" parent="ScrollContainer/Locations" unique_id=1918959133]
+unique_name_in_owner = true
+
+[node name="LocationNodes" type="Control" parent="ScrollContainer/Locations" unique_id=595716712]
+unique_name_in_owner = true
+layout_mode = 2

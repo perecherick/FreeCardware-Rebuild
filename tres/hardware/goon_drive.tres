@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://ch48w72sdosn1"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_aac6t"]
+
+[resource]
+script = ExtResource("1_aac6t")
+id = "goon_drive"
+name = "TID_GOON_DRIVE"
+description = "TID_GOON_DRIVE_DESC"
+color = "orange"
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

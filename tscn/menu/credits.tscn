@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bqpdph6he6aq4"]
+
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="1_dmcpd"]
+[ext_resource type="Script" uid="uid://k0kaj3e721pd" path="res://gd/credits.gd" id="1_v7do4"]
+[ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="2_m4fet"]
+
+[node name="Credits" type="Control" unique_id=84591324]
+z_index = 101
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v7do4")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=962247637]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="CreditsContainer" type="VBoxContainer" parent="." unique_id=123643407]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 130.0
+offset_right = 1460.0
+offset_bottom = 830.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CreditsContainer" unique_id=105090369]
+custom_minimum_size = Vector2(0, 615)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_dmcpd")
+theme_override_fonts/bold_font = ExtResource("1_dmcpd")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 30
+bbcode_enabled = true
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="CreditsContainer" unique_id=889908645]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_m4fet")
+theme_override_font_sizes/font_size = 16
+text = "MENU_BACK"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="CreditsContainer/Button" to="." method="_on_button_pressed"]

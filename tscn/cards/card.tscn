@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://dg4uitjqffpta"]
+
+[ext_resource type="Script" uid="uid://5un4y7bw5d6w" path="res://gd/cards/card_view.gd" id="1_kss27"]
+[ext_resource type="Texture2D" uid="uid://c0bdjbnwhgl0v" path="res://img/cards/card_base.png" id="2_ff6ss"]
+[ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="3_j15ok"]
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="4_ff6ss"]
+[ext_resource type="Texture2D" uid="uid://bidjau4io2pnt" path="res://img/cards/lights/off.png" id="5_1s4ku"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="6_n7rqi"]
+
+[node name="Card" type="Control" unique_id=1210802773]
+custom_minimum_size = Vector2(94, 167)
+layout_mode = 3
+anchors_preset = 0
+offset_top = 21.0
+offset_right = 94.0
+offset_bottom = 186.0
+script = ExtResource("1_kss27")
+
+[node name="Visual" type="Control" parent="." unique_id=1977344763]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 94.0
+offset_bottom = 167.0
+
+[node name="CardTexture" type="TextureRect" parent="Visual" unique_id=1898623521]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 94.0
+offset_bottom = 167.0
+texture = ExtResource("2_ff6ss")
+
+[node name="CardName" type="Label" parent="Visual" unique_id=918403619]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = -1.0
+offset_right = 94.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("3_j15ok")
+theme_override_font_sizes/font_size = 16
+text = "Default"
+horizontal_alignment = 1
+
+[node name="CardImage" type="TextureRect" parent="Visual" unique_id=586068299]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 14.0
+offset_top = 21.0
+offset_right = 80.0
+offset_bottom = 86.0
+
+[node name="CardDescription" type="RichTextLabel" parent="Visual" unique_id=868208477]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 4.0
+offset_top = 86.0
+offset_right = 90.0
+offset_bottom = 167.0
+mouse_force_pass_scroll_events = false
+theme_override_fonts/normal_font = ExtResource("4_ff6ss")
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "Description"
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Light" type="TextureRect" parent="Visual" unique_id=1607221419]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -2.0
+offset_top = -23.0
+offset_right = 22.0
+offset_bottom = 1.0
+texture = ExtResource("5_1s4ku")
+
+[node name="EnergyCost" type="Label" parent="Visual" unique_id=1052655672]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 6.0
+offset_top = -23.0
+offset_right = 12.0
+offset_bottom = -5.0
+theme_override_fonts/font = ExtResource("6_n7rqi")
+theme_override_font_sizes/font_size = 12
+text = "0"
+
+[node name="ShopCost" type="Label" parent="Visual" unique_id=602022962]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = 166.0
+offset_right = 94.0
+offset_bottom = 202.0
+theme_override_fonts/font = ExtResource("6_n7rqi")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+
+[node name="HoverArea" type="Control" parent="." unique_id=489291432]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 94.0
+offset_bottom = 167.0
+
+[connection signal="gui_input" from="HoverArea" to="." method="_on_hover_area_gui_input"]
+[connection signal="mouse_entered" from="HoverArea" to="." method="_on_hover_area_mouse_entered"]
+[connection signal="mouse_exited" from="HoverArea" to="." method="_on_hover_area_mouse_exited"]

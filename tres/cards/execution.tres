@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bmaat5amlaa5e"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_f1dka"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_iql4i"]
+[ext_resource type="Resource" uid="uid://5opqwlfc80xs" path="res://tres/cards/card_effects/execution.tres" id="2_myblu"]
+[ext_resource type="Resource" uid="uid://bm3apve4lsw86" path="res://tres/cards/card_effects/execution_kill_effect.tres" id="3_6wl1j"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_myblu"]
+
+[resource]
+script = ExtResource("1_iql4i")
+id = "execution"
+name = "TID_EXECUTION_NAME"
+description = "TID_EXECUTION_DESC"
+hover_description = "TID_STRIKE_DESC"
+energy_cost = 2
+damage = 8
+exhaust = true
+description_colors = Dictionary[StringName, Color]({
+&"admg": Color(1, 0.64705884, 0, 1)
+})
+card_effects = Array[ExtResource("1_f1dka")]([ExtResource("2_myblu"), ExtResource("3_6wl1j")])
+attack = true
+card_type = 4
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

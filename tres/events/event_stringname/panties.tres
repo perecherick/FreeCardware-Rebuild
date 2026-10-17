@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StringNamePair" format=3 uid="uid://dg22yi7nfp7ls"]
+
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="1_kr4df"]
+
+[resource]
+script = ExtResource("1_kr4df")
+key = &"panties_removed"
+value = &"saved_panties_removed"
+metadata/_custom_type_script = "uid://ctxp58gvugpnr"

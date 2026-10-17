@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://bhlgrn3k44hry"]
+
+[ext_resource type="PackedScene" uid="uid://fcermrhselry" path="res://tscn/menu/cheat_menus/cheat_submenu_template.tscn" id="1_i4mai"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="2_ed0yj"]
+[ext_resource type="Script" uid="uid://dhb821ciclawa" path="res://gd/cheat/add_card.gd" id="2_txty4"]
+[ext_resource type="PackedScene" uid="uid://dg4uitjqffpta" path="res://tscn/cards/card.tscn" id="3_txty4"]
+
+[node name="AddCard" unique_id=71860582 instance=ExtResource("1_i4mai")]
+script = ExtResource("2_txty4")
+card_scene = ExtResource("3_txty4")
+
+[node name="Label" parent="ColorRect" parent_id_path=PackedInt32Array(523543793) index="0" unique_id=1399750212]
+text = "TID_ADD_CARD"
+
+[node name="VBoxContainer" parent="ScrollContainer" parent_id_path=PackedInt32Array(462886225) index="0" unique_id=624849541]
+theme_override_constants/separation = 30
+
+[node name="DamageBox" type="VBoxContainer" parent="ScrollContainer/VBoxContainer" index="0" unique_id=1180671783]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Damage" type="Label" parent="ScrollContainer/VBoxContainer/DamageBox" index="0" unique_id=419279308]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ed0yj")
+theme_override_font_sizes/font_size = 36
+text = "TID_DAMAGE_CARD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DamgeList" type="HFlowContainer" parent="ScrollContainer/VBoxContainer/DamageBox" index="1" unique_id=732687583]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 50
+alignment = 1
+
+[node name="PPBox" type="VBoxContainer" parent="ScrollContainer/VBoxContainer" index="1" unique_id=871606543]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="PP" type="Label" parent="ScrollContainer/VBoxContainer/PPBox" index="0" unique_id=1121791775]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ed0yj")
+theme_override_font_sizes/font_size = 36
+text = "TID_PP_CARD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PPList" type="HFlowContainer" parent="ScrollContainer/VBoxContainer/PPBox" index="1" unique_id=1348120451]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 50
+alignment = 1
+
+[node name="SexCard" type="VBoxContainer" parent="ScrollContainer/VBoxContainer" index="2" unique_id=224905206]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Sex" type="Label" parent="ScrollContainer/VBoxContainer/SexCard" index="0" unique_id=1558088674]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ed0yj")
+theme_override_font_sizes/font_size = 36
+text = "TID_SEX_CARD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SexList" type="HFlowContainer" parent="ScrollContainer/VBoxContainer/SexCard" index="1" unique_id=965584638]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 50
+alignment = 1
+
+[node name="MiscBox" type="VBoxContainer" parent="ScrollContainer/VBoxContainer" index="3" unique_id=981185372]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Misc" type="Label" parent="ScrollContainer/VBoxContainer/MiscBox" index="0" unique_id=323169938]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ed0yj")
+theme_override_font_sizes/font_size = 36
+text = "TID_MISC_CARD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MiscList" type="HFlowContainer" parent="ScrollContainer/VBoxContainer/MiscBox" index="1" unique_id=1896329214]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 50
+alignment = 1

@@ -1,0 +1,69 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Free Cardware: Rebuild"
+run/main_scene="uid://c6xs05vwdl5gk"
+config/features=PackedStringArray("4.7", "Mobile")
+config/icon="uid://1xpv2g37ciqr"
+config/macos_native_icon="res://img/icons/icon.icns"
+config/windows_native_icon="res://img/icons/icon.ico"
+
+[autoload]
+
+SettingsPreload="*uid://ktr6hh5bjulm"
+DebugLogger="*uid://dyverlwebx3mp"
+CardLibrary="*uid://bu45euo0jrmfx"
+EnemyLibrary="*uid://dxbk2i2hj2u6t"
+DiscordActivity="*uid://01rja77q8hr2"
+EventLibrary="*uid://hm11i2hsk27y"
+SexLibrary="*uid://cftu44xus7klg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+mouse_cursor/custom_image="uid://dgm2o8bj8sjw7"
+
+[editor]
+
+script/search_in_file_extensions=PackedStringArray("gd", "gdshader", "tres", "tscn")
+
+[input]
+
+scroll_up={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"location":0,"echo":false,"script":null)
+]
+}
+scroll_down={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translation_remaps={}
+locale/translations=PackedStringArray("res://translations/ui.de.translation", "res://translations/ui.en.translation", "res://translations/ui.es.translation", "res://translations/ui.ja.translation", "res://translations/ui.ko.translation", "res://translations/ui.ru.translation", "res://translations/ui.zh.translation", "res://translations/cards.de.translation", "res://translations/cards.en.translation", "res://translations/cards.es.translation", "res://translations/cards.ja.translation", "res://translations/cards.ko.translation", "res://translations/cards.ru.translation", "res://translations/cards.zh.translation", "res://translations/effects.de.translation", "res://translations/effects.en.translation", "res://translations/effects.es.translation", "res://translations/effects.ja.translation", "res://translations/effects.ko.translation", "res://translations/effects.ru.translation", "res://translations/effects.zh.translation", "res://translations/enemies.de.translation", "res://translations/enemies.en.translation", "res://translations/enemies.es.translation", "res://translations/enemies.ja.translation", "res://translations/enemies.ko.translation", "res://translations/enemies.ru.translation", "res://translations/enemies.zh.translation", "res://translations/discord.de.translation", "res://translations/discord.en.translation", "res://translations/discord.es.translation", "res://translations/discord.ja.translation", "res://translations/discord.ko.translation", "res://translations/discord.ru.translation", "res://translations/discord.zh.translation")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

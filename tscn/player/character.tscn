@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cwlq63tjog0i8"]
+
+[ext_resource type="Script" uid="uid://n6ym28i0rspp" path="res://gd/characters/character.gd" id="1_q8jwu"]
+[ext_resource type="Texture2D" uid="uid://b6bkcoru5x64n" path="res://img/background/Alley_1_sized.png" id="2_vhusi"]
+[ext_resource type="PackedScene" uid="uid://b1mpriwwjas5a" path="res://tscn/player/standart_sprite.tscn" id="3_jtmhs"]
+
+[node name="Character" type="Control" unique_id=101900509]
+custom_minimum_size = Vector2(336, 336)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q8jwu")
+
+[node name="TextureRect" type="TextureButton" parent="." unique_id=1361348395]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 336.0
+offset_bottom = 336.0
+texture_normal = ExtResource("2_vhusi")
+stretch_mode = 0
+
+[node name="StandardSprite" parent="." unique_id=2080346513 instance=ExtResource("3_jtmhs")]
+unique_name_in_owner = true
+position = Vector2(168, 184)
+
+[connection signal="pressed" from="TextureRect" to="." method="_on_texture_rect_pressed"]

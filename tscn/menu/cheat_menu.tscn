@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://ci4a4buqv2td6"]
+
+[ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="1_qcgr4"]
+[ext_resource type="Script" uid="uid://dcqh8li3cjgjx" path="res://gd/cheat/debug_menu.gd" id="1_sg1yp"]
+[ext_resource type="PackedScene" uid="uid://bhlgrn3k44hry" path="res://tscn/menu/cheat_menus/add_card.tscn" id="3_6yuwi"]
+[ext_resource type="PackedScene" uid="uid://v4bs46amubnm" path="res://tscn/menu/cheat_menus/event_menu.tscn" id="3_ce0q4"]
+[ext_resource type="PackedScene" uid="uid://d0bptx4btfwra" path="res://tscn/menu/remove_card.tscn" id="4_bo2um"]
+[ext_resource type="PackedScene" uid="uid://da445nxt04k4o" path="res://tscn/menu/cheat_menus/sex_menu.tscn" id="6_osd7h"]
+
+[node name="DebugMenu" type="Control" unique_id=995641294]
+z_index = 3001
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_sg1yp")
+
+[node name="ToggleMenu" type="Button" parent="." unique_id=1737005018]
+layout_mode = 0
+offset_left = 1258.0
+offset_right = 1359.0
+offset_bottom = 56.0
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "TOGGLE_DEBUG"
+
+[node name="DebugMenu" type="VBoxContainer" parent="." unique_id=292887138]
+unique_name_in_owner = true
+visible = false
+clip_children = 1
+layout_mode = 0
+offset_left = 1327.0
+offset_top = 81.0
+offset_right = 1864.0
+offset_bottom = 915.0
+
+[node name="DebugMenuLabel" type="Label" parent="DebugMenu" unique_id=989533277]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_qcgr4")
+theme_override_font_sizes/font_size = 32
+text = "DEBUG_MENU"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AddCard" type="Button" parent="DebugMenu" unique_id=2003506616]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "ADD_CARD_TO_DECK"
+text_overrun_behavior = 2
+
+[node name="RemoveCard" type="Button" parent="DebugMenu" unique_id=1536561619]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "REMOVE_CARD_FROM_DECK"
+
+[node name="EventMenu" type="Button" parent="DebugMenu" unique_id=1263926621]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "EVENT_MENU"
+
+[node name="SexMenu" type="Button" parent="DebugMenu" unique_id=993701990]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "SEX_MENU"
+
+[node name="StatsMenu" type="Button" parent="DebugMenu" unique_id=1272982502]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "STATS_MENU"
+
+[node name="ClothesContainer" type="HBoxContainer" parent="DebugMenu" unique_id=525132861]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ClothesToggle" type="Button" parent="DebugMenu/ClothesContainer" unique_id=1240598961]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "TOGGLE_CLOTHES"
+autowrap_mode = 3
+clip_text = true
+
+[node name="TornToggle" type="Button" parent="DebugMenu/ClothesContainer" unique_id=193718714]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "TOGGLE_TORN_CLOTHES"
+autowrap_mode = 3
+clip_text = true
+
+[node name="PantiesToggle" type="Button" parent="DebugMenu/ClothesContainer" unique_id=1260041510]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "TOGGLE_PANTIES"
+autowrap_mode = 3
+clip_text = true
+
+[node name="CombatContainer" type="HBoxContainer" parent="DebugMenu" unique_id=797365173]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CombatMenu" type="Button" parent="DebugMenu/CombatContainer" unique_id=2003552357]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "COMBAT_MENU"
+
+[node name="SummonMenu" type="Button" parent="DebugMenu/CombatContainer" unique_id=97669719]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "SUMMON_ENEMY"
+
+[node name="InstaWin" type="Button" parent="DebugMenu" unique_id=853290104]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "INSTAWIN_COMBAT"
+
+[node name="StatusesMenu" type="Button" parent="DebugMenu" unique_id=1159566080]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_qcgr4")
+text = "STATUSES_MENU"
+
+[node name="SubMenus" type="Control" parent="." unique_id=1869787583]
+unique_name_in_owner = true
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="AddCard" parent="SubMenus" unique_id=71860582 instance=ExtResource("3_6yuwi")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[node name="RemoveCard" parent="SubMenus" unique_id=579480327 instance=ExtResource("4_bo2um")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[node name="EventMenu" parent="SubMenus" unique_id=762297518 instance=ExtResource("3_ce0q4")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[node name="SexMenu" parent="SubMenus" unique_id=2094647446 instance=ExtResource("6_osd7h")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="ToggleMenu" to="." method="_on_toggle_menu_pressed"]
+[connection signal="pressed" from="DebugMenu/AddCard" to="." method="_on_add_card_pressed"]
+[connection signal="pressed" from="DebugMenu/RemoveCard" to="." method="_on_remove_card_pressed"]
+[connection signal="pressed" from="DebugMenu/EventMenu" to="." method="_on_event_menu_pressed"]
+[connection signal="pressed" from="DebugMenu/SexMenu" to="." method="_on_sex_menu_pressed"]
+[connection signal="pressed" from="DebugMenu/ClothesContainer/ClothesToggle" to="." method="_on_clothes_toggle_pressed"]
+[connection signal="pressed" from="DebugMenu/ClothesContainer/TornToggle" to="." method="_on_torn_toggle_pressed"]
+[connection signal="pressed" from="DebugMenu/ClothesContainer/PantiesToggle" to="." method="_on_panties_toggle_pressed"]
+[connection signal="card_selected" from="SubMenus/AddCard" to="." method="_on_add_card_card_selected"]
+[connection signal="event_selected" from="SubMenus/EventMenu" to="." method="_on_event_menu_event_selected"]

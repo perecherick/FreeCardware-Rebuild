@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://ciqfacs3k4cve"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_1lrjt"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_hd6nx"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_7b6jx"]
+[ext_resource type="Resource" uid="uid://yd10l3ilhpot" path="res://tres/events/event_effects/random_hack.tres" id="3_hd6nx"]
+
+[resource]
+script = ExtResource("3_7b6jx")
+id = &"charging_station_hack_step_0"
+text = "TID_HACK_0"
+loop = false
+next_step = &"charging_station_hack_step_1"
+effects = Array[ExtResource("2_hd6nx")]([ExtResource("3_hd6nx")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

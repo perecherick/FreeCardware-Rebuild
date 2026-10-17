@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SetEventValue" format=3 uid="uid://b6yh48sdu1gjg"]
+
+[ext_resource type="Script" uid="uid://b817wdnfiblhn" path="res://gd/event/event_effects/set_event_values.gd" id="1_fhb52"]
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="2_ovctj"]
+[ext_resource type="Resource" uid="uid://cqxuytb7neptd" path="res://tres/events/event_stringname/heads.tres" id="3_ovctj"]
+
+[resource]
+script = ExtResource("1_fhb52")
+values = Array[ExtResource("2_ovctj")]([ExtResource("3_ovctj")])
+metadata/_custom_type_script = "uid://b817wdnfiblhn"

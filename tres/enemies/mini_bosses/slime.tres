@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://dgaqmvv7krv2x"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_47bd7"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_ee4lb"]
+[ext_resource type="Script" uid="uid://coasviibakvjg" path="res://gd/enemy/enemy_data.gd" id="3_ptygv"]
+[ext_resource type="Texture2D" uid="uid://cuekk1kos6fyt" path="res://img/enemies/mini_bosses/slime.png" id="4_ee4lb"]
+
+[resource]
+script = ExtResource("3_ptygv")
+id = "slime"
+name = "TID_SLIME"
+texture = ExtResource("4_ee4lb")
+type = 2
+max_hp = 78
+starting_hp = 78
+max_pp = 65
+metadata/_custom_type_script = "uid://coasviibakvjg"

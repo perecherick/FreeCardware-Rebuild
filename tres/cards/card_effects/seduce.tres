@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="BodySlamEffect" format=3 uid="uid://cddp0jik3d3uw"]
+
+[ext_resource type="Script" uid="uid://bi1uuua6m12ks" path="res://gd/cards/card_effects/body_slam.gd" id="1_nkxkp"]
+
+[resource]
+script = ExtResource("1_nkxkp")
+lewdness_per_pp = 2
+metadata/_custom_type_script = "uid://dm5f1pfmxm1qf"

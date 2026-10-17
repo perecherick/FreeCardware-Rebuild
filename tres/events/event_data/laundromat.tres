@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://bvyy2vh653t7o"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_gps5y"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_254ir"]
+[ext_resource type="Resource" uid="uid://baxso6odetwe3" path="res://tres/events/event_step/laundromat_look_for_clothes.tres" id="3_bmr1x"]
+[ext_resource type="Resource" uid="uid://bekeaiosd10p1" path="res://tres/events/event_step/laundromat_step_0.tres" id="4_iw4h2"]
+[ext_resource type="Resource" uid="uid://b3hpqvwfgk6m3" path="res://tres/events/event_step/laundromat_step_found_clothes.tres" id="5_5ad5h"]
+[ext_resource type="Resource" uid="uid://cesebvvti1kvs" path="res://tres/events/event_step/laundromat_washing_step_0.tres" id="5_sjt4u"]
+[ext_resource type="Resource" uid="uid://dn7bu3jknooud" path="res://tres/events/event_step/laundromat_step_leave.tres" id="6_iw4h2"]
+[ext_resource type="Resource" uid="uid://rkx0fnfdw01e" path="res://tres/events/event_step/laundromat_step_found_panties.tres" id="6_jng06"]
+[ext_resource type="Resource" uid="uid://ch3eoflukg6fo" path="res://tres/events/event_step/laundromat_step_locker.tres" id="6_p0b70"]
+[ext_resource type="Resource" uid="uid://dudyn7bf3wjn2" path="res://tres/events/event_step/laundromat_washing_step_1.tres" id="8_vbgmv"]
+[ext_resource type="Resource" uid="uid://c8threajjx5fh" path="res://tres/events/event_step/laundromat_washing_step_2.tres" id="9_3wrbq"]
+[ext_resource type="Resource" uid="uid://cnl5twu50t7ap" path="res://tres/events/event_step/laundromat_washing_step_3.tres" id="10_vbgmv"]
+[ext_resource type="Resource" uid="uid://dabawt6yagboj" path="res://tres/events/event_step/laundromat_step_on_the_ground.tres" id="11_3wrbq"]
+[ext_resource type="Resource" uid="uid://nogd3banipmw" path="res://tres/events/event_step/laundromat_found_nothing.tres" id="14_jng06"]
+
+[resource]
+script = ExtResource("1_gps5y")
+id = &"laundromat"
+steps = Array[ExtResource("2_254ir")]([ExtResource("4_iw4h2"), ExtResource("3_bmr1x"), ExtResource("5_5ad5h"), ExtResource("6_jng06"), ExtResource("6_iw4h2"), ExtResource("6_p0b70"), ExtResource("11_3wrbq"), ExtResource("5_sjt4u"), ExtResource("8_vbgmv"), ExtResource("9_3wrbq"), ExtResource("10_vbgmv"), ExtResource("14_jng06")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

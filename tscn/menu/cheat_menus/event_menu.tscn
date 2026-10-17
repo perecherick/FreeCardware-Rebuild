@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://v4bs46amubnm"]
+
+[ext_resource type="Script" uid="uid://45cp20wgtj0w" path="res://gd/cheat/event_cheat_menu.gd" id="1_4wbls"]
+[ext_resource type="PackedScene" uid="uid://fcermrhselry" path="res://tscn/menu/cheat_menus/cheat_submenu_template.tscn" id="1_8anss"]
+
+[node name="EventMenu" unique_id=71860582 instance=ExtResource("1_8anss")]
+script = ExtResource("1_4wbls")
+
+[node name="Label" parent="ColorRect" parent_id_path=PackedInt32Array(523543793) index="0" unique_id=1399750212]
+text = "TID_EVENT_CHEAT_MENU"

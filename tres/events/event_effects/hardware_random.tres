@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RandomHardware" format=3 uid="uid://bnc3uv3vev66r"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_ups85"]
+[ext_resource type="Resource" uid="uid://cbp4j12xdbk15" path="res://tres/hardware/silicone.tres" id="2_md26w"]
+[ext_resource type="Script" uid="uid://dyyo83dqlwyni" path="res://gd/event/event_effects/random_hardware.gd" id="2_x3i2v"]
+[ext_resource type="Resource" uid="uid://0wm0b3axx24s" path="res://tres/hardware/tens.tres" id="3_ax2mf"]
+
+[resource]
+script = ExtResource("2_x3i2v")
+hardware = Array[ExtResource("1_ups85")]([ExtResource("2_md26w"), ExtResource("3_ax2mf")])
+metadata/_custom_type_script = "uid://dyyo83dqlwyni"

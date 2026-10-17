@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventConditionalStep" format=3 uid="uid://byuhjkxdf4qny"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_3d1ai"]
+[ext_resource type="Resource" uid="uid://cm3gkd8ohgr15" path="res://tres/events/event_conditions/panty_gamble_loss.tres" id="1_jtked"]
+
+[resource]
+script = ExtResource("1_3d1ai")
+condition = ExtResource("1_jtked")
+next_step = &"panty_gamble_step_loss"
+metadata/_custom_type_script = "uid://b5lem4i7qg8w4"

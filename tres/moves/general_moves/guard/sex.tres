@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EnemyMove" format=3 uid="uid://d2yeaj0csbof"]
+
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="1_4jjjv"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_0i1t7"]
+[ext_resource type="Resource" uid="uid://6kl58k5vguph" path="res://tres/moves/move_data/guard/thrust.tres" id="2_6fwto"]
+
+[resource]
+script = ExtResource("2_0i1t7")
+intent = "TID_GUARD_SEX"
+actions = Array[ExtResource("1_4jjjv")]([ExtResource("2_6fwto")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"

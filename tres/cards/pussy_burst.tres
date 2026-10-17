@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://byotng33o0544"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_fvlv5"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_ikf5w"]
+[ext_resource type="Resource" uid="uid://capklln6trxy" path="res://tres/cards/card_effects/pussy_burst.tres" id="2_oe51x"]
+[ext_resource type="Resource" uid="uid://ytqnp0ynmvkl" path="res://tres/cards/card_effects/panties_burst.tres" id="3_4i6ct"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_oe51x"]
+[ext_resource type="Texture2D" uid="uid://23kf6kl454p5" path="res://img/cards/card/pussy_burst.png" id="4_4i6ct"]
+
+[resource]
+script = ExtResource("2_ikf5w")
+id = "pussy_burst"
+name = "TID_PUSSY_BURST_NAME"
+img = ExtResource("4_4i6ct")
+description = "TID_PUSSY_BURST_DESC"
+energy_cost = 3
+damage = 50
+card_cost = 100
+exhaust = true
+card_effects = Array[ExtResource("1_fvlv5")]([ExtResource("2_oe51x"), ExtResource("3_4i6ct")])
+attack = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

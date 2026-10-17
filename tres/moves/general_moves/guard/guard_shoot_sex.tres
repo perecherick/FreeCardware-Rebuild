@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EnemyMove" format=3 uid="uid://bo8avkc4hop04"]
+
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="1_mkrcl"]
+[ext_resource type="Resource" uid="uid://badms2151rqqf" path="res://tres/moves/move_data/guard/guard_shoot_sex.tres" id="2_pir4p"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="4_3ypua"]
+
+[resource]
+script = ExtResource("4_3ypua")
+intent = "TID_SHOOT"
+actions = Array[ExtResource("1_mkrcl")]([ExtResource("2_pir4p"), ExtResource("2_pir4p"), ExtResource("2_pir4p")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"

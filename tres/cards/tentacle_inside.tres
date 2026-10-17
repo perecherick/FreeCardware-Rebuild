@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dy4yog4vallty"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_jx8nr"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_47kjc"]
+[ext_resource type="Resource" uid="uid://bqtg2wrv1fqig" path="res://tres/cards/card_effects/tentacle_inside.tres" id="2_xtwkh"]
+[ext_resource type="Texture2D" uid="uid://bi6eex7dm4syh" path="res://img/cards/card/tentacle_inside.png" id="3_0uf3w"]
+[ext_resource type="Resource" uid="uid://ccg26bcc45mvp" path="res://tres/cards/card_effects/tentacle_inside_limits.tres" id="3_6aeqe"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_xtwkh"]
+
+[resource]
+script = ExtResource("2_47kjc")
+id = "tentacle_inside"
+name = "TID_TENTACLE_INSIDE_NAME"
+img = ExtResource("3_0uf3w")
+description = "TID_TENTACLE_INSIDE_DESC"
+hover_description = "TID_TENTACLE_INSIDE_HOVER_DESC"
+description_colors = Dictionary[StringName, Color]({
+&"maxlp": Color(0.93333334, 0.50980395, 0.93333334, 1),
+&"maxpp": Color(1, 0.078431375, 0.5764706, 1),
+&"minlp": Color(0.93333334, 0.50980395, 0.93333334, 1),
+&"minpp": Color(1, 0.078431375, 0.5764706, 1)
+})
+card_effects = Array[ExtResource("1_jx8nr")]([ExtResource("2_xtwkh"), ExtResource("3_6aeqe")])
+pleasure = true
+card_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

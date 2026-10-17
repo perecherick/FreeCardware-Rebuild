@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="OpenMenu" format=3 uid="uid://1gmwekl8ofyr"]
+
+[ext_resource type="PackedScene" uid="uid://d0bptx4btfwra" path="res://tscn/menu/remove_card.tscn" id="1_jwqq3"]
+[ext_resource type="Script" uid="uid://bkt56bqowd0h5" path="res://gd/event/event_effects/open_menu.gd" id="1_wqe7w"]
+
+[resource]
+script = ExtResource("1_wqe7w")
+menu_to_open = ExtResource("1_jwqq3")
+metadata/_custom_type_script = "uid://bkt56bqowd0h5"

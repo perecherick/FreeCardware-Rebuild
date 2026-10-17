@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://d38khpa4rwsx3"]
+
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="1_rxxbe"]
+[ext_resource type="Resource" uid="uid://1e4ygyvpy77k" path="res://tres/events/event_conditions/condition_gold_100.tres" id="2_iwd2b"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="2_pn3j7"]
+[ext_resource type="Resource" uid="uid://dje0xxffdrmbj" path="res://tres/events/event_conditions/no_panties.tres" id="2_rerbn"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="4_yetwa"]
+[ext_resource type="Resource" uid="uid://crgkt6pv5tuaf" path="res://tres/events/event_effects/put_on_panties.tres" id="5_8kkna"]
+[ext_resource type="Resource" uid="uid://cbftntkcg3nmb" path="res://tres/events/event_effects/spend_100_gold.tres" id="6_yetwa"]
+
+[resource]
+script = ExtResource("2_pn3j7")
+text = "TID_BUY_PANTIES"
+conditions = Array[ExtResource("1_rxxbe")]([ExtResource("2_iwd2b"), ExtResource("2_rerbn")])
+effects = Array[ExtResource("4_yetwa")]([ExtResource("5_8kkna"), ExtResource("6_yetwa")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

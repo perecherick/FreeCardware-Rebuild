@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://cxalf01a2h2pb"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_6c87n"]
+
+[resource]
+script = ExtResource("1_6c87n")
+id = "onahole"
+name = "TID_ONAHOLE"
+description = "TID_ONAHOLE_DESC"
+color = "orange"
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

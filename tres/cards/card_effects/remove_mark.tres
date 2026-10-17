@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RemoveEffect" format=3 uid="uid://064f4k5lx0ry"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_d2gj2"]
+[ext_resource type="Script" uid="uid://dvdwv5cas1ig7" path="res://gd/cards/card_effects/remove_effect.gd" id="2_0oasq"]
+[ext_resource type="Resource" uid="uid://di0auu47aalsk" path="res://tres/enemies/effects/mark.tres" id="2_ymm3c"]
+
+[resource]
+script = ExtResource("2_0oasq")
+effect_to_remove = Array[ExtResource("1_d2gj2")]([ExtResource("2_ymm3c")])
+metadata/_custom_type_script = "uid://dvdwv5cas1ig7"

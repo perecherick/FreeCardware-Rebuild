@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://c7vvw0afgrgsu"]
+
+[ext_resource type="Script" uid="uid://i4cdr6fncadi" path="res://gd/event/event.gd" id="1_8kvym"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="1_ivojv"]
+[ext_resource type="PackedScene" uid="uid://b0ltq03c1pvgb" path="res://tscn/events/choice_button.tscn" id="2_mfnym"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cme8h"]
+content_margin_left = 16.0
+content_margin_top = 6.0
+content_margin_right = 16.0
+content_margin_bottom = 6.0
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Event" type="Control" unique_id=109770575]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+script = ExtResource("1_8kvym")
+choice_button_scene = ExtResource("2_mfnym")
+
+[node name="Content" type="Control" parent="." unique_id=1932768844]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Content" unique_id=246701231]
+z_index = -1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 42.0
+offset_right = 1264.0
+offset_bottom = 828.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="EventImage" type="TextureRect" parent="Content" unique_id=1169118141]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 1264.0
+offset_bottom = 828.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Content" unique_id=1269256862]
+root_node = NodePath("../..")
+
+[node name="Custom" type="Control" parent="Content" unique_id=135247688]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextGroup" type="Control" parent="." unique_id=431962931]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="TextGroup" unique_id=1327983472]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 849.0
+offset_right = 1264.0
+offset_bottom = 1053.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextGroup" unique_id=940574869]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 48.0
+offset_top = 849.0
+offset_right = 1264.0
+offset_bottom = 1053.0
+theme_override_fonts/normal_font = ExtResource("1_ivojv")
+theme_override_font_sizes/normal_font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_cme8h")
+bbcode_enabled = true
+
+[node name="Choices" type="VBoxContainer" parent="." unique_id=1581008617]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 728.0
+offset_top = 539.0
+offset_right = 1263.0
+offset_bottom = 828.0
+mouse_filter = 2
+alignment = 2
+
+[connection signal="gui_input" from="Content/EventImage" to="." method="_on_event_image_gui_input"]

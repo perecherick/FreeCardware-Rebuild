@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://dv5l63o8x1tcj"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_im885"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_v0lqa"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_ib1bi"]
+[ext_resource type="Texture2D" uid="uid://8bk5f64pdmnx" path="res://img/events/tentacle_hole/fall_asleep.png" id="4_vds0j"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="5_kweyb"]
+
+[resource]
+script = ExtResource("5_kweyb")
+id = &"tentacle_hole_step_sleep_0"
+text = "TID_FALL_ASLEEP_0"
+frames = Array[Texture2D]([ExtResource("4_vds0j")])
+loop = false
+next_step = &"tentacle_hole_step_sleep_1"
+metadata/_custom_type_script = "uid://d023vifri6y0k"

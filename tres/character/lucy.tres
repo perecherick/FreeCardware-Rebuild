@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://dlaavcl3e1ga4"]
+
+[ext_resource type="Script" uid="uid://31017q4m43is" path="res://gd/characters/character_data.gd" id="1_2xyjo"]
+[ext_resource type="Texture2D" uid="uid://b6bkcoru5x64n" path="res://img/background/Alley_1_sized.png" id="1_pgd1v"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="3_juq85"]
+[ext_resource type="Resource" uid="uid://dsujb3dmh24yq" path="res://tres/cards/strike.tres" id="4_juq85"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="4_s7ueg"]
+[ext_resource type="Resource" uid="uid://4d050h1vo73s" path="res://tres/cards/touch.tres" id="5_pdh0t"]
+[ext_resource type="Resource" uid="uid://c3cb3x8syb8nh" path="res://tres/cards/shove.tres" id="6_xjghh"]
+[ext_resource type="Resource" uid="uid://dm6xu8fci20hm" path="res://tres/hardware/virgin.tres" id="8_juq85"]
+
+[resource]
+script = ExtResource("1_2xyjo")
+id = "lucy"
+background = ExtResource("1_pgd1v")
+max_hp = 55
+max_lp = 35
+max_energy = 3
+starting_deck = Array[ExtResource("3_juq85")]([ExtResource("4_juq85"), ExtResource("4_juq85"), ExtResource("4_juq85"), ExtResource("4_juq85"), ExtResource("4_juq85"), ExtResource("5_pdh0t"), ExtResource("5_pdh0t"), ExtResource("5_pdh0t"), ExtResource("5_pdh0t"), ExtResource("6_xjghh")])
+starting_hardware = Array[ExtResource("4_s7ueg")]([ExtResource("8_juq85")])
+metadata/_custom_type_script = "uid://31017q4m43is"

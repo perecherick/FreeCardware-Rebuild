@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LoadEventValues" format=3 uid="uid://btvnnrsrfm1lc"]
+
+[ext_resource type="Script" uid="uid://ckp32fs6ww5yj" path="res://gd/event/event_effects/load_event_values.gd" id="1_2kb67"]
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="2_tw4fl"]
+[ext_resource type="Resource" uid="uid://debwajeb7tmkx" path="res://tres/events/event_stringname/clothes.tres" id="3_b54ei"]
+[ext_resource type="Resource" uid="uid://dg22yi7nfp7ls" path="res://tres/events/event_stringname/panties.tres" id="4_h3e14"]
+
+[resource]
+script = ExtResource("1_2kb67")
+values = Array[ExtResource("2_tw4fl")]([ExtResource("3_b54ei"), ExtResource("4_h3e14")])
+metadata/_custom_type_script = "uid://ckp32fs6ww5yj"

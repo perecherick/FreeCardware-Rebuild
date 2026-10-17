@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://cnuc2hlqg1pw2"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_5vbgh"]
+[ext_resource type="Resource" uid="uid://1rclnbqoty1h" path="res://tres/cards/card_effects/fantasize.tres" id="2_clywc"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_snt50"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_clywc"]
+[ext_resource type="Texture2D" uid="uid://eh85wn7fr5j2" path="res://img/cards/card/fantasize.png" id="3_resny"]
+
+[resource]
+script = ExtResource("2_snt50")
+id = "fantasize"
+name = "TID_FANTASIZE_NAME"
+img = ExtResource("3_resny")
+description = "TID_FANTASIZE_DESC"
+energy_cost = 1
+lp = 6
+card_cost = 75
+description_colors = Dictionary[StringName, Color]({
+&"gen": Color(0, 1, 1, 1)
+})
+card_effects = Array[ExtResource("1_5vbgh")]([ExtResource("2_clywc")])
+misc = true
+card_type = 3
+target_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

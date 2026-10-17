@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SexData" format=3 uid="uid://13cwyfx8e330"]
+
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="1_v1vjt"]
+
+[resource]
+script = ExtResource("1_v1vjt")
+id = &"floating_sex"
+sex_type = 1
+max_state = 4
+metadata/_custom_type_script = "uid://c0l5rrxqmaadr"

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://bcl7j8go54vma"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_lufpk"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_68xa0"]
+[ext_resource type="Resource" uid="uid://dklohdcgbhhq2" path="res://tres/events/event_step/onahole_step_0.tres" id="3_64dsq"]
+[ext_resource type="Resource" uid="uid://sjip6ebe0ycb" path="res://tres/events/event_step/onahole_step_1.tres" id="4_q3kh4"]
+[ext_resource type="Resource" uid="uid://dmfded8xjvewj" path="res://tres/events/event_step/onahole_step_2.tres" id="5_e2055"]
+[ext_resource type="Resource" uid="uid://b7bqltai1mq84" path="res://tres/events/event_step/onahole_step_3.tres" id="7_4dqr4"]
+[ext_resource type="Resource" uid="uid://din34pyrewhww" path="res://tres/events/event_step/onahole_step_orgasming_0.tres" id="7_uoq35"]
+[ext_resource type="Resource" uid="uid://dugovwdqjgawi" path="res://tres/events/event_step/onahole_step_orgasming_1.tres" id="8_mqs1x"]
+[ext_resource type="Resource" uid="uid://q75qtu5atnsd" path="res://tres/events/event_step/onahole_step_rub_pussy.tres" id="8_umhsh"]
+[ext_resource type="Resource" uid="uid://c5gxj8tffr2ki" path="res://tres/events/event_step/onahole_step_orgasming_2.tres" id="9_mmicv"]
+[ext_resource type="Resource" uid="uid://1qsu3r7cgu5s" path="res://tres/events/event_step/onahole_step_orgasming_3.tres" id="10_fww1h"]
+[ext_resource type="Resource" uid="uid://chu038xeuf6tl" path="res://tres/events/event_step/onahole_step_orgasming_4.tres" id="11_l3tum"]
+[ext_resource type="Resource" uid="uid://cfi5emnvfaotd" path="res://tres/events/event_step/onahole_step_orgasming_5.tres" id="12_362uv"]
+[ext_resource type="Resource" uid="uid://c5mc21keyro33" path="res://tres/events/event_step/onahole_step_orgasming_6.tres" id="13_xtmgm"]
+[ext_resource type="Resource" uid="uid://dqi88x28m1uej" path="res://tres/events/event_step/onahole_step_rub_pussy_gooner.tres" id="15_mqs1x"]
+
+[resource]
+script = ExtResource("1_lufpk")
+id = &"onahole"
+steps = Array[ExtResource("2_68xa0")]([ExtResource("3_64dsq"), ExtResource("4_q3kh4"), ExtResource("5_e2055"), ExtResource("7_4dqr4"), ExtResource("7_uoq35"), ExtResource("8_mqs1x"), ExtResource("9_mmicv"), ExtResource("10_fww1h"), ExtResource("11_l3tum"), ExtResource("12_362uv"), ExtResource("13_xtmgm"), ExtResource("8_umhsh"), ExtResource("15_mqs1x")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

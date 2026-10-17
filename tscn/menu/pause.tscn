@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://ceeaayjlmtu2x"]
+
+[ext_resource type="Script" uid="uid://dufhhs1g48w16" path="res://gd/pause.gd" id="1_mkug2"]
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="1_uuxrw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_idgvd"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pqbp4"]
+bg_color = Color(0, 0, 0, 0.5019608)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gg1x4"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rwk2x"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r1bb6"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Pause" type="Control" unique_id=936694100]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_mkug2")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1588805195]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.5)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1677216108]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 598.0
+offset_right = 540.0
+offset_bottom = 898.0
+alignment = 1
+
+[node name="Continue" type="Button" parent="VBoxContainer" unique_id=1488686379]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_uuxrw")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_idgvd")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_pqbp4")
+text = "CONTINUE_RUN"
+
+[node name="MainMenu" type="Button" parent="VBoxContainer" unique_id=934122041]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_uuxrw")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_gg1x4")
+text = "TID_MAIN_MENU"
+
+[node name="Options" type="Button" parent="VBoxContainer" unique_id=1831752581]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_uuxrw")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_rwk2x")
+text = "SETTINGS"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=660007702]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_uuxrw")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_r1bb6")
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="visibility_changed" from="VBoxContainer/Continue" to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

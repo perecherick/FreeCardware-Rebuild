@@ -1,0 +1,4 @@
+keys,en,ja,zh,es,ko,ru,de
+TID_DISCORD_RUN,In-Game - Act {act},プレイ中 - 第{act}幕, 游戏中 - 第{act}幕,Jugando - Acto {act},게임 중 - 액트 {act},В игре — Акт {act},Im Spiel - Akt {act}
+TID_DISCORD_WIN,Victory!,勝利！,胜利！,¡Victoria!,승리!,Победа!,Sieg!
+TID_DISCORD_LOSS,Defeat!,敗北！,失败！,¡Derrota!,패배!,Поражение!,Niederlage!

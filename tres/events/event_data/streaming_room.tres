@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://dp2485jut4xib"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_j06d8"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_mvh4p"]
+[ext_resource type="Resource" uid="uid://bkih83ejfgirc" path="res://tres/events/event_step/streaming_room_step_0.tres" id="3_xxiie"]
+[ext_resource type="Resource" uid="uid://cjtbbm1b230ud" path="res://tres/events/event_step/streaming_room_step_lewd.tres" id="4_r5fe8"]
+[ext_resource type="Resource" uid="uid://cu2nnnobwmvu3" path="res://tres/events/event_step/streaming_room_step_silly_naked.tres" id="5_oyc3w"]
+[ext_resource type="Resource" uid="uid://bi8vcmrcmimq" path="res://tres/events/event_step/streaming_room_step_silly_torn.tres" id="6_rlq6b"]
+
+[resource]
+script = ExtResource("1_j06d8")
+id = &"streaming_room"
+steps = Array[ExtResource("2_mvh4p")]([ExtResource("3_xxiie"), ExtResource("4_r5fe8"), ExtResource("5_oyc3w"), ExtResource("6_rlq6b")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

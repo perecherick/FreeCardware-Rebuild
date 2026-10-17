@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://choacmcvn7m73"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_is76d"]
+
+[resource]
+script = ExtResource("1_is76d")
+id = "torn_clothes"
+name = "TID_TORN_CLOTHES"
+description = "TID_TORN_CLOTHES_DESC"
+color = "purple"
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

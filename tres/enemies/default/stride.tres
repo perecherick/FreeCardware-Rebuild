@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://cpvelpk8wwdhd"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_8cvni"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_q1dgh"]
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="3_gv2i3"]
+[ext_resource type="Script" uid="uid://coasviibakvjg" path="res://gd/enemy/enemy_data.gd" id="3_mlvw0"]
+[ext_resource type="Texture2D" uid="uid://bqkspb8rt6fs4" path="res://img/enemies/default/stride.png" id="5_e4h40"]
+
+[sub_resource type="Resource" id="Resource_qcfvc"]
+script = ExtResource("3_gv2i3")
+pp = 8
+self_pp = 6
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_jllgf"]
+script = ExtResource("2_q1dgh")
+actions = Array[ExtResource("3_gv2i3")]([SubResource("Resource_qcfvc")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_e4h40"]
+script = ExtResource("3_gv2i3")
+pp = 4
+self_pp = 2
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_gv2i3"]
+script = ExtResource("2_q1dgh")
+actions = Array[ExtResource("3_gv2i3")]([SubResource("Resource_e4h40")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_augrp"]
+script = ExtResource("3_gv2i3")
+pp = 6
+self_pp = 2
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_e31he"]
+script = ExtResource("2_q1dgh")
+intent = "TID_KISS"
+actions = Array[ExtResource("3_gv2i3")]([SubResource("Resource_augrp")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_u87qe"]
+script = ExtResource("3_gv2i3")
+pp = 4
+self_pp = 2
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_53yuw"]
+script = ExtResource("2_q1dgh")
+actions = Array[ExtResource("3_gv2i3")]([SubResource("Resource_u87qe")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_rmr15"]
+script = ExtResource("3_gv2i3")
+pp = 6
+self_pp = 3
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_w2bgn"]
+script = ExtResource("2_q1dgh")
+actions = Array[ExtResource("3_gv2i3")]([SubResource("Resource_rmr15")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_c8ii5"]
+script = ExtResource("3_gv2i3")
+pp = 8
+self_pp = 4
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_31h6n"]
+script = ExtResource("2_q1dgh")
+actions = Array[ExtResource("3_gv2i3")]([SubResource("Resource_c8ii5")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_n1u7g"]
+script = ExtResource("3_gv2i3")
+pp = 4
+self_pp = 3
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_0mnsv"]
+script = ExtResource("2_q1dgh")
+intent = "TID_TOUCH"
+actions = Array[ExtResource("3_gv2i3")]([SubResource("Resource_n1u7g")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[resource]
+script = ExtResource("3_mlvw0")
+id = "stride"
+name = "TID_STRIDE"
+texture = ExtResource("5_e4h40")
+max_hp = 30
+starting_hp = 30
+max_pp = 30
+move_list = Array[ExtResource("2_q1dgh")]([SubResource("Resource_gv2i3"), SubResource("Resource_e31he")])
+enemy_initiated_sex_moves = Array[ExtResource("2_q1dgh")]([SubResource("Resource_jllgf")])
+player_initiated_sex_moves = Array[ExtResource("2_q1dgh")]([SubResource("Resource_53yuw"), SubResource("Resource_w2bgn"), SubResource("Resource_31h6n")])
+player_orgasm_moves = Array[ExtResource("2_q1dgh")]([SubResource("Resource_0mnsv")])
+metadata/_custom_type_script = "uid://coasviibakvjg"

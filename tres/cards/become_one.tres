@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://drdyxs7jlbtse"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_86jtm"]
+[ext_resource type="Resource" uid="uid://dlqbxwtduinrm" path="res://tres/cards/card_effects/become_one.tres" id="2_lsbrc"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_sp0ra"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_lsbrc"]
+
+[resource]
+script = ExtResource("2_sp0ra")
+id = "become_one"
+name = "TID_BECOME_ONE_NAME"
+description = "TID_BECOME_ONE_DESC"
+hover_description = "TID_BECOME_ONE_HOVER_DESC"
+energy_cost = 2
+card_cost = 75
+card_effects = Array[ExtResource("1_86jtm")]([ExtResource("2_lsbrc")])
+misc = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

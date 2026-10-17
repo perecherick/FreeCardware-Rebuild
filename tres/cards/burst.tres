@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://basf3u0gy11g0"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_v7yxx"]
+[ext_resource type="Resource" uid="uid://dmc0j4pl0yggy" path="res://tres/cards/card_effects/burst.tres" id="2_1j5lk"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_yh0a8"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_1j5lk"]
+[ext_resource type="Resource" uid="uid://064f4k5lx0ry" path="res://tres/cards/card_effects/remove_mark.tres" id="3_iq1c3"]
+[ext_resource type="Texture2D" uid="uid://b3r1std1ebkfb" path="res://img/cards/card/burst.png" id="3_t56h4"]
+
+[resource]
+script = ExtResource("2_yh0a8")
+id = "burst"
+name = "TID_BURST_NAME"
+img = ExtResource("3_t56h4")
+description = "TID_BURST_DESC"
+hover_description = "TID_BURST_HOVER_DESC"
+energy_cost = 1
+damage = 4
+hp = 2
+card_effects = Array[ExtResource("1_v7yxx")]([ExtResource("2_1j5lk"), ExtResource("3_iq1c3")])
+attack = true
+misc = true
+card_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

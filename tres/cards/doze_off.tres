@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://cwk7km1gtxull"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_0dwx1"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_sjxvs"]
+[ext_resource type="Resource" uid="uid://b1byykj8cmvq" path="res://tres/cards/card_effects/dynamic_cost.tres" id="2_y5dg1"]
+[ext_resource type="Resource" uid="uid://cguuoje2l5kej" path="res://tres/cards/card_effects/doze_off.tres" id="3_dl8nj"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_y5dg1"]
+[ext_resource type="Texture2D" uid="uid://8jcyva6c4wlm" path="res://img/cards/card/doze_off.png" id="4_dl8nj"]
+
+[resource]
+script = ExtResource("2_sjxvs")
+id = "doze_off"
+name = "TID_DOZE_OFF_NAME"
+img = ExtResource("4_dl8nj")
+description = "TID_DOZE_OFF_DESC"
+hover_description = "TID_DOZE_OFF_HOVER_DESC"
+energy_cost = 1
+lp = -12
+card_cost = 100
+card_effects = Array[ExtResource("1_0dwx1")]([ExtResource("2_y5dg1"), ExtResource("3_dl8nj")])
+misc = true
+card_type = 3
+target_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

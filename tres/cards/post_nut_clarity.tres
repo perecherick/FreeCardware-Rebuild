@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://blcp04qtrrj4v"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_5uy0h"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_ncgfl"]
+[ext_resource type="Resource" uid="uid://bm2v05jaufqlu" path="res://tres/cards/card_effects/post_nut_clarity.tres" id="2_ol124"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_ol124"]
+[ext_resource type="Texture2D" uid="uid://c1xbr8grjhjju" path="res://img/cards/card/post_nut_clarity.png" id="3_w856l"]
+
+[resource]
+script = ExtResource("2_ncgfl")
+id = "post_nut_clarity"
+name = "TID_POST_NUT_CLARITY_NAME"
+img = ExtResource("3_w856l")
+description = "TID_POST_NUT_CLARITY_DESC"
+exhaust = true
+description_colors = Dictionary[StringName, Color]({
+&"gen": Color(0, 1, 1, 1)
+})
+card_effects = Array[ExtResource("1_5uy0h")]([ExtResource("2_ol124")])
+misc = true
+card_type = 4
+target_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

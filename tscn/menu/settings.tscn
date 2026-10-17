@@ -1,0 +1,242 @@
+[gd_scene format=3 uid="uid://b2v36bclcfu8b"]
+
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="1_kqhxr"]
+[ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="2_joago"]
+[ext_resource type="Script" uid="uid://cehwir8i83vpv" path="res://gd/settings.gd" id="3_cvhwl"]
+
+[node name="Settings" type="Control" unique_id=430279223]
+z_index = 100
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_cvhwl")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1533461496]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1902951874]
+layout_mode = 0
+offset_left = 502.0
+offset_top = 133.0
+offset_right = 1502.0
+offset_bottom = 189.0
+
+[node name="CreditsButton" type="Button" parent="VBoxContainer" unique_id=131353650]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_kqhxr")
+theme_override_font_sizes/font_size = 30
+text = "CREDITS"
+
+[node name="Settings" type="Label" parent="VBoxContainer" unique_id=702042085]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_kqhxr")
+theme_override_font_sizes/font_size = 30
+text = "SETTINGS"
+horizontal_alignment = 1
+
+[node name="MasterVolume" type="VBoxContainer" parent="VBoxContainer" unique_id=1192000418]
+layout_mode = 2
+
+[node name="MasterLabel" type="Label" parent="VBoxContainer/MasterVolume" unique_id=751884379]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+theme_override_font_sizes/font_size = 16
+text = "SET_MASTER_VOLUME"
+
+[node name="MasterSlider" type="HSlider" parent="VBoxContainer/MasterVolume" unique_id=1740900585]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="MusicVolume" type="VBoxContainer" parent="VBoxContainer" unique_id=1277610676]
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="VBoxContainer/MusicVolume" unique_id=2013717805]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+theme_override_font_sizes/font_size = 16
+text = "SET_MUSIC_VOLUME"
+
+[node name="MusicSlider" type="HSlider" parent="VBoxContainer/MusicVolume" unique_id=401054360]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="SFXVolume" type="VBoxContainer" parent="VBoxContainer" unique_id=1586336974]
+layout_mode = 2
+
+[node name="SFXLabel" type="Label" parent="VBoxContainer/SFXVolume" unique_id=1872453810]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+text = "SET_SFX_VOLUME"
+
+[node name="SFXSlider" type="HSlider" parent="VBoxContainer/SFXVolume" unique_id=1234276741]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="SexVolume" type="VBoxContainer" parent="VBoxContainer" unique_id=1309176131]
+layout_mode = 2
+
+[node name="Sexlabel" type="Label" parent="VBoxContainer/SexVolume" unique_id=915384563]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+text = "SET_SEX_VOLUME"
+
+[node name="SexSlider" type="HSlider" parent="VBoxContainer/SexVolume" unique_id=1229723438]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="ScreenMode" type="HBoxContainer" parent="VBoxContainer" unique_id=1204543]
+layout_mode = 2
+
+[node name="ScreenModeLabel" type="Label" parent="VBoxContainer/ScreenMode" unique_id=1691843461]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+text = "SET_SCREEN_MODE"
+
+[node name="ScreenModeButton" type="OptionButton" parent="VBoxContainer/ScreenMode" unique_id=1261883828]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_joago")
+selected = 0
+item_count = 3
+popup/item_0/text = "SET_SCREEN_WINDOWED"
+popup/item_0/id = 0
+popup/item_1/text = "SET_SCREEN_FULLSCREEN"
+popup/item_1/id = 1
+popup/item_2/text = "SET_SCREEN_BORDERLESS"
+popup/item_2/id = 2
+
+[node name="ScreenSize" type="HBoxContainer" parent="VBoxContainer" unique_id=1915670284]
+layout_mode = 2
+
+[node name="ScreenSizeLabel" type="Label" parent="VBoxContainer/ScreenSize" unique_id=1159957433]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+text = "SET_SCREEN_SIZE"
+
+[node name="ScreenSizeButton" type="OptionButton" parent="VBoxContainer/ScreenSize" unique_id=1368080400]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_joago")
+disabled = true
+selected = 0
+item_count = 7
+popup/item_0/text = "TID_NATIVE"
+popup/item_0/id = 0
+popup/item_1/text = "3840×2160"
+popup/item_1/id = 1
+popup/item_2/text = "2560×1440"
+popup/item_2/id = 2
+popup/item_3/text = "1920×1080"
+popup/item_3/id = 3
+popup/item_4/text = "1600×900"
+popup/item_4/id = 4
+popup/item_5/text = "1366×768"
+popup/item_5/id = 5
+popup/item_6/text = "1280×720"
+popup/item_6/id = 6
+
+[node name="LanguageMode" type="HBoxContainer" parent="VBoxContainer" unique_id=2129046850]
+layout_mode = 2
+
+[node name="LanguageLabel" type="Label" parent="VBoxContainer/LanguageMode" unique_id=1377512741]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+text = "SET_LANGUAGE"
+
+[node name="LanguageSelectButton" type="OptionButton" parent="VBoxContainer/LanguageMode" unique_id=1377006493]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_joago")
+selected = 0
+item_count = 7
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "Japanese/日本語"
+popup/item_1/id = 1
+popup/item_2/text = "Chinese/简体中文"
+popup/item_2/id = 2
+popup/item_3/text = "Spanish/Español"
+popup/item_3/id = 3
+popup/item_4/text = "Korean/한국어"
+popup/item_4/id = 4
+popup/item_5/text = "Russian/Русский"
+popup/item_5/id = 5
+popup/item_6/text = "German/Deutsch"
+popup/item_6/id = 6
+
+[node name="CheatCodes" type="HBoxContainer" parent="VBoxContainer" unique_id=2133364404]
+layout_mode = 2
+
+[node name="CheatCodesLabel" type="Label" parent="VBoxContainer/CheatCodes" unique_id=939208435]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+text = "SET_CHEAT_PLACEHOLDER"
+
+[node name="CheatsLineEdit" type="LineEdit" parent="VBoxContainer/CheatCodes" unique_id=627772883]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_joago")
+placeholder_text = "jelly?"
+
+[node name="WIPLabel" type="Label" parent="VBoxContainer" unique_id=1554138055]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_kqhxr")
+theme_override_font_sizes/font_size = 20
+text = "SET_EXPERIMENTAL"
+
+[node name="Silicone" type="HBoxContainer" parent="VBoxContainer" unique_id=919764925]
+layout_mode = 2
+
+[node name="SiliconeLabel" type="Label" parent="VBoxContainer/Silicone" unique_id=321838759]
+layout_mode = 2
+text = "SET_USE_SILICONE_SPRITE"
+
+[node name="CheckButton" type="CheckButton" parent="VBoxContainer/Silicone" unique_id=1836259190]
+layout_mode = 2
+
+[node name="Discord" type="HBoxContainer" parent="VBoxContainer" unique_id=17598619]
+layout_mode = 2
+
+[node name="DiscordLabel" type="Label" parent="VBoxContainer/Discord" unique_id=1161361208]
+layout_mode = 2
+text = "TID_DISCORD_ACTIVITY"
+
+[node name="DiscordButton" type="CheckButton" parent="VBoxContainer/Discord" unique_id=2089175827]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=2082992968]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_joago")
+text = "MENU_BACK"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="value_changed" from="VBoxContainer/MasterVolume/MasterSlider" to="." method="_on_master_slider_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/MusicVolume/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/SFXVolume/SFXSlider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/SexVolume/SexSlider" to="." method="_on_sex_slider_value_changed"]
+[connection signal="item_selected" from="VBoxContainer/ScreenMode/ScreenModeButton" to="." method="_on_screen_mode_button_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/ScreenSize/ScreenSizeButton" to="." method="_on_screen_size_button_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/LanguageMode/LanguageSelectButton" to="." method="_on_language_select_button_item_selected"]
+[connection signal="text_changed" from="VBoxContainer/CheatCodes/CheatsLineEdit" to="." method="_on_cheats_line_edit_text_changed"]
+[connection signal="toggled" from="VBoxContainer/Discord/DiscordButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_back_button_pressed"]

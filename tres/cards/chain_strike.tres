@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://outsi37l7yuk"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_x1t37"]
+[ext_resource type="Resource" uid="uid://bg2wepstevfju" path="res://tres/cards/card_effects/chain_strike_end_turn.tres" id="2_cu4ox"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_p3itt"]
+[ext_resource type="Resource" uid="uid://bxfhygvrersqf" path="res://tres/cards/card_effects/chain_strike.tres" id="2_umf8m"]
+[ext_resource type="Resource" uid="uid://dgo10faej5sdw" path="res://tres/cards/card_effects/apply_combo_effect.tres" id="3_cu4ox"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_umf8m"]
+[ext_resource type="Resource" uid="uid://dpl4ubb8hilli" path="res://tres/cards/card_effects/chain_strike_limit_per_hand.tres" id="5_265s0"]
+[ext_resource type="Texture2D" uid="uid://0gf8e6q65iap" path="res://img/cards/card/chain_strike.png" id="5_g6ptc"]
+
+[resource]
+script = ExtResource("2_p3itt")
+id = "chain_strike"
+name = "TID_CHAIN_STRIKE_NAME"
+img = ExtResource("5_g6ptc")
+description = "TID_CHAIN_STRIKE_DESC"
+hover_description = "TID_CHAIN_STRIKE_HOVER_DESC"
+energy_cost = 1
+damage = 4
+card_cost = 75
+description_colors = Dictionary[StringName, Color]({
+&"admg": Color(1, 0.64705884, 0, 1)
+})
+card_effects = Array[ExtResource("1_x1t37")]([ExtResource("2_cu4ox"), ExtResource("2_umf8m"), ExtResource("3_cu4ox"), ExtResource("5_265s0")])
+attack = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

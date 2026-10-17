@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://cu2nnnobwmvu3"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_d2f1o"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_nu2lc"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_t27ix"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_ilssx"]
+[ext_resource type="Resource" uid="uid://tdwybr5g31ay" path="res://tres/events/event_effects/earn_15_gold.tres" id="4_nu2lc"]
+
+[resource]
+script = ExtResource("4_ilssx")
+id = &"streaming_room_step_silly_naked"
+text = "TID_SILLY_NAKED"
+loop = false
+effects = Array[ExtResource("3_t27ix")]([ExtResource("4_nu2lc")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="HardwareCondition" format=3 uid="uid://bcicnidbppeyw"]
+
+[ext_resource type="Script" uid="uid://detnwbjy34lc2" path="res://gd/event/event_condition/hardware_condition.gd" id="1_fx2rc"]
+[ext_resource type="Resource" uid="uid://ch48w72sdosn1" path="res://tres/hardware/goon_drive.tres" id="1_h1mnq"]
+
+[resource]
+script = ExtResource("1_fx2rc")
+hardware = ExtResource("1_h1mnq")
+metadata/_custom_type_script = "uid://detnwbjy34lc2"

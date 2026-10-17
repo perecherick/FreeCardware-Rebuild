@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://dugovwdqjgawi"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_2jlu0"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_2811y"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_t74w8"]
+
+[resource]
+script = ExtResource("3_t74w8")
+id = &"onahole_step_orgasming_1"
+text = "TID_ONAHOLE_ORGASMING_1"
+loop = false
+next_step = &"onahole_step_orgasming_2"
+metadata/_custom_type_script = "uid://d023vifri6y0k"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StringNamePair" format=3 uid="uid://c4cxw0n51k2vl"]
+
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="1_ehfhb"]
+
+[resource]
+script = ExtResource("1_ehfhb")
+key = &"laundromat_found"
+value = &"nothing"
+metadata/_custom_type_script = "uid://ctxp58gvugpnr"

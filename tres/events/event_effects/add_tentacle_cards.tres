@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventAddCards" format=3 uid="uid://yth580l2vdjd"]
+
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_ok8bu"]
+[ext_resource type="Resource" uid="uid://dy4yog4vallty" path="res://tres/cards/tentacle_inside.tres" id="2_47lwn"]
+[ext_resource type="Script" uid="uid://d16e1v5dmyeg0" path="res://gd/event/event_effects/add_cards.gd" id="2_dh4ge"]
+
+[resource]
+script = ExtResource("2_dh4ge")
+add_cards = Array[ExtResource("1_ok8bu")]([ExtResource("2_47lwn"), ExtResource("2_47lwn")])
+metadata/_custom_type_script = "uid://d16e1v5dmyeg0"

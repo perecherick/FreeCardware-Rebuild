@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://726ljuh3vkg2"]
+
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="1_cbxht"]
+[ext_resource type="Resource" uid="uid://cm4ceng4lrjy3" path="res://tres/events/event_conditions/shop_condition_fix_clothes.tres" id="2_gm00s"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_psg6e"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="3_gcduw"]
+[ext_resource type="Resource" uid="uid://qcfl1ufbnuv" path="res://tres/events/event_conditions/condition_gold_25.tres" id="3_ny7xs"]
+[ext_resource type="Resource" uid="uid://cej7efulej3lx" path="res://tres/events/event_effects/shop_fix_clothes.tres" id="5_7hiur"]
+[ext_resource type="Resource" uid="uid://cy71wpsdf7qm7" path="res://tres/events/event_effects/spend_25_gold.tres" id="6_qicbc"]
+
+[resource]
+script = ExtResource("3_gcduw")
+text = "TID_FIX_CLOTHES"
+conditions = Array[ExtResource("1_cbxht")]([ExtResource("2_gm00s"), ExtResource("3_ny7xs")])
+effects = Array[ExtResource("2_psg6e")]([ExtResource("5_7hiur"), ExtResource("6_qicbc")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

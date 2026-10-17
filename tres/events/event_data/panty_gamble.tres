@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://dxmcxqkg5w6mn"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_fsvwd"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_rntij"]
+[ext_resource type="Resource" uid="uid://f0x7v5my4hmv" path="res://tres/events/event_step/panty_gamble_step_0.tres" id="3_ahicq"]
+[ext_resource type="Resource" uid="uid://c11gs2fygd28j" path="res://tres/events/event_step/panty_gamble_dissapointed.tres" id="4_2fr11"]
+[ext_resource type="Resource" uid="uid://cp4s54osidpxh" path="res://tres/events/event_step/panty_gamble_step_1.tres" id="5_qf14v"]
+[ext_resource type="Resource" uid="uid://wii3sk7ubvvi" path="res://tres/events/event_step/panty_gamble_step_loss.tres" id="6_oq632"]
+[ext_resource type="Resource" uid="uid://cpbape3bsf40g" path="res://tres/events/event_step/panty_gamble_step_reward.tres" id="7_jjq63"]
+[ext_resource type="Resource" uid="uid://cohtywx86ppa7" path="res://tres/events/event_step/panty_gamble_step_won.tres" id="8_6jn68"]
+
+[resource]
+script = ExtResource("1_fsvwd")
+id = &"panty_gamble"
+steps = Array[ExtResource("2_rntij")]([ExtResource("3_ahicq"), ExtResource("4_2fr11"), ExtResource("5_qf14v"), ExtResource("6_oq632"), ExtResource("7_jjq63"), ExtResource("8_6jn68")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://cb0s0gowv2sea"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_xde4m"]
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="2_si330"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_04en2"]
+[ext_resource type="Resource" uid="uid://djisgg12en5oa" path="res://tres/events/event_conditions/lewdness_less_10.tres" id="3_si330"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="4_pibfc"]
+
+[resource]
+script = ExtResource("4_pibfc")
+text = "TID_LEWD_SHOW"
+next_step = &"streaming_room_step_lewd"
+conditions = Array[ExtResource("2_si330")]([ExtResource("3_si330")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

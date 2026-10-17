@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CleanSelfEffect" format=3 uid="uid://yuqnkaxxhi8u"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_qo4su"]
+[ext_resource type="Script" uid="uid://cfnnfwpelok2e" path="res://gd/cards/card_effects/clean_self.gd" id="2_o0xs6"]
+[ext_resource type="Resource" uid="uid://dm008sm6hqdsk" path="res://tres/hardware/bukkake.tres" id="2_xd7rr"]
+[ext_resource type="Resource" uid="uid://ke0wcl648yeh" path="res://tres/hardware/facial.tres" id="3_i83lt"]
+[ext_resource type="Resource" uid="uid://bqmp3dcoqugeu" path="res://tres/hardware/creampie.tres" id="4_8sp8q"]
+
+[resource]
+script = ExtResource("2_o0xs6")
+hardwares = Array[ExtResource("1_qo4su")]([ExtResource("2_xd7rr"), ExtResource("3_i83lt"), ExtResource("4_8sp8q")])
+heal_per_cum = 6
+lp_per_cum = 3
+metadata/_custom_type_script = "uid://cfnnfwpelok2e"

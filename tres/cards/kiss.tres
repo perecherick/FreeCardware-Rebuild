@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dkx2n0pre4v85"]
+
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_4i0dp"]
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_e8a2s"]
+[ext_resource type="Texture2D" uid="uid://d1mw62oo7eh76" path="res://img/cards/card/kiss.png" id="2_ps6ow"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="4_g4tu1"]
+
+[resource]
+script = ExtResource("1_4i0dp")
+id = "kiss"
+name = "TID_KISS_NAME"
+img = ExtResource("2_ps6ow")
+description = "TID_KISS_DESC"
+pp = 4
+card_cost = 50
+pleasure = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

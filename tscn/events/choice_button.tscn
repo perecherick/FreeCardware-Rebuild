@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b0ltq03c1pvgb"]
+
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="1_qehpt"]
+[ext_resource type="Script" uid="uid://bx4yo423d6j1p" path="res://gd/event/choice_button.gd" id="2_fvun6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cme8h"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iya5f"]
+bg_color = Color(0.27058825, 0.27058825, 0.27058825, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0rnak"]
+bg_color = Color(0.23529412, 0.23529412, 0.23529412, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a2opt"]
+bg_color = Color(0.039215688, 0.039215688, 0.039215688, 1)
+
+[node name="ChoiceButton" type="Button" unique_id=848105983]
+anchors_preset = -1
+anchor_right = 0.279
+anchor_bottom = 0.038000003
+offset_right = -0.6800537
+offset_bottom = 2.959999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_qehpt")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_cme8h")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iya5f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0rnak")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_a2opt")
+script = ExtResource("2_fvun6")

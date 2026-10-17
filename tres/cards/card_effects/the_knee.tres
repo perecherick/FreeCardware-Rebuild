@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ModifyCardDuringSexEffect" format=3 uid="uid://b2o15lguqyhuf"]
+
+[ext_resource type="Script" uid="uid://bynqo41q6hhqf" path="res://gd/cards/card_effects/modify_card_during_sex.gd" id="1_oebi8"]
+
+[resource]
+script = ExtResource("1_oebi8")
+damage_buff = 6
+metadata/_custom_type_script = "uid://bynqo41q6hhqf"

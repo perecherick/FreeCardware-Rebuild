@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://462ipal0b5vw"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_o4us6"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_crf11"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_1u8ve"]
+[ext_resource type="Texture2D" uid="uid://7mo8a6jts8x2" path="res://img/events/tentacle_hole/sprite_in_hole/tile000.png" id="4_wgwe4"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="5_dm7dc"]
+
+[resource]
+script = ExtResource("5_dm7dc")
+id = &"tentacle_hole_step_relax"
+text = "TID_RELAX"
+frames = Array[Texture2D]([ExtResource("4_wgwe4")])
+loop = false
+metadata/_custom_type_script = "uid://d023vifri6y0k"

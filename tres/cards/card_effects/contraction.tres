@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ContractionEffect" format=3 uid="uid://duy5iy8hi226b"]
+
+[ext_resource type="Resource" uid="uid://cuwq4vsel8ykr" path="res://tres/sex/blowjob.tres" id="1_0iljh"]
+[ext_resource type="Script" uid="uid://blh0454inwnk1" path="res://gd/cards/card_effects/contraction.gd" id="1_k5tfc"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="2_o5w2g"]
+[ext_resource type="Resource" uid="uid://hfurg1mk67qf" path="res://tres/sex/dildo_ride.tres" id="4_ap0wv"]
+
+[resource]
+script = ExtResource("1_k5tfc")
+blowjob = ExtResource("1_0iljh")
+vaginal = Array[ExtResource("2_o5w2g")]([ExtResource("4_ap0wv")])
+additional_pp_for_blowjob = 4
+additional_pp_for_vaginal = 6
+metadata/_custom_type_script = "uid://blh0454inwnk1"

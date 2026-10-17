@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://cplfjwiyl7x2s"]
+
+[ext_resource type="Texture2D" uid="uid://ce0gl4e45ntpq" path="res://img/main/main_menu.png" id="1_hpdlp"]
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="2_ymtcx"]
+[ext_resource type="Script" uid="uid://ca0uupmtby0x" path="res://gd/main_menu.gd" id="3_ru8tr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cme8h"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymtcx"]
+bg_color = Color(0, 0, 0, 0.5019608)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mb4tv"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iya5f"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0rnak"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="Control" unique_id=1097915424]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=684124754]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_hpdlp")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=963397114]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.627451)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1136983104]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 598.0
+offset_right = 540.0
+offset_bottom = 898.0
+alignment = 1
+
+[node name="ContinueRun" type="Button" parent="VBoxContainer" unique_id=1625501613]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_ymtcx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_cme8h")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ymtcx")
+disabled = true
+text = "CONTINUE_RUN"
+
+[node name="NewRun" type="Button" parent="VBoxContainer" unique_id=336824807]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_ymtcx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_mb4tv")
+text = "NEW_RUN"
+
+[node name="Options" type="Button" parent="VBoxContainer" unique_id=785334096]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_ymtcx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_iya5f")
+text = "SETTINGS"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1555243717]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_ymtcx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_0rnak")
+text = "QUIT"
+script = ExtResource("3_ru8tr")
+
+[connection signal="pressed" from="VBoxContainer/NewRun" to="VBoxContainer/Quit" method="_on_new_run_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer/Quit" method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="VBoxContainer/Quit" method="_on_quit_pressed"]

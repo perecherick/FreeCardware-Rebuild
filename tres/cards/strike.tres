@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dsujb3dmh24yq"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_0qtw2"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_bgiu7"]
+[ext_resource type="Texture2D" uid="uid://dy22puw4c87wm" path="res://img/cards/card/strike.png" id="1_rqvbp"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="4_xabhq"]
+
+[resource]
+script = ExtResource("1_bgiu7")
+id = "strike"
+name = "TID_STRIKE_NAME"
+img = ExtResource("1_rqvbp")
+description = "TID_STRIKE_DESC"
+energy_cost = 1
+damage = 4
+attack = true
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

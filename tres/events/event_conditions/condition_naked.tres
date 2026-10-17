@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ClothesCondition" format=3 uid="uid://ehrg7gqidxno"]
+
+[ext_resource type="Script" uid="uid://d1vxv7t1cdjv3" path="res://gd/event/event_condition/clothes_condition.gd" id="1_n5a6h"]
+
+[resource]
+script = ExtResource("1_n5a6h")
+nude = true
+metadata/_custom_type_script = "uid://d1vxv7t1cdjv3"

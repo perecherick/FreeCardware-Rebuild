@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://bk32n5p4ao0qv"]
+
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="1_4dbjw"]
+[ext_resource type="Texture2D" uid="uid://b6bkcoru5x64n" path="res://img/background/Alley_1_sized.png" id="1_c3h0q"]
+[ext_resource type="Script" uid="uid://c3kxoj8663j8x" path="res://gd/run_preview.gd" id="1_gbowy"]
+[ext_resource type="Texture2D" uid="uid://cnqbbhty5bqom" path="res://img/game_modes/normal_run.png" id="1_jp1g8"]
+[ext_resource type="PackedScene" uid="uid://b1mpriwwjas5a" path="res://tscn/player/standart_sprite.tscn" id="2_gbowy"]
+[ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="2_rkbpa"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_fyr6a"]
+
+[node name="RunPreview" type="Control" unique_id=1533316770]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gbowy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1594229269]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2039056680]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 300.0
+offset_right = 1422.0
+offset_bottom = 720.0
+scale = Vector2(1.25, 1.25)
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer" unique_id=319078319]
+custom_minimum_size = Vector2(420, 420)
+layout_mode = 2
+texture_normal = ExtResource("1_c3h0q")
+stretch_mode = 0
+
+[node name="StandardSprite" parent="HBoxContainer" unique_id=2080346513 instance=ExtResource("2_gbowy")]
+unique_name_in_owner = true
+position = Vector2(210, 230)
+scale = Vector2(1.25, 1.25)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1316283949]
+layout_mode = 2
+
+[node name="RunPreviewLabel" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=120139504]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4dbjw")
+theme_override_font_sizes/font_size = 20
+text = "RUN_PREVIEW"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/VBoxContainer" unique_id=1204843707]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(384, 256)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/ScrollContainer" unique_id=1762769899]
+custom_minimum_size = Vector2(384, 256)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="RunPreviewDescription" type="Label" parent="HBoxContainer/VBoxContainer/ScrollContainer/VBoxContainer" unique_id=582816903]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_rkbpa")
+text = "RUN_DESCRIPTION"
+autowrap_mode = 3
+
+[node name="RunPreviewDiffDecription" type="Label" parent="HBoxContainer/VBoxContainer/ScrollContainer/VBoxContainer" unique_id=1577699934]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_rkbpa")
+text = "RUN_DIFF_DESCRIPTION"
+autowrap_mode = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1796592799]
+layout_mode = 2
+
+[node name="IsEndless" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer2" unique_id=333574256]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_rkbpa")
+text = "IS_ENDLESS"
+
+[node name="IsEndlessButton" type="CheckButton" parent="HBoxContainer/VBoxContainer/HBoxContainer2" unique_id=1468949658]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=280876157]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_rkbpa")
+text = "RUN_DIFFICULTY"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1161281440]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Normal" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=544331682]
+layout_mode = 2
+metadata/difficulty = "normal"
+
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer/VBoxContainer/HBoxContainer/Normal" unique_id=442447022]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_rkbpa")
+button_pressed = true
+button_group = SubResource("ButtonGroup_fyr6a")
+text = "DIF_NORMAL"
+
+[node name="Hard" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=45049669]
+layout_mode = 2
+metadata/difficulty = "hard"
+
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer/VBoxContainer/HBoxContainer/Hard" unique_id=1758849734]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_rkbpa")
+button_group = SubResource("ButtonGroup_fyr6a")
+text = "DIF_HARD"
+
+[node name="Insane" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=487664804]
+layout_mode = 2
+metadata/difficulty = "insane"
+
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer/VBoxContainer/HBoxContainer/Insane" unique_id=1046763920]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_rkbpa")
+button_group = SubResource("ButtonGroup_fyr6a")
+text = "DIF_INSANE"
+
+[node name="StartRun" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=408446072]
+layout_mode = 2
+text = "TID_START_RUN"
+
+[node name="DifficultyImage" type="TextureRect" parent="HBoxContainer" unique_id=1030814319]
+custom_minimum_size = Vector2(420, 420)
+layout_mode = 2
+texture = ExtResource("1_jp1g8")
+
+[connection signal="visibility_changed" from="HBoxContainer" to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="HBoxContainer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="toggled" from="HBoxContainer/VBoxContainer/HBoxContainer2/IsEndlessButton" to="." method="_on_is_endless_button_toggled"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/StartRun" to="." method="_on_start_run_pressed"]

@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://bbar807ila0q3"]
+
+[ext_resource type="Texture2D" uid="uid://ccvgmr28n1g2n" path="res://img/enemies/mini_bosses/guard.png" id="1_8opls"]
+[ext_resource type="Script" uid="uid://cldwnhsq65jdc" path="res://gd/enemy/enemy.gd" id="1_gcg8i"]
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="2_gcg8i"]
+[ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="3_dkh6o"]
+[ext_resource type="Texture2D" uid="uid://p5760bgvhk3y" path="res://img/enemies/enemy_selection_border.png" id="4_ovw7n"]
+[ext_resource type="Script" uid="uid://b7n2wf1a3t7v8" path="res://gd/combat_visual_animator.gd" id="6_dkh6o"]
+
+[node name="Enemy" type="Node2D" unique_id=219881952]
+script = ExtResource("1_gcg8i")
+
+[node name="Visual" type="Node2D" parent="." unique_id=1312556138]
+unique_name_in_owner = true
+
+[node name="VisualRoot" type="Node2D" parent="Visual" unique_id=453967015]
+
+[node name="Sprite" type="Sprite2D" parent="Visual/VisualRoot" unique_id=1284952011]
+unique_name_in_owner = true
+scale = Vector2(1.65, 1.65)
+texture = ExtResource("1_8opls")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Visual" unique_id=1055682776]
+offset_left = 33.0
+offset_top = -137.0
+offset_right = 105.0
+offset_bottom = -15.0
+theme_override_constants/separation = -5
+
+[node name="HP" type="Label" parent="Visual/VBoxContainer" unique_id=100392948]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.93333334, 0.26666668, 0.1882353, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_gcg8i")
+theme_override_font_sizes/font_size = 10
+text = "00/00HP"
+horizontal_alignment = 1
+
+[node name="PP" type="Label" parent="Visual/VBoxContainer" unique_id=1031000823]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.43137255, 0.6627451, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_gcg8i")
+theme_override_font_sizes/font_size = 10
+text = "00/00PP"
+horizontal_alignment = 1
+
+[node name="Statuses" type="RichTextLabel" parent="Visual/VBoxContainer" unique_id=992725072]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2_gcg8i")
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+horizontal_alignment = 1
+meta_underlined = false
+hint_underlined = false
+
+[node name="Intend" type="Label" parent="Visual" unique_id=1854182031]
+unique_name_in_owner = true
+offset_left = -70.0
+offset_top = -162.0
+offset_right = 27.0
+offset_bottom = -138.0
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_dkh6o")
+text = "PLACEHOLDER"
+
+[node name="Name" type="Label" parent="Visual" unique_id=1002372108]
+unique_name_in_owner = true
+visible = false
+offset_left = -45.0
+offset_top = 63.0
+offset_right = 45.0
+offset_bottom = 86.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_gcg8i")
+theme_override_font_sizes/font_size = 10
+text = "NAME"
+horizontal_alignment = 1
+
+[node name="SelectionArea" type="Control" parent="Visual" unique_id=1312798934]
+unique_name_in_owner = true
+z_index = 1
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -99.0
+offset_right = 64.0
+offset_bottom = 99.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Selection" type="Sprite2D" parent="Visual" unique_id=1408207297]
+unique_name_in_owner = true
+visible = false
+texture = ExtResource("4_ovw7n")
+
+[node name="CombatVisualAnimator" type="Node" parent="." unique_id=1056744908 node_paths=PackedStringArray("visual_root")]
+unique_name_in_owner = true
+script = ExtResource("6_dkh6o")
+visual_root = NodePath("../Visual/VisualRoot")
+back_offset = Vector2(-12, 0)
+forward_offset = Vector2(8, 0)
+
+[connection signal="mouse_entered" from="Visual/SelectionArea" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Visual/SelectionArea" to="." method="_on_area_2d_mouse_exited"]

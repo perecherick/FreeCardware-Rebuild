@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dbecwa46hx73i"]
+
+[ext_resource type="Script" uid="uid://pbwhknbqqa56" path="res://gd/enemy/combat.gd" id="1_b4c3t"]
+[ext_resource type="PackedScene" uid="uid://bbar807ila0q3" path="res://tscn/enemy/enemy.tscn" id="2_krifr"]
+[ext_resource type="PackedScene" uid="uid://ope6qcxaug2t" path="res://tscn/menu/combat_hud.tscn" id="3_kq48t"]
+[ext_resource type="PackedScene" uid="uid://c4jbhougq2i0x" path="res://tscn/cards/card_hand.tscn" id="4_uei8w"]
+
+[node name="Combat" type="Control" unique_id=1445530108]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_b4c3t")
+enemy_scene = ExtResource("2_krifr")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=892139564]
+z_index = -1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 42.0
+offset_right = 1264.0
+offset_bottom = 828.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="EnemiesRoot" type="Node2D" parent="." unique_id=2081968502]
+unique_name_in_owner = true
+
+[node name="CombatHud" parent="." unique_id=1728503173 instance=ExtResource("3_kq48t")]
+layout_mode = 1
+
+[node name="CardHand" parent="." unique_id=2076411051 instance=ExtResource("4_uei8w")]
+layout_mode = 1
+
+[connection signal="end_turn_pressed" from="CombatHud" to="." method="_on_combat_hud_end_turn_pressed"]

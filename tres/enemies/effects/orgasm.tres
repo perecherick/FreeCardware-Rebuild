@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EffectData" format=3 uid="uid://bpujb73wlira"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_b8ri2"]
+
+[resource]
+script = ExtResource("1_b8ri2")
+id = "orgasm"
+name = "TID_ORGASM"
+color = "white"
+duration_mode = 1
+default_duration = 3
+default_stacks = 1
+max_stacks = 3
+disables_turn = true
+disable_intent = "TID_ORGASM"
+metadata/_custom_type_script = "uid://b42lcmpk0fand"

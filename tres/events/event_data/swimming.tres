@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://c76s1yjqvmleq"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_eo8xp"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_32m5f"]
+[ext_resource type="Resource" uid="uid://cd5ljlpjyh8rd" path="res://tres/events/event_step/swimming_step_0.tres" id="3_e2aj8"]
+[ext_resource type="Resource" uid="uid://dufa4k20rtd08" path="res://tres/events/event_step/swimming_step_clothed.tres" id="4_0pu6x"]
+[ext_resource type="Resource" uid="uid://dbiaf24u23bm7" path="res://tres/events/event_step/swimming_step_naked.tres" id="5_un04d"]
+
+[resource]
+script = ExtResource("1_eo8xp")
+id = &"swimming"
+steps = Array[ExtResource("2_32m5f")]([ExtResource("3_e2aj8"), ExtResource("4_0pu6x"), ExtResource("5_un04d")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

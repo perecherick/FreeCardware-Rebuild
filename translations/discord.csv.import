@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dnp6c7hxxligf"
+
+[deps]
+
+files=["res://translations/discord.en.translation", "res://translations/discord.ja.translation", "res://translations/discord.zh.translation", "res://translations/discord.es.translation", "res://translations/discord.ko.translation", "res://translations/discord.ru.translation", "res://translations/discord.de.translation"]
+
+source_file="res://translations/discord.csv"
+dest_files=["res://translations/discord.en.translation", "res://translations/discord.ja.translation", "res://translations/discord.zh.translation", "res://translations/discord.es.translation", "res://translations/discord.ko.translation", "res://translations/discord.ru.translation", "res://translations/discord.de.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

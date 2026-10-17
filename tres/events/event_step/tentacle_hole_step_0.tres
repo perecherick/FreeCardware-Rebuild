@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://dohp8cp1vulbl"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_c832h"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_6b7ea"]
+[ext_resource type="Resource" uid="uid://di0t7i4os5x7o" path="res://tres/events/event_choices/tentacle_hole_choice_panic.tres" id="2_52nb5"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_nhmve"]
+[ext_resource type="Resource" uid="uid://nfbtfv1jiebk" path="res://tres/events/event_choices/tentacle_hole_choice_sleep.tres" id="3_nx6ft"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_cm7ku"]
+[ext_resource type="Texture2D" uid="uid://7mo8a6jts8x2" path="res://img/events/tentacle_hole/sprite_in_hole/tile000.png" id="4_lauyi"]
+[ext_resource type="Texture2D" uid="uid://52epfytptu2k" path="res://img/events/tentacle_hole/sprite_in_hole/tile001.png" id="5_46hr8"]
+[ext_resource type="Texture2D" uid="uid://cmrfngqk4suux" path="res://img/events/tentacle_hole/sprite_in_hole/tile002.png" id="6_52nb5"]
+[ext_resource type="Texture2D" uid="uid://dlbfwgxm7qaji" path="res://img/events/tentacle_hole/sprite_in_hole/tile003.png" id="7_nx6ft"]
+[ext_resource type="Texture2D" uid="uid://cp26kflci6wf2" path="res://img/events/tentacle_hole/sprite_in_hole/tile004.png" id="8_3gy5p"]
+[ext_resource type="Texture2D" uid="uid://huw2ler12vbb" path="res://img/events/tentacle_hole/sprite_in_hole/tile005.png" id="9_u40gv"]
+[ext_resource type="Texture2D" uid="uid://ba3l57iyt7ivn" path="res://img/events/tentacle_hole/sprite_in_hole/tile006.png" id="10_gq4mj"]
+[ext_resource type="Texture2D" uid="uid://cw4gkgqdvet1l" path="res://img/events/tentacle_hole/sprite_in_hole/tile007.png" id="11_jiacg"]
+[ext_resource type="Texture2D" uid="uid://cit77i6xf7t3t" path="res://img/events/tentacle_hole/sprite_in_hole/tile008.png" id="12_62lr3"]
+[ext_resource type="Texture2D" uid="uid://bs3cq4pq581ci" path="res://img/events/tentacle_hole/sprite_in_hole/tile009.png" id="13_ix6d0"]
+[ext_resource type="Texture2D" uid="uid://bciab0oibl36v" path="res://img/events/tentacle_hole/sprite_in_hole/tile010.png" id="14_3353c"]
+[ext_resource type="Texture2D" uid="uid://d2s4kyqlyavpb" path="res://img/events/tentacle_hole/sprite_in_hole/tile011.png" id="15_41uv3"]
+[ext_resource type="Texture2D" uid="uid://cgpot7l38g065" path="res://img/events/tentacle_hole/sprite_in_hole/tile012.png" id="16_1wio7"]
+[ext_resource type="Texture2D" uid="uid://bln18f47r4u51" path="res://img/events/tentacle_hole/sprite_in_hole/tile013.png" id="17_d7ka3"]
+[ext_resource type="Texture2D" uid="uid://dhoj4set07upb" path="res://img/events/tentacle_hole/sprite_in_hole/tile014.png" id="18_qr4jn"]
+[ext_resource type="Texture2D" uid="uid://b2lkvitmb34r5" path="res://img/events/tentacle_hole/sprite_in_hole/tile015.png" id="19_7dxbn"]
+[ext_resource type="Texture2D" uid="uid://b2qeq0fddpkxd" path="res://img/events/tentacle_hole/sprite_in_hole/tile016.png" id="20_lhitc"]
+[ext_resource type="Texture2D" uid="uid://jlxwnrtj5yte" path="res://img/events/tentacle_hole/sprite_in_hole/tile017.png" id="21_67fqm"]
+
+[resource]
+script = ExtResource("4_cm7ku")
+id = &"tentacle_hole_step_0"
+text = "TID_FALL_IN_HOLE"
+frames = Array[Texture2D]([ExtResource("4_lauyi"), ExtResource("5_46hr8"), ExtResource("6_52nb5"), ExtResource("7_nx6ft"), ExtResource("8_3gy5p"), ExtResource("9_u40gv"), ExtResource("10_gq4mj"), ExtResource("11_jiacg"), ExtResource("12_62lr3"), ExtResource("13_ix6d0"), ExtResource("14_3353c"), ExtResource("15_41uv3"), ExtResource("16_1wio7"), ExtResource("17_d7ka3"), ExtResource("18_qr4jn"), ExtResource("19_7dxbn"), ExtResource("20_lhitc"), ExtResource("21_67fqm")])
+choices = Array[ExtResource("1_c832h")]([ExtResource("2_52nb5"), ExtResource("3_nx6ft")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

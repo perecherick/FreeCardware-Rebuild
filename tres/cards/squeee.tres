@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://jk0iio8lamrq"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_hsay8"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_qwao3"]
+[ext_resource type="Resource" uid="uid://cn610lgwu7cvt" path="res://tres/cards/card_effects/squeee.tres" id="2_yi4wx"]
+[ext_resource type="Resource" uid="uid://bbtl4d0ucyg5k" path="res://tres/cards/card_effects/squeee_limits.tres" id="3_b5svp"]
+[ext_resource type="Texture2D" uid="uid://bwnxef465q1pc" path="res://img/cards/card/squeee.png" id="3_x4lk1"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_yi4wx"]
+
+[resource]
+script = ExtResource("2_qwao3")
+id = "squeee"
+name = "TID_SQUEEE_NAME"
+img = ExtResource("3_x4lk1")
+description = "TID_SQUEEE_DESC"
+hover_description = "TID_STRIKE_DESC"
+energy_cost = 2
+damage = 22
+card_cost = 75
+description_colors = Dictionary[StringName, Color]({
+&"mindmg": Color(1, 0.64705884, 0, 1)
+})
+card_effects = Array[ExtResource("1_hsay8")]([ExtResource("2_yi4wx"), ExtResource("3_b5svp")])
+attack = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

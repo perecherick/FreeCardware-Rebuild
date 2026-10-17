@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="KillEffect" format=3 uid="uid://bm3apve4lsw86"]
+
+[ext_resource type="Script" uid="uid://dm00evg7dcbgd" path="res://gd/cards/card_effects/add_hardware_on_kill.gd" id="1_ccjgw"]
+[ext_resource type="Resource" uid="uid://ckl7pb81tkta3" path="res://tres/hardware/execution.tres" id="1_p8fuf"]
+
+[resource]
+script = ExtResource("1_ccjgw")
+hardware = ExtResource("1_p8fuf")
+metadata/_custom_type_script = "uid://dm00evg7dcbgd"

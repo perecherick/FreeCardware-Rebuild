@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventAddHardware" format=3 uid="uid://bjq86hlikd2la"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_opndf"]
+[ext_resource type="Resource" uid="uid://c7q3i0dqsqlcd" path="res://tres/hardware/badge.tres" id="2_kct61"]
+[ext_resource type="Script" uid="uid://cx8vxvyghxwxv" path="res://gd/event/event_effects/add_hardware.gd" id="2_ogluu"]
+
+[resource]
+script = ExtResource("2_ogluu")
+hardware_list = Array[ExtResource("1_opndf")]([ExtResource("2_kct61")])
+metadata/_custom_type_script = "uid://cx8vxvyghxwxv"

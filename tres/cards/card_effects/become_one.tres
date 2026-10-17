@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="BecomeOneEffect" format=3 uid="uid://dlqbxwtduinrm"]
+
+[ext_resource type="Script" uid="uid://cfhrqnet0tfbr" path="res://gd/cards/card_effects/become_one.gd" id="1_bsymo"]
+
+[resource]
+script = ExtResource("1_bsymo")
+metadata/_custom_type_script = "uid://cfhrqnet0tfbr"

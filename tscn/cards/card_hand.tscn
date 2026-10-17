@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c4jbhougq2i0x"]
+
+[ext_resource type="Script" uid="uid://b6i7jphe537u4" path="res://gd/cards/card_hand.gd" id="1_k3v2t"]
+[ext_resource type="PackedScene" uid="uid://dg4uitjqffpta" path="res://tscn/cards/card.tscn" id="2_yacub"]
+
+[node name="CardHand" type="Control" unique_id=2076411051]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_k3v2t")
+card_scene = ExtResource("2_yacub")
+
+[node name="Hand" type="HBoxContainer" parent="." unique_id=2013102558]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1300, 334)
+layout_mode = 0
+offset_top = 864.0
+offset_right = 1300.0
+offset_bottom = 1198.0
+theme_override_constants/separation = 0
+alignment = 1

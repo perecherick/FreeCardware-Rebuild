@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://dl8o0h70k51vr"]
+
+[ext_resource type="Script" uid="uid://c7tqof485lqnu" path="res://gd/map/map_location.gd" id="1_d3vej"]
+[ext_resource type="Script" uid="uid://di1f1jy6oe71g" path="res://gd/map/map_visuals.gd" id="2_htskj"]
+[ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="2_pm3qs"]
+[ext_resource type="Texture2D" uid="uid://7lpj840uhf1b" path="res://img/map/enemy.png" id="2_x8j8r"]
+[ext_resource type="Texture2D" uid="uid://dh2gvli14otvo" path="res://img/map/completed.png" id="4_77g0t"]
+
+[sub_resource type="Animation" id="Animation_77g0t"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visual/Icon:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_htskj"]
+resource_name = "rotation"
+length = 1.8
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visual/Icon:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.35, -0.25, 0, 0.25, 0, 0.35, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.4, 1.2, 1.6)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ae1ki"]
+_data = {
+&"RESET": SubResource("Animation_77g0t"),
+&"rotation": SubResource("Animation_htskj")
+}
+
+[node name="MapLocation" type="Control" unique_id=288195275]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 64.0
+offset_bottom = 64.0
+focus_mode = 2
+mouse_filter = 1
+script = ExtResource("1_d3vej")
+
+[node name="Visual" type="Control" parent="." unique_id=254649761]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 128.0
+offset_bottom = 128.0
+pivot_offset = Vector2(64, 64)
+mouse_filter = 1
+script = ExtResource("2_htskj")
+
+[node name="Icon" type="TextureRect" parent="Visual" unique_id=2064415529]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+pivot_offset = Vector2(64, 64)
+texture = ExtResource("2_x8j8r")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Visual/Icon" unique_id=1499696913]
+unique_name_in_owner = true
+root_node = NodePath("../../..")
+libraries/ = SubResource("AnimationLibrary_ae1ki")
+
+[node name="Label" type="Label" parent="Visual" unique_id=1460958828]
+unique_name_in_owner = true
+visible = false
+z_index = 1
+layout_mode = 0
+offset_top = 124.0
+offset_right = 128.0
+offset_bottom = 156.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_pm3qs")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+
+[node name="Circle" type="TextureRect" parent="Visual" unique_id=1369146668]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 144.0
+offset_bottom = 144.0
+pivot_offset = Vector2(80, 80)
+texture = ExtResource("4_77g0t")
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dnvsi84354dd4"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_advva"]
+[ext_resource type="Resource" uid="uid://b2o15lguqyhuf" path="res://tres/cards/card_effects/the_knee.tres" id="2_a5egc"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_wfc48"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_a5egc"]
+[ext_resource type="Texture2D" uid="uid://cfy38qyk0sucn" path="res://img/cards/card/the knee.png" id="3_ion52"]
+
+[resource]
+script = ExtResource("2_wfc48")
+id = "the_knee"
+name = "TID_THE_KNEE_NAME"
+img = ExtResource("3_ion52")
+description = "TID_THE_KNEE_DESC"
+hover_description = "TID_STRIKE_DESC"
+energy_cost = 1
+damage = 6
+card_cost = 50
+card_effects = Array[ExtResource("1_advva")]([ExtResource("2_a5egc")])
+attack = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

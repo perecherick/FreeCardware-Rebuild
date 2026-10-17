@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://c58amq8oqnhpt"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_pyxb8"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_ifcul"]
+[ext_resource type="Resource" uid="uid://ea3nfwm3tayv" path="res://tres/cards/card_effects/body_slam.tres" id="2_viff5"]
+[ext_resource type="Resource" uid="uid://dhapo5cxnxcaf" path="res://tres/cards/card_effects/body_slam_limits.tres" id="3_b5bwf"]
+[ext_resource type="Texture2D" uid="uid://dxqefigpimpxr" path="res://img/cards/card/body_slam.png" id="3_tkvqx"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_viff5"]
+
+[resource]
+script = ExtResource("2_ifcul")
+id = "body_slam"
+name = "TID_BODY_SLAM_NAME"
+img = ExtResource("3_tkvqx")
+description = "TID_BODY_SLAM_DESC"
+hover_description = "TID_BODY_SLAM_HOVER_DESC"
+energy_cost = 2
+damage = 1
+pp = 1
+description_colors = Dictionary[StringName, Color]({
+&"mindmg": Color(1, 0.64705884, 0, 1),
+&"minpp": Color(1, 0.078431375, 0.5764706, 1)
+})
+card_effects = Array[ExtResource("1_pyxb8")]([ExtResource("2_viff5"), ExtResource("3_b5bwf")])
+attack = true
+pleasure = true
+card_type = 4
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

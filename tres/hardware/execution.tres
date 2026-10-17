@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://ckl7pb81tkta3"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_55kgi"]
+
+[resource]
+script = ExtResource("1_55kgi")
+id = "execution"
+name = "TID_EXECUTION"
+description = "TID_EXECUTION_DESC"
+color = "orange"
+stackable = true
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

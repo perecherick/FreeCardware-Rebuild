@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://d144rgvcos6am"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_undh3"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_7ds7q"]
+[ext_resource type="Resource" uid="uid://ux42bg3dokpk" path="res://tres/events/event_step/tourist_step_0.tres" id="3_njrkg"]
+[ext_resource type="Resource" uid="uid://csqndkev22uax" path="res://tres/events/event_step/tourist_step_1.tres" id="4_kmik6"]
+[ext_resource type="Resource" uid="uid://buktuhipqsejc" path="res://tres/events/event_step/tourist_step_blowjob_0.tres" id="5_1i8rs"]
+[ext_resource type="Resource" uid="uid://br7wfwfat0v1e" path="res://tres/events/event_step/tourist_step_blowjob_1.tres" id="6_r3bwu"]
+[ext_resource type="Resource" uid="uid://bvf8np1x4pym1" path="res://tres/events/event_step/tourist_step_give_directions.tres" id="7_l0u23"]
+
+[resource]
+script = ExtResource("1_undh3")
+id = &"tourist"
+steps = Array[ExtResource("2_7ds7q")]([ExtResource("3_njrkg"), ExtResource("4_kmik6"), ExtResource("5_1i8rs"), ExtResource("6_r3bwu"), ExtResource("7_l0u23")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

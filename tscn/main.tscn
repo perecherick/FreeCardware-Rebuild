@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://c6xs05vwdl5gk"]
+
+[ext_resource type="Script" uid="uid://dguxklkjilv7j" path="res://gd/main.gd" id="1_g6ans"]
+[ext_resource type="PackedScene" uid="uid://cplfjwiyl7x2s" path="res://tscn/menu/main_menu.tscn" id="2_8kplt"]
+[ext_resource type="PackedScene" uid="uid://b2v36bclcfu8b" path="res://tscn/menu/settings.tscn" id="3_ao1ln"]
+[ext_resource type="PackedScene" uid="uid://bqpdph6he6aq4" path="res://tscn/menu/credits.tscn" id="4_q8ief"]
+[ext_resource type="PackedScene" uid="uid://ci4a4buqv2td6" path="res://tscn/menu/cheat_menu.tscn" id="5_ap273"]
+[ext_resource type="PackedScene" uid="uid://bspekfcp4blnp" path="res://tscn/menu/new_game.tscn" id="6_8kplt"]
+[ext_resource type="PackedScene" uid="uid://bk32n5p4ao0qv" path="res://tscn/menu/run_preview.tscn" id="7_ao1ln"]
+[ext_resource type="PackedScene" uid="uid://di3dio65tojk1" path="res://tscn/map/main_hud.tscn" id="8_q8ief"]
+[ext_resource type="PackedScene" uid="uid://doy74m07eqnqt" path="res://tscn/player/character_select.tscn" id="9_ap273"]
+
+[node name="Main" type="Node" unique_id=207641851]
+script = ExtResource("1_g6ans")
+
+[node name="MainMenu" parent="." unique_id=1097915424 instance=ExtResource("2_8kplt")]
+mouse_filter = 2
+
+[node name="Credits" parent="." unique_id=84591324 instance=ExtResource("4_q8ief")]
+visible = false
+mouse_filter = 2
+
+[node name="NewGame" parent="." unique_id=638646986 instance=ExtResource("6_8kplt")]
+visible = false
+mouse_filter = 2
+
+[node name="RunPreview" parent="." unique_id=1533316770 instance=ExtResource("7_ao1ln")]
+visible = false
+mouse_filter = 2
+
+[node name="MainHud" parent="." unique_id=135217630 instance=ExtResource("8_q8ief")]
+visible = false
+mouse_filter = 2
+
+[node name="Settings" parent="." unique_id=430279223 instance=ExtResource("3_ao1ln")]
+visible = false
+mouse_filter = 2
+
+[node name="CharacterSelect" parent="." unique_id=2029769746 instance=ExtResource("9_ap273")]
+visible = false
+mouse_filter = 2
+
+[node name="DebugMenu" parent="." unique_id=995641294 instance=ExtResource("5_ap273")]
+visible = false
+z_index = 4096

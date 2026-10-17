@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://secol7qy8wte"]
+
+[ext_resource type="Script" uid="uid://ckbmfu3tkw6e2" path="res://gd/cards/deck.gd" id="1_5twik"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="1_yvttv"]
+[ext_resource type="PackedScene" uid="uid://dg4uitjqffpta" path="res://tscn/cards/card.tscn" id="2_5wlcf"]
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="2_jf1sx"]
+
+[node name="Deck" type="Control" unique_id=1062778375]
+z_index = 10
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5twik")
+card_scene = ExtResource("2_5wlcf")
+
+[node name="Visual" type="Control" parent="." unique_id=899017740]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Visual" unique_id=1377502766]
+layout_mode = 0
+offset_right = 1300.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.3764706)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Visual" unique_id=351584720]
+layout_mode = 0
+offset_top = 1029.0
+offset_right = 1300.0
+offset_bottom = 1079.0
+theme_override_constants/separation = 75
+
+[node name="Lewdness" type="Label" parent="Visual/HBoxContainer" unique_id=201497607]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jf1sx")
+theme_override_font_sizes/font_size = 30
+text = "TID_LEWDNESS_COUNT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Orgasm" type="Label" parent="Visual/HBoxContainer" unique_id=2092866051]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jf1sx")
+theme_override_font_sizes/font_size = 30
+text = "TID_ORGASM_COUNT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Visual" unique_id=227057351]
+layout_mode = 0
+offset_right = 1300.0
+offset_bottom = 1033.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Visual/ScrollContainer" unique_id=1868330633]
+custom_minimum_size = Vector2(1300, 1033)
+layout_mode = 2
+theme_override_constants/margin_top = 145
+theme_override_constants/margin_bottom = 90
+
+[node name="GridContainer" type="GridContainer" parent="Visual/ScrollContainer/MarginContainer" unique_id=2085344561]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 110
+theme_override_constants/v_separation = 65
+columns = 4
+
+[node name="Button" type="Button" parent="." unique_id=1408714097]
+layout_mode = 0
+offset_left = 1753.0
+offset_right = 1920.0
+offset_bottom = 62.0
+theme_override_fonts/font = ExtResource("1_yvttv")
+theme_override_font_sizes/font_size = 36
+text = "TID_DECK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

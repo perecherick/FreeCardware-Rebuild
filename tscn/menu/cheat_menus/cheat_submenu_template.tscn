@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://fcermrhselry"]
+
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="1_k78b4"]
+
+[node name="CheatSubmenuTemplate" type="Control" unique_id=71860582]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=523543793]
+layout_mode = 0
+offset_right = 1270.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.49803922)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1399750212]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 1270.0
+offset_bottom = 56.0
+theme_override_fonts/font = ExtResource("1_k78b4")
+theme_override_font_sizes/font_size = 36
+text = "TID_SOMETHING"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=1738229723]
+layout_mode = 0
+offset_top = 56.0
+offset_right = 1270.0
+offset_bottom = 60.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=462886225]
+layout_mode = 0
+offset_top = 60.0
+offset_right = 1270.0
+offset_bottom = 1080.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=624849541]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 0

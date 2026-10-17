@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TentacleInsideEffect" format=3 uid="uid://bqtg2wrv1fqig"]
+
+[ext_resource type="Script" uid="uid://bqmyn1xdoqyi7" path="res://gd/cards/card_effects/tentacle_inside.gd" id="1_7mb7x"]
+
+[resource]
+script = ExtResource("1_7mb7x")
+metadata/_custom_type_script = "uid://bqmyn1xdoqyi7"

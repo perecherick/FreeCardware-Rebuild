@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://d4do4cw4f42d7"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_uhu3t"]
+[ext_resource type="Texture2D" uid="uid://ippq7bji00px" path="res://img/cards/card/dildo_ride.png" id="2_be6ft"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_ctqon"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_be6ft"]
+[ext_resource type="Resource" uid="uid://hfurg1mk67qf" path="res://tres/sex/dildo_ride.tres" id="3_ctqon"]
+
+[resource]
+script = ExtResource("2_ctqon")
+id = "dildo_ride"
+name = "TID_DILDO_RIDE_NAME"
+img = ExtResource("2_be6ft")
+description = "TID_DILDO_RIDE_DESC"
+energy_cost = 1
+pp = 3
+lp = 6
+sex_type = ExtResource("3_ctqon")
+sex_state_change = 1
+pleasure = true
+sex = true
+card_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

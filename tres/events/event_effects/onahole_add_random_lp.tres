@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ChangeStats" format=3 uid="uid://c4jcyehnw1jk3"]
+
+[ext_resource type="Script" uid="uid://bexy0uk3qygd0" path="res://gd/event/event_effects/change_stats.gd" id="1_nqirr"]
+
+[resource]
+script = ExtResource("1_nqirr")
+current_lp_random_min = 3
+current_lp_random_max = 7
+prevent_orgasm = true
+metadata/_custom_type_script = "uid://bexy0uk3qygd0"

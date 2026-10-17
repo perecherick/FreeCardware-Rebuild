@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="BloodRageEffect" format=3 uid="uid://8mufvsbcasg1"]
+
+[ext_resource type="Script" uid="uid://xpwna3lnfo2l" path="res://gd/cards/card_effects/blood_rage.gd" id="1_4iy77"]
+
+[resource]
+script = ExtResource("1_4iy77")
+metadata/_custom_type_script = "uid://xpwna3lnfo2l"

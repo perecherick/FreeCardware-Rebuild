@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dc4rghmgsq050"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_vbfj4"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_bcifb"]
+[ext_resource type="Resource" uid="uid://cddp0jik3d3uw" path="res://tres/cards/card_effects/seduce.tres" id="2_vhapx"]
+[ext_resource type="Texture2D" uid="uid://cd02rc3e48fe4" path="res://img/cards/card/seduce.png" id="3_ekf4k"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_vhapx"]
+
+[resource]
+script = ExtResource("2_bcifb")
+id = "seduce"
+name = "TID_SEDUCE_NAME"
+img = ExtResource("3_ekf4k")
+description = "TID_SEDUCE_DESC"
+hover_description = "TID_SEDUCE_HOVER_DESC"
+energy_cost = 1
+pp = 1
+card_cost = 100
+card_effects = Array[ExtResource("1_vbfj4")]([ExtResource("2_vhapx")])
+pleasure = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

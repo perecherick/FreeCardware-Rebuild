@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ClothesChange" format=3 uid="uid://6b16sesajsjx"]
+
+[ext_resource type="Script" uid="uid://bncpl2rtee4e7" path="res://gd/event/event_effects/clothes_change.gd" id="1_jfyf7"]
+
+[resource]
+script = ExtResource("1_jfyf7")
+torn_clothes = true
+metadata/_custom_type_script = "uid://bncpl2rtee4e7"

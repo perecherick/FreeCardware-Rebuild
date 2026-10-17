@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://blmty0rx0hd78"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_d6ueo"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_t6hty"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_igrbx"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_8knn5"]
+[ext_resource type="Texture2D" uid="uid://beemcl8k5cty3" path="res://img/events/tollbooth/gate.png" id="4_t6hty"]
+
+[resource]
+script = ExtResource("4_8knn5")
+id = &"tollbooth_step_lose"
+text = "TID_TOLLBOOTH_LOSE"
+frames = Array[Texture2D]([ExtResource("4_t6hty")])
+loop = false
+metadata/_custom_type_script = "uid://d023vifri6y0k"

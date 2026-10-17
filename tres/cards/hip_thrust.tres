@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://c1gsx30v7efm"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_fb84j"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_nw2fo"]
+[ext_resource type="Texture2D" uid="uid://b61at1ho3hecx" path="res://img/cards/card/hip_thrust.png" id="2_s4gnd"]
+
+[resource]
+script = ExtResource("2_nw2fo")
+id = "hip_thrust"
+name = "TID_HIP_THRUST_NAME"
+img = ExtResource("2_s4gnd")
+description = "TID_HIP_THRUST_DESC"
+energy_cost = 1
+pp = 10
+lp = 10
+sex_state_change = 1
+pleasure = true
+sex = true
+card_type = 2
+works_only_in = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://cpod3cif1jbdi"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_afh2s"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_5cwem"]
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="3_m6wov"]
+[ext_resource type="Script" uid="uid://coasviibakvjg" path="res://gd/enemy/enemy_data.gd" id="3_nq43a"]
+[ext_resource type="Texture2D" uid="uid://clfj3nsxwigac" path="res://img/enemies/default/shark.png" id="5_asele"]
+
+[sub_resource type="Resource" id="Resource_gxd8c"]
+script = ExtResource("3_m6wov")
+damage = 10
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_npp0g"]
+script = ExtResource("2_5cwem")
+actions = Array[ExtResource("3_m6wov")]([SubResource("Resource_gxd8c")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[resource]
+script = ExtResource("3_nq43a")
+id = "shark"
+name = "TID_SHARK"
+texture = ExtResource("5_asele")
+type = 1
+max_hp = 50
+starting_hp = 50
+max_pp = 50
+move_list = Array[ExtResource("2_5cwem")]([SubResource("Resource_npp0g")])
+metadata/_custom_type_script = "uid://coasviibakvjg"

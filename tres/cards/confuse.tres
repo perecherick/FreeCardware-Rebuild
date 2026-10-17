@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bamujrm3uhos1"]
+
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_gq3ss"]
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_r4jgl"]
+[ext_resource type="Texture2D" uid="uid://bi22mmwcquubt" path="res://img/cards/card/confuse.png" id="2_qjjol"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_qjjol"]
+
+[resource]
+script = ExtResource("1_gq3ss")
+id = "confuse"
+name = "TID_CONFUSE_NAME"
+img = ExtResource("2_qjjol")
+description = "TID_CONFUSE_DESC"
+energy_cost = 1
+damage = 4
+pp = 4
+card_cost = 50
+attack = true
+pleasure = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

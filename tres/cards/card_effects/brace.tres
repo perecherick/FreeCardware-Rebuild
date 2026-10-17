@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ApplyHardware" format=3 uid="uid://ds5vbmqho3xj3"]
+
+[ext_resource type="Script" uid="uid://cp5r2ubl3a8fl" path="res://gd/cards/card_effects/apply_hardware.gd" id="1_b5rkq"]
+[ext_resource type="Resource" uid="uid://ddu85vo6ohkg7" path="res://tres/hardware/brace.tres" id="1_nqewl"]
+
+[resource]
+script = ExtResource("1_b5rkq")
+hardware = ExtResource("1_nqewl")
+metadata/_custom_type_script = "uid://cp5r2ubl3a8fl"

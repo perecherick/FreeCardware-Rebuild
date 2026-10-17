@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnergyToLpEffect" format=3 uid="uid://cguuoje2l5kej"]
+
+[ext_resource type="Script" uid="uid://dvkym0o7v38u" path="res://gd/cards/card_effects/energy_to_lp.gd" id="1_hkqno"]
+
+[resource]
+script = ExtResource("1_hkqno")
+lp_per_energy = 12
+metadata/_custom_type_script = "uid://dvkym0o7v38u"

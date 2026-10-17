@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bhjddkj71anyt"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_srkbd"]
+[ext_resource type="Resource" uid="uid://b1byykj8cmvq" path="res://tres/cards/card_effects/dynamic_cost.tres" id="2_ji4dd"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_nnurk"]
+[ext_resource type="Resource" uid="uid://blv6s1u0qedqd" path="res://tres/cards/card_effects/bondage.tres" id="3_icr3j"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_ji4dd"]
+[ext_resource type="Texture2D" uid="uid://c65y0y3ddwihv" path="res://img/cards/card/bondage.png" id="4_icr3j"]
+
+[resource]
+script = ExtResource("2_nnurk")
+id = "bondage"
+name = "TID_BONDAGE_NAME"
+img = ExtResource("4_icr3j")
+description = "TID_BONDAGE_DESC"
+hover_description = "TID_BONDAGE_HOVER_DESC"
+energy_cost = 1
+exhaust = true
+card_effects = Array[ExtResource("1_srkbd")]([ExtResource("2_ji4dd"), ExtResource("3_icr3j")])
+misc = true
+card_type = 4
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

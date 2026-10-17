@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="LewdnessCondition" format=3 uid="uid://badb0d2mwnmdv"]
+
+[ext_resource type="Script" uid="uid://bmtf2c3f83sfj" path="res://gd/event/event_condition/lewdness_condition.gd" id="1_k6vxq"]
+
+[resource]
+script = ExtResource("1_k6vxq")
+lewdness = 20
+metadata/_custom_type_script = "uid://bmtf2c3f83sfj"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://c7q3i0dqsqlcd"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_730p5"]
+
+[resource]
+script = ExtResource("1_730p5")
+id = "badge"
+name = "TID_BADGE"
+description = "TID_BADGE_DESC"
+color = "orange"
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

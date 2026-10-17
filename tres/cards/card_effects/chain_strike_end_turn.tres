@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ChainStrikeEffect" format=3 uid="uid://bg2wepstevfju"]
+
+[ext_resource type="Resource" uid="uid://bk3o48gibs5s6" path="res://tres/hardware/combo.tres" id="1_olo4b"]
+[ext_resource type="Script" uid="uid://61ox6paltrw4" path="res://gd/cards/card_effects/chain_strike.gd" id="1_ucs1s"]
+
+[resource]
+script = ExtResource("1_ucs1s")
+hardware = ExtResource("1_olo4b")
+metadata/_custom_type_script = "uid://61ox6paltrw4"

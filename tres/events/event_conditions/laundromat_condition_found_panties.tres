@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EventValueCondition" format=3 uid="uid://cbdgrwoxvgmdb"]
+
+[ext_resource type="Script" uid="uid://ds7mdbri7tm4r" path="res://gd/event/event_effects/event_value_condition.gd" id="1_0am8p"]
+
+[resource]
+script = ExtResource("1_0am8p")
+key = &"laundromat_found"
+value = &"panties"
+metadata/_custom_type_script = "uid://ds7mdbri7tm4r"

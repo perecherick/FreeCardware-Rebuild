@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://ckf0aa23n2t05"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_oslkm"]
+[ext_resource type="Resource" uid="uid://bx4a0osucbnhg" path="res://tres/cards/card_effects/tease.tres" id="2_h0p1d"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_vyf65"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_h0p1d"]
+[ext_resource type="Texture2D" uid="uid://cl825w3t48m4p" path="res://img/cards/card/tease.png" id="3_hj5w1"]
+
+[resource]
+script = ExtResource("2_vyf65")
+id = "tease"
+name = "TID_TEASE_NAME"
+img = ExtResource("3_hj5w1")
+description = "TID_TEASE_DESC"
+card_cost = 50
+card_effects = Array[ExtResource("1_oslkm")]([ExtResource("2_h0p1d")])
+misc = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

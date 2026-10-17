@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://badms2151rqqf"]
+
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="1_cbrfp"]
+
+[resource]
+script = ExtResource("1_cbrfp")
+damage = 4
+metadata/_custom_type_script = "uid://bh106js5jebrk"

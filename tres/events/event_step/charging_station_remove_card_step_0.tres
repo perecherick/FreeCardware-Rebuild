@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://cfllxnqnmp25g"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_8tpgk"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_gafqo"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_orbxe"]
+
+[resource]
+script = ExtResource("3_orbxe")
+id = &"charging_station_remove_card_step_0"
+text = "TID_REMOVE_CARD_0"
+loop = false
+next_step = &"charging_station_remove_card_step_1"
+metadata/_custom_type_script = "uid://d023vifri6y0k"

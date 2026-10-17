@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="OrgasmCondition" format=3 uid="uid://cptyk02k4faa3"]
+
+[ext_resource type="Script" uid="uid://dwxdywacpr1bp" path="res://gd/event/event_condition/orgasm_condition.gd" id="1_xt1sh"]
+
+[resource]
+script = ExtResource("1_xt1sh")
+metadata/_custom_type_script = "uid://dwxdywacpr1bp"

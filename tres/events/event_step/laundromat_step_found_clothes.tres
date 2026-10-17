@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://b3hpqvwfgk6m3"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_2kg4c"]
+[ext_resource type="Resource" uid="uid://5ube3w0y7ha8" path="res://tres/events/event_choices/laundromat_choice_put_on_clothes.tres" id="2_0pvfe"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_5a8au"]
+[ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="3_gn274"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_x8ype"]
+[ext_resource type="Texture2D" uid="uid://dvtf3rbswaqf6" path="res://img/events/laundromat/laundromat.png" id="5_mhh2y"]
+
+[resource]
+script = ExtResource("3_x8ype")
+id = &"laundromat_step_found_clothes"
+text = "TID_FOUND_CLOTHES"
+frames = Array[Texture2D]([ExtResource("5_mhh2y")])
+loop = false
+choices = Array[ExtResource("1_2kg4c")]([ExtResource("2_0pvfe"), ExtResource("3_gn274")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

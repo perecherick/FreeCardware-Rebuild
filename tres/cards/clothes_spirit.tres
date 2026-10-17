@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://c842rkphd0lms"]
+
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_0c7j8"]
+[ext_resource type="Texture2D" uid="uid://dpmjymli56rqk" path="res://img/cards/card/clothes_spirit.png" id="1_1qc01"]
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_xmfeg"]
+[ext_resource type="Resource" uid="uid://0rr0x72u23p2" path="res://tres/cards/card_effects/clothes_spirit.tres" id="2_xanbc"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="4_xanbc"]
+
+[resource]
+script = ExtResource("1_0c7j8")
+id = "clothes_spirit"
+name = "TID_CLOTHES_SPIRIT_NAME"
+img = ExtResource("1_1qc01")
+description = "TID_CLOTHES_SPIRIT_DESC"
+hover_description = "TID_STRIKE_DESC"
+energy_cost = 1
+damage = 1
+card_cost = 75
+card_effects = Array[ExtResource("1_xmfeg")]([ExtResource("2_xanbc")])
+attack = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

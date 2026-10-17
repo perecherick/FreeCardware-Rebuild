@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://6kl58k5vguph"]
+
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="1_5lprv"]
+[ext_resource type="Resource" uid="uid://cuwq4vsel8ykr" path="res://tres/sex/blowjob.tres" id="2_43x8s"]
+
+[resource]
+script = ExtResource("1_5lprv")
+pp = 10
+self_pp = 5
+sex_value = 1
+sex_type = ExtResource("2_43x8s")
+metadata/_custom_type_script = "uid://bh106js5jebrk"

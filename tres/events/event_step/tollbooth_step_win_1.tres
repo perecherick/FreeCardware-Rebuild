@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://dvf7kfbdcglag"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_smt5s"]
+[ext_resource type="Resource" uid="uid://dpnboifblr1p" path="res://tres/events/event_choices/tollbooth_choice_equip.tres" id="2_qw6ep"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_uvdco"]
+[ext_resource type="Resource" uid="uid://cab43q0e4l5g7" path="res://tres/events/event_choices/tollbooth_choice_ignore.tres" id="3_eu22t"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_qw6ep"]
+[ext_resource type="Texture2D" uid="uid://beemcl8k5cty3" path="res://img/events/tollbooth/gate.png" id="4_eu22t"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="5_odwms"]
+
+[resource]
+script = ExtResource("5_odwms")
+id = &"tollbooth_step_win_1"
+text = "TID_TOLLBOOTH_WIN_1"
+frames = Array[Texture2D]([ExtResource("4_eu22t")])
+loop = false
+choices = Array[ExtResource("1_smt5s")]([ExtResource("2_qw6ep"), ExtResource("3_eu22t")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

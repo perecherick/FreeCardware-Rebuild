@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyMove" format=3 uid="uid://b5cc2utqy6hvt"]
+
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="1_4o2tg"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_w5klo"]
+
+[sub_resource type="Resource" id="Resource_516bj"]
+script = ExtResource("1_4o2tg")
+damage = 7
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[resource]
+script = ExtResource("2_w5klo")
+actions = Array[ExtResource("1_4o2tg")]([SubResource("Resource_516bj")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"

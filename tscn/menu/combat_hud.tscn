@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://ope6qcxaug2t"]
+
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="1_6l8ij"]
+[ext_resource type="Script" uid="uid://cwcsna6a5e8xj" path="res://gd/combat_hud.gd" id="1_jwdsw"]
+[ext_resource type="Texture2D" uid="uid://ctdsgpew8fegl" path="res://img/combat/battery.png" id="2_jwdsw"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="3_uawha"]
+
+[node name="CombatHud" type="Control" unique_id=1728503173]
+z_index = 25
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_jwdsw")
+
+[node name="EndTurn" type="Button" parent="." unique_id=2002721086]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1288.0
+offset_top = 752.0
+offset_right = 1488.0
+offset_bottom = 824.0
+theme_override_fonts/font = ExtResource("1_6l8ij")
+theme_override_font_sizes/font_size = 40
+text = "TID_END_TURN"
+
+[node name="Energy" type="Control" parent="." unique_id=1617067030]
+z_index = -25
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Battery" type="TextureRect" parent="Energy" unique_id=1531698726]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -8.0
+offset_top = 672.0
+offset_right = 56.0
+offset_bottom = 736.0
+scale = Vector2(4, 4)
+offset_transform_enabled = true
+offset_transform_rotation = -1.5707964
+texture = ExtResource("2_jwdsw")
+
+[node name="EnergyCount" type="Label" parent="Energy" unique_id=296762285]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 92.0
+offset_top = 760.0
+offset_right = 228.0
+offset_bottom = 839.0
+theme_override_fonts/font = ExtResource("3_uawha")
+theme_override_font_sizes/font_size = 48
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardStats" type="Control" parent="." unique_id=1911914018]
+anchors_preset = 0
+offset_left = 710.0
+offset_top = -15.0
+offset_right = 1210.0
+offset_bottom = 53.0
+
+[node name="Discard" type="Label" parent="CardStats" unique_id=1566849171]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 248.0
+offset_top = 1.0
+offset_right = 492.0
+offset_bottom = 65.0
+theme_override_fonts/font = ExtResource("1_6l8ij")
+theme_override_font_sizes/font_size = 40
+text = "TID_DISCARD"
+
+[node name="Cards" type="Label" parent="CardStats" unique_id=1798628207]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 180.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("1_6l8ij")
+theme_override_font_sizes/font_size = 40
+text = "TID_DECK"
+
+[connection signal="pressed" from="EndTurn" to="." method="_on_button_pressed"]

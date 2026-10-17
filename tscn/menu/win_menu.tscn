@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://6ktdr8542kyk"]
+
+[ext_resource type="Script" uid="uid://ij01vm552joh" path="res://gd/win_menu.gd" id="1_53jt0"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="1_ao5bj"]
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="2_53jt0"]
+
+[node name="WinMenu" type="Control" unique_id=1730600437]
+z_index = 100
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_53jt0")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1942220153]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 1256.0
+offset_bottom = 544.0
+color = Color(0.08627451, 0.05882353, 0.18039216, 1)
+
+[node name="Won" type="Label" parent="." unique_id=559577893]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 1264.0
+offset_bottom = 174.0
+theme_override_fonts/font = ExtResource("1_ao5bj")
+theme_override_font_sizes/font_size = 72
+text = "TID_WIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thx" type="Label" parent="." unique_id=731940017]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 262.0
+offset_right = 1140.0
+offset_bottom = 544.0
+theme_override_fonts/font = ExtResource("1_ao5bj")
+theme_override_font_sizes/font_size = 36
+text = "TID_THX_VERY_MUCH"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 2
+
+[node name="Play" type="Label" parent="." unique_id=795214003]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 262.0
+offset_right = 449.0
+offset_bottom = 392.0
+theme_override_fonts/font = ExtResource("1_ao5bj")
+theme_override_font_sizes/font_size = 36
+text = "TID_PLAY_ANOTHER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1905492537]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 428.0
+offset_right = 430.0
+offset_bottom = 544.0
+theme_override_fonts/font = ExtResource("2_53jt0")
+theme_override_font_sizes/font_size = 40
+text = "TID_MAIN_MENU"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

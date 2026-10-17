@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EffectData" format=3 uid="uid://cx0vuj1dy7qtp"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_skyxe"]
+
+[resource]
+script = ExtResource("1_skyxe")
+id = "bound"
+name = "TID_BOUND"
+color = "white"
+duration_mode = 1
+default_duration = 3
+default_stacks = 1
+stacks_change_per_turn = 1
+disables_turn = true
+disable_intent = "TID_BOUND"
+metadata/_custom_type_script = "uid://b42lcmpk0fand"

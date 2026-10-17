@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RandomEventEffect" format=3 uid="uid://de1ow7kw1qh2t"]
+
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="1_fr5ex"]
+[ext_resource type="Script" uid="uid://4d070gtwhlo0" path="res://gd/event/event_effects/random_effect.gd" id="2_bnjk1"]
+[ext_resource type="Resource" uid="uid://b6yh48sdu1gjg" path="res://tres/events/event_set_value/heads.tres" id="2_w84c0"]
+[ext_resource type="Resource" uid="uid://bj44qsv7sn4g" path="res://tres/events/event_set_value/tails.tres" id="3_ell40"]
+
+[resource]
+script = ExtResource("2_bnjk1")
+effect_list = Array[ExtResource("1_fr5ex")]([ExtResource("2_w84c0"), ExtResource("3_ell40")])
+text_list = Array[StringName]([&"heads", &"tails"])
+metadata/_custom_type_script = "uid://4d070gtwhlo0"

@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://bbafjvg7n2sf2"]
+
+[ext_resource type="Script" uid="uid://xiudvp6a38pi" path="res://gd/sex/sex_animation.gd" id="1_hbakl"]
+
+[node name="SexAnimation" type="Node2D" unique_id=1692070017]
+script = ExtResource("1_hbakl")
+
+[node name="Head" type="Node2D" parent="." unique_id=2073270737]
+
+[node name="Head1" type="Sprite2D" parent="Head" unique_id=1611789825]
+visible = false
+
+[node name="Head2" type="Sprite2D" parent="Head" unique_id=1407480218]
+visible = false
+
+[node name="Head3" type="Sprite2D" parent="Head" unique_id=1929212820]
+visible = false
+
+[node name="Head4" type="Sprite2D" parent="Head" unique_id=553922753]
+visible = false
+
+[node name="Head5" type="Sprite2D" parent="Head" unique_id=1562779651]
+visible = false
+
+[node name="Body" type="Node2D" parent="." unique_id=1602899178]
+
+[node name="Body1" type="Sprite2D" parent="Body" unique_id=1970325323]
+visible = false
+
+[node name="Body2" type="Sprite2D" parent="Body" unique_id=136873508]
+visible = false
+
+[node name="Body3" type="Sprite2D" parent="Body" unique_id=640139899]
+visible = false
+
+[node name="Body4" type="Sprite2D" parent="Body" unique_id=952369524]
+visible = false
+
+[node name="Body5" type="Sprite2D" parent="Body" unique_id=340848809]
+visible = false
+
+[node name="Clothes" type="Node2D" parent="." unique_id=276799503]
+
+[node name="Clothes" type="Sprite2D" parent="Clothes" unique_id=1392556559]
+visible = false
+z_index = 1
+
+[node name="Panties" type="Node2D" parent="." unique_id=1445022870]
+
+[node name="Panties" type="Sprite2D" parent="Panties" unique_id=1596792105]
+visible = false
+z_index = 1
+
+[node name="Cum" type="Node2D" parent="." unique_id=902161071]
+
+[node name="Creampie" type="Sprite2D" parent="Cum" unique_id=129770791]
+visible = false
+
+[node name="AnalCreampie" type="Sprite2D" parent="Cum" unique_id=520478814]
+visible = false
+
+[node name="Facial" type="Sprite2D" parent="Cum" unique_id=301079972]
+visible = false
+
+[node name="Dick" type="Node2D" parent="." unique_id=547966814]
+
+[node name="1" type="Sprite2D" parent="Dick" unique_id=195031457]
+visible = false
+
+[node name="2" type="Sprite2D" parent="Dick" unique_id=1009659165]
+visible = false
+
+[node name="3" type="Sprite2D" parent="Dick" unique_id=802916448]
+visible = false
+
+[node name="4" type="Sprite2D" parent="Dick" unique_id=678830821]
+visible = false
+
+[node name="5" type="Sprite2D" parent="Dick" unique_id=1055584776]
+visible = false
+
+[node name="Cum" type="Sprite2D" parent="Dick" unique_id=1089590194]
+unique_name_in_owner = true
+visible = false

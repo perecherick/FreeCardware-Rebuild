@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="DynamicCost" format=3 uid="uid://b1byykj8cmvq"]
+
+[ext_resource type="Script" uid="uid://cwadx71pkt755" path="res://gd/cards/card_effects/dynamic_cost.gd" id="1_ntrx2"]
+
+[resource]
+script = ExtResource("1_ntrx2")
+metadata/_custom_type_script = "uid://cwadx71pkt755"

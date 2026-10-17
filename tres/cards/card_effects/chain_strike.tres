@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DamagePerStackEffect" format=3 uid="uid://bxfhygvrersqf"]
+
+[ext_resource type="Resource" uid="uid://bk3o48gibs5s6" path="res://tres/hardware/combo.tres" id="1_fnopj"]
+[ext_resource type="Script" uid="uid://cahl0dwdituk0" path="res://gd/cards/card_effects/damage_per_stack.gd" id="2_fnopj"]
+
+[resource]
+script = ExtResource("2_fnopj")
+hardware = ExtResource("1_fnopj")
+damage_per_stack = 2
+metadata/_custom_type_script = "uid://cp5r2ubl3a8fl"

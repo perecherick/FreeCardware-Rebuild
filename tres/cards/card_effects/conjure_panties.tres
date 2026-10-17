@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ChangeClothesEffect" format=3 uid="uid://do51nxe8archf"]
+
+[ext_resource type="Script" uid="uid://dd3hwo50ue68v" path="res://gd/cards/card_effects/change_clothes.gd" id="1_3mqk5"]
+
+[resource]
+script = ExtResource("1_3mqk5")
+gain_panties = true
+metadata/_custom_type_script = "uid://dd3hwo50ue68v"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://cqmelf54nwhs6"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_54rp2"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_qv4ts"]
+[ext_resource type="Texture2D" uid="uid://b86n6cgj1gtr2" path="res://img/cards/card/blowjob.png" id="2_kpgv7"]
+[ext_resource type="Resource" uid="uid://cuwq4vsel8ykr" path="res://tres/sex/blowjob.tres" id="2_mucgx"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_54rp2"]
+
+[resource]
+script = ExtResource("1_qv4ts")
+id = "blowjob"
+name = "TID_BLOWJOB_NAME"
+img = ExtResource("2_kpgv7")
+description = "TID_BLOWJOB_DESC"
+energy_cost = 1
+pp = 5
+lp = 1
+card_cost = 75
+sex_type = ExtResource("2_mucgx")
+sex_state_change = 1
+pleasure = true
+sex = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://dpgtr6bwwgyrk"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_jljki"]
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="2_13se6"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_tnx26"]
+[ext_resource type="Resource" uid="uid://crgkt6pv5tuaf" path="res://tres/events/event_effects/put_on_panties.tres" id="4_13se6"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="4_mj454"]
+
+[resource]
+script = ExtResource("4_mj454")
+text = "TID_PUT_ON"
+finish_event = true
+effects = Array[ExtResource("3_tnx26")]([ExtResource("4_13se6")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

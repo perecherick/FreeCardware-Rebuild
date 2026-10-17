@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ChangeGold" format=3 uid="uid://bykk7d8fdvn45"]
+
+[ext_resource type="Script" uid="uid://dsu1wmcmqdh2e" path="res://gd/event/event_effects/change_gold.gd" id="1_442r7"]
+
+[resource]
+script = ExtResource("1_442r7")
+amount = 50
+metadata/_custom_type_script = "uid://dsu1wmcmqdh2e"

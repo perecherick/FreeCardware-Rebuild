@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="BattleTranceEffect" format=3 uid="uid://crv37ceh2bsfm"]
+
+[ext_resource type="Script" uid="uid://csy7ihitehv8" path="res://gd/cards/card_effects/battle_trance.gd" id="1_aret5"]
+
+[resource]
+script = ExtResource("1_aret5")
+metadata/_custom_type_script = "uid://dm5f1pfmxm1qf"

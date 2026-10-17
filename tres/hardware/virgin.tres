@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://dm6xu8fci20hm"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_bwy66"]
+
+[resource]
+script = ExtResource("1_bwy66")
+id = "virgin"
+name = "TID_VIRGIN_NAME"
+description = "TID_VIRGIN_DESC"
+color = "pink"
+lewdness = -3
+hp_after_combat = 3
+lp_after_combat = -2
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

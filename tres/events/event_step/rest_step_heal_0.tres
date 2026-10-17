@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://kwwlcia02rva"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_54tr7"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_yge5c"]
+[ext_resource type="Texture2D" uid="uid://dx1t6h0a2505n" path="res://img/events/rest/heal/tile000.png" id="3_lsl4d"]
+[ext_resource type="Texture2D" uid="uid://bxyt1ax162i3o" path="res://img/events/rest/heal/tile001.png" id="4_lr07q"]
+[ext_resource type="Texture2D" uid="uid://0usrhr4ibnvq" path="res://img/events/rest/heal/tile002.png" id="5_0phdf"]
+[ext_resource type="Texture2D" uid="uid://b85c0hrul1fyo" path="res://img/events/rest/heal/tile003.png" id="6_0t215"]
+[ext_resource type="Texture2D" uid="uid://b6u1muopjd54i" path="res://img/events/rest/heal/tile004.png" id="7_o5uv5"]
+[ext_resource type="Texture2D" uid="uid://yxxwbcqtrtw6" path="res://img/events/rest/heal/tile005.png" id="8_j8gh6"]
+[ext_resource type="Texture2D" uid="uid://0nqwe6et16kd" path="res://img/events/rest/heal/tile006.png" id="9_yd36q"]
+[ext_resource type="Texture2D" uid="uid://c3w47jbx8cu5n" path="res://img/events/rest/heal/tile007.png" id="10_dt7fg"]
+[ext_resource type="Texture2D" uid="uid://b07bsns1fgvda" path="res://img/events/rest/heal/tile008.png" id="11_7r8j1"]
+[ext_resource type="Texture2D" uid="uid://4ibte22jfwjh" path="res://img/events/rest/heal/tile009.png" id="12_ybxyy"]
+[ext_resource type="Texture2D" uid="uid://drsvbb8j8ota8" path="res://img/events/rest/heal/tile010.png" id="13_r0hfl"]
+[ext_resource type="Texture2D" uid="uid://c68l1newrdnvg" path="res://img/events/rest/heal/tile011.png" id="14_q6qt6"]
+[ext_resource type="Texture2D" uid="uid://cpn5cutwowb03" path="res://img/events/rest/heal/tile012.png" id="15_5dina"]
+[ext_resource type="Texture2D" uid="uid://4p8isfhjur5r" path="res://img/events/rest/heal/tile013.png" id="16_07up5"]
+[ext_resource type="Texture2D" uid="uid://bmp1o4yilwuma" path="res://img/events/rest/heal/tile014.png" id="17_lfwsd"]
+[ext_resource type="Texture2D" uid="uid://cnq2dn7m3ufon" path="res://img/events/rest/heal/tile015.png" id="18_0jlwp"]
+[ext_resource type="Texture2D" uid="uid://dec70fcxiux2i" path="res://img/events/rest/heal/tile016.png" id="19_tfp7p"]
+[ext_resource type="Texture2D" uid="uid://bpmom10fp38ox" path="res://img/events/rest/heal/tile017.png" id="20_k42q1"]
+[ext_resource type="Texture2D" uid="uid://bnj3afaam2xk" path="res://img/events/rest/heal/tile018.png" id="21_6c5ol"]
+[ext_resource type="Texture2D" uid="uid://ku6s6c4k6o1n" path="res://img/events/rest/heal/tile019.png" id="22_w6yfc"]
+[ext_resource type="Texture2D" uid="uid://bse6cj6pqhrct" path="res://img/events/rest/heal/tile020.png" id="23_fcths"]
+[ext_resource type="Texture2D" uid="uid://byrjat5dka6yk" path="res://img/events/rest/heal/tile021.png" id="24_nntvf"]
+[ext_resource type="Texture2D" uid="uid://duv3epbm2jwqc" path="res://img/events/rest/heal/tile022.png" id="25_mubul"]
+[ext_resource type="Texture2D" uid="uid://c65t2tn7xpog0" path="res://img/events/rest/heal/tile023.png" id="26_hlrka"]
+[ext_resource type="Texture2D" uid="uid://ddhdc66tok6km" path="res://img/events/rest/heal/tile024.png" id="27_yy4lr"]
+[ext_resource type="Texture2D" uid="uid://q1sxtj0ae7ke" path="res://img/events/rest/heal/tile025.png" id="28_6c0hw"]
+[ext_resource type="Texture2D" uid="uid://rweux7udyp7r" path="res://img/events/rest/heal/tile026.png" id="29_rkw22"]
+[ext_resource type="Texture2D" uid="uid://301tjwxn5efq" path="res://img/events/rest/heal/tile027.png" id="30_4bjw7"]
+[ext_resource type="Texture2D" uid="uid://d1mc578yv1krc" path="res://img/events/rest/heal/tile028.png" id="31_tjp8t"]
+[ext_resource type="Texture2D" uid="uid://cyke7f0bhsg3y" path="res://img/events/rest/heal/tile029.png" id="32_ykuur"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="33_3s6r4"]
+
+[resource]
+script = ExtResource("33_3s6r4")
+id = &"rest_step_heal_0"
+text = "TID_REST_HEAL_0"
+frames = Array[Texture2D]([ExtResource("3_lsl4d"), ExtResource("4_lr07q"), ExtResource("5_0phdf"), ExtResource("6_0t215"), ExtResource("7_o5uv5"), ExtResource("8_j8gh6"), ExtResource("9_yd36q"), ExtResource("10_dt7fg"), ExtResource("11_7r8j1"), ExtResource("12_ybxyy"), ExtResource("13_r0hfl"), ExtResource("14_q6qt6"), ExtResource("15_5dina"), ExtResource("16_07up5"), ExtResource("17_lfwsd"), ExtResource("18_0jlwp"), ExtResource("19_tfp7p"), ExtResource("20_k42q1"), ExtResource("21_6c5ol"), ExtResource("22_w6yfc"), ExtResource("23_fcths"), ExtResource("24_nntvf"), ExtResource("25_mubul"), ExtResource("26_hlrka"), ExtResource("27_yy4lr"), ExtResource("28_6c0hw"), ExtResource("29_rkw22"), ExtResource("30_4bjw7"), ExtResource("31_tjp8t"), ExtResource("32_ykuur")])
+next_step = &"rest_step_heal_1"
+metadata/_custom_type_script = "uid://d023vifri6y0k"

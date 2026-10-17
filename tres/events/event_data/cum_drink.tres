@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://d4hwtsglhotb4"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_ohqsj"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_0j68k"]
+[ext_resource type="Resource" uid="uid://cciwol57ceqna" path="res://tres/events/event_step/cum_drink_step_0.tres" id="3_0j68k"]
+[ext_resource type="Resource" uid="uid://dl0vrhqwedyii" path="res://tres/events/event_step/cum_drink_sip_0.tres" id="4_3e5qg"]
+[ext_resource type="Resource" uid="uid://dkh5rkbk0arkh" path="res://tres/events/event_step/cum_drink_another_sip.tres" id="6_fd3dm"]
+[ext_resource type="Resource" uid="uid://hjjcc5ixmcjs" path="res://tres/events/event_step/cum_drink_chug.tres" id="8_rseab"]
+
+[resource]
+script = ExtResource("1_ohqsj")
+id = &"cum_drink"
+steps = Array[ExtResource("2_0j68k")]([ExtResource("3_0j68k"), ExtResource("4_3e5qg"), ExtResource("8_rseab"), ExtResource("6_fd3dm")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

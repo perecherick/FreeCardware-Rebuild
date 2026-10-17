@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SexData" format=3 uid="uid://c1tw20aqkpy4n"]
+
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="1_mk1hr"]
+
+[resource]
+script = ExtResource("1_mk1hr")
+id = &"slime_enter"
+sex_type = 1
+max_state = 1
+return_state = 1
+metadata/_custom_type_script = "uid://c0l5rrxqmaadr"

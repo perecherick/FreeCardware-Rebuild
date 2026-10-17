@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://dpnboifblr1p"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_1j1dp"]
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="2_5ma4b"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_ujpw5"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="4_5j7fg"]
+
+[resource]
+script = ExtResource("4_5j7fg")
+text = "TID_EQUIP"
+next_step = &"tollbooth_step_equip"
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

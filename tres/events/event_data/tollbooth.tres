@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://cawsl6sh27j6n"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_tgv64"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_jji63"]
+[ext_resource type="Resource" uid="uid://cb87xwf0167fh" path="res://tres/events/event_step/tollbooth_step_0.tres" id="3_w5mo0"]
+[ext_resource type="Resource" uid="uid://dyxg34pd80htl" path="res://tres/events/event_step/tollbooth_step_1.tres" id="4_h8h7l"]
+[ext_resource type="Resource" uid="uid://cpu51kr7v2j28" path="res://tres/events/event_step/tollbooth_step_2.tres" id="5_nmmra"]
+[ext_resource type="Resource" uid="uid://ctkdca15t4ye5" path="res://tres/events/event_step/tollbooth_step_bribe.tres" id="6_jkl4p"]
+[ext_resource type="Resource" uid="uid://tfr1xh7ohgxj" path="res://tres/events/event_step/tollbooth_step_equip.tres" id="7_5jpya"]
+[ext_resource type="Resource" uid="uid://r41x8rg3o3by" path="res://tres/events/event_step/tollbooth_step_panties_0.tres" id="7_aofxs"]
+[ext_resource type="Resource" uid="uid://dny245xsf33bq" path="res://tres/events/event_step/tollbooth_step_ignore.tres" id="8_8kdvw"]
+[ext_resource type="Resource" uid="uid://bg0qexrq3d2r2" path="res://tres/events/event_step/tollbooth_step_panties_1.tres" id="8_423wu"]
+[ext_resource type="Resource" uid="uid://b886xkehwhphd" path="res://tres/events/event_step/tollbooth_step_refuse_0.tres" id="9_5jpya"]
+[ext_resource type="Resource" uid="uid://blmty0rx0hd78" path="res://tres/events/event_step/tollbooth_step_lose.tres" id="9_abq1q"]
+[ext_resource type="Resource" uid="uid://cfl3ciaeyf53q" path="res://tres/events/event_step/tollbooth_step_refuse_1.tres" id="10_8kdvw"]
+[ext_resource type="Resource" uid="uid://bfrwv28okwcrb" path="res://tres/events/event_step/tollbooth_step_refuse_2.tres" id="14_adlhn"]
+[ext_resource type="Resource" uid="uid://cac3mduues8o8" path="res://tres/events/event_step/tollbooth_step_win_0.tres" id="15_xirt5"]
+[ext_resource type="Resource" uid="uid://dvf7kfbdcglag" path="res://tres/events/event_step/tollbooth_step_win_1.tres" id="16_vqvgi"]
+
+[resource]
+script = ExtResource("1_tgv64")
+id = &"tollbooth"
+steps = Array[ExtResource("2_jji63")]([ExtResource("3_w5mo0"), ExtResource("4_h8h7l"), ExtResource("5_nmmra"), ExtResource("6_jkl4p"), ExtResource("7_5jpya"), ExtResource("8_8kdvw"), ExtResource("9_abq1q"), ExtResource("7_aofxs"), ExtResource("8_423wu"), ExtResource("9_5jpya"), ExtResource("10_8kdvw"), ExtResource("14_adlhn"), ExtResource("15_xirt5"), ExtResource("16_vqvgi")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

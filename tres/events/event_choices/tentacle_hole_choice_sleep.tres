@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://nfbtfv1jiebk"]
+
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_hsie3"]
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="2_keub5"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_21tny"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="4_4pag3"]
+[ext_resource type="Resource" uid="uid://ba78iyg70v1th" path="res://tres/events/event_effects/heal_3.tres" id="4_keub5"]
+
+[resource]
+script = ExtResource("4_4pag3")
+text = "TID_TAKE_A_NAP"
+next_step = &"tentacle_hole_step_sleep_0"
+effects = Array[ExtResource("3_21tny")]([ExtResource("4_keub5")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

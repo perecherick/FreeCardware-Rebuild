@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://cfi5emnvfaotd"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_7i74h"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_ft0g4"]
+[ext_resource type="Resource" uid="uid://cxh5s5x5cawqe" path="res://tres/events/event_effects/onahole_orgasm_max_lp.tres" id="3_ft0g4"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_t4gi6"]
+
+[resource]
+script = ExtResource("3_t4gi6")
+id = &"onahole_step_orgasming_5"
+text = "TID_ONAHOLE_ORGASMING_5"
+loop = false
+next_step = &"onahole_step_orgasming_6"
+effects = Array[ExtResource("2_ft0g4")]([ExtResource("3_ft0g4")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

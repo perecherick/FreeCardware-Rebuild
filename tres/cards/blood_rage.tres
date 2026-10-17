@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dvwo1icas3rfw"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_id16g"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="1_wdlly"]
+[ext_resource type="Resource" uid="uid://8mufvsbcasg1" path="res://tres/cards/card_effects/blood_rage.tres" id="2_tdhjm"]
+[ext_resource type="Texture2D" uid="uid://bocbumtmuv6ik" path="res://img/cards/card/blood_rage.png" id="3_tdhjm"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="4_44uny"]
+
+[resource]
+script = ExtResource("1_wdlly")
+id = "blood_rage"
+name = "TID_BLOOD_RAGE_NAME"
+img = ExtResource("3_tdhjm")
+description = "TID_BLOOD_RAGE_DESC"
+hover_description = "TID_BLOOD_RAGE_HOVER_DESC"
+energy_cost = 1
+damage = 4
+hp = 4
+card_cost = 100
+card_effects = Array[ExtResource("1_id16g")]([ExtResource("2_tdhjm")])
+attack = true
+card_type = 3
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

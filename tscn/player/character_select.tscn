@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://doy74m07eqnqt"]
+
+[ext_resource type="Script" uid="uid://dwim4a8xsreu1" path="res://gd/characters/character_select.gd" id="1_lcl27"]
+[ext_resource type="PackedScene" uid="uid://dg4uitjqffpta" path="res://tscn/cards/card.tscn" id="3_263h0"]
+[ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="7_g2kog"]
+[ext_resource type="PackedScene" uid="uid://cwlq63tjog0i8" path="res://tscn/player/character.tscn" id="7_qpsva"]
+[ext_resource type="PackedScene" uid="uid://tc7t8asxhpw2" path="res://tscn/player/player_hud.tscn" id="8_263h0"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="9_ehda4"]
+
+[node name="CharacterSelect" type="Control" unique_id=2029769746]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lcl27")
+character_scene = ExtResource("7_qpsva")
+card_scene = ExtResource("3_263h0")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1452857894]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="CharContainer" type="HBoxContainer" parent="." unique_id=893053483]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(682, 446)
+layout_mode = 0
+offset_right = 672.0
+offset_bottom = 1080.0
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="PlayerHud" parent="." unique_id=636175873 instance=ExtResource("8_263h0")]
+layout_mode = 1
+
+[node name="Button" type="Button" parent="." unique_id=1257790037]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 711.0
+offset_right = 1312.0
+offset_bottom = 879.0
+theme_override_fonts/font = ExtResource("7_g2kog")
+theme_override_font_sizes/font_size = 80
+text = "TID_CHARACTER_SELECT"
+autowrap_mode = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1867767470]
+custom_minimum_size = Vector2(630, 0)
+layout_mode = 0
+offset_left = 682.0
+offset_top = 250.0
+offset_right = 1312.0
+offset_bottom = 563.0
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer" unique_id=594942396]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/v_separation = 36
+columns = 5
+
+[node name="Label" type="Label" parent="." unique_id=2127656188]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 143.0
+offset_right = 1312.0
+offset_bottom = 215.0
+theme_override_fonts/font = ExtResource("9_ehda4")
+theme_override_font_sizes/font_size = 48
+text = "TID_STARTING_DECK"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_select_character"]

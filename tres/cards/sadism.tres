@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://kexvqhqvqgmq"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_866i2"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_vhhvh"]
+[ext_resource type="Resource" uid="uid://smhiqlg3xox1" path="res://tres/cards/card_effects/sadism.tres" id="2_yqwio"]
+[ext_resource type="Resource" uid="uid://be4kvbnwq4fmf" path="res://tres/cards/card_effects/sadism_limits.tres" id="3_c1ypu"]
+[ext_resource type="Texture2D" uid="uid://djswei32u3va0" path="res://img/cards/card/sadism.png" id="3_xsx4j"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_yqwio"]
+
+[resource]
+script = ExtResource("2_vhhvh")
+id = "sadism"
+name = "TID_SADISM_NAME"
+img = ExtResource("3_xsx4j")
+description = "TID_SADISM_DESC"
+hover_description = "TID_SADISM_HOVER_DESC"
+energy_cost = 1
+damage = 1
+lp = 1
+description_colors = Dictionary[StringName, Color]({
+&"maxdmg": Color(1, 0.64705884, 0, 1)
+})
+card_effects = Array[ExtResource("1_866i2")]([ExtResource("2_yqwio"), ExtResource("3_c1ypu")])
+attack = true
+card_type = 4
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

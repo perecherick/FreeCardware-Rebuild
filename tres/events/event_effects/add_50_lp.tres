@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ChangeStats" format=3 uid="uid://0m3rhc4y8bg3"]
+
+[ext_resource type="Script" uid="uid://bexy0uk3qygd0" path="res://gd/event/event_effects/change_stats.gd" id="1_nhdev"]
+
+[resource]
+script = ExtResource("1_nhdev")
+current_lp = 50
+metadata/_custom_type_script = "uid://bexy0uk3qygd0"

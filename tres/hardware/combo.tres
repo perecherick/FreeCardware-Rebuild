@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://bk3o48gibs5s6"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_d1ue6"]
+
+[resource]
+script = ExtResource("1_d1ue6")
+id = "combo"
+name = "TID_COMBO"
+description = "TID_COMBO_DESC"
+color = "aqua"
+stackable = true
+max_stacks = 6
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="GainEnergyEffect" format=3 uid="uid://1rclnbqoty1h"]
+
+[ext_resource type="Script" uid="uid://bwbnnoxo0rssr" path="res://gd/cards/card_effects/gain_energy.gd" id="1_3m7gb"]
+
+[resource]
+script = ExtResource("1_3m7gb")
+amount = 2
+metadata/_custom_type_script = "uid://bwbnnoxo0rssr"

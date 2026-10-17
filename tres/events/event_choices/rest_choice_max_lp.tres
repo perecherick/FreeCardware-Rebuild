@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://dv83gsjttpjv1"]
+
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="1_klma5"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_pt4n6"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="3_d67x2"]
+[ext_resource type="Resource" uid="uid://vc8g6q0i06x4" path="res://tres/events/event_effects/rest_add_max_lp.tres" id="3_pt4n6"]
+
+[resource]
+script = ExtResource("3_d67x2")
+text = "TID_MAX_LP"
+next_step = &"rest_step_lp"
+effects = Array[ExtResource("2_pt4n6")]([ExtResource("3_pt4n6")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

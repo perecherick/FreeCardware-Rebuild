@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://dvyevpua4hhm0"]
+
+[ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_vy25g"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_yk22e"]
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="3_47ec1"]
+[ext_resource type="Script" uid="uid://coasviibakvjg" path="res://gd/enemy/enemy_data.gd" id="3_hdcjm"]
+[ext_resource type="Texture2D" uid="uid://c2etyd0tup2pq" path="res://img/enemies/event/elf.png" id="5_727jg"]
+
+[sub_resource type="Resource" id="Resource_5a833"]
+script = ExtResource("3_47ec1")
+pp = 8
+self_pp = 4
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_uei8w"]
+script = ExtResource("2_yk22e")
+intent = "TID_PAT"
+actions = Array[ExtResource("3_47ec1")]([SubResource("Resource_5a833")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_cq7tc"]
+script = ExtResource("3_47ec1")
+pp = 10
+self_pp = 5
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_h6b58"]
+script = ExtResource("2_yk22e")
+intent = "TID_GROPE"
+actions = Array[ExtResource("3_47ec1")]([SubResource("Resource_cq7tc")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_y5t7p"]
+script = ExtResource("3_47ec1")
+pp = 8
+self_pp = 4
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_k3eqc"]
+script = ExtResource("2_yk22e")
+intent = "TID_PAT"
+actions = Array[ExtResource("3_47ec1")]([SubResource("Resource_y5t7p")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_x0lon"]
+script = ExtResource("3_47ec1")
+pp = 8
+self_pp = 4
+sex_value = 1
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_vim4a"]
+script = ExtResource("2_yk22e")
+intent = "TID_THRUST"
+actions = Array[ExtResource("3_47ec1")]([SubResource("Resource_x0lon")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[sub_resource type="Resource" id="Resource_2awm0"]
+script = ExtResource("3_47ec1")
+strip_panties = true
+metadata/_custom_type_script = "uid://bh106js5jebrk"
+
+[sub_resource type="Resource" id="Resource_dk8ac"]
+script = ExtResource("2_yk22e")
+intent = "TID_STEAL_PANTIES"
+actions = Array[ExtResource("3_47ec1")]([SubResource("Resource_2awm0")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"
+
+[resource]
+script = ExtResource("3_hdcjm")
+id = "elf"
+name = "TID_ELF"
+texture = ExtResource("5_727jg")
+type = 4
+max_hp = 45
+starting_hp = 45
+max_pp = 50
+starting_pp = 35
+move_list = Array[ExtResource("2_yk22e")]([SubResource("Resource_uei8w"), SubResource("Resource_h6b58"), SubResource("Resource_k3eqc")])
+player_initiated_sex_moves = Array[ExtResource("2_yk22e")]([SubResource("Resource_vim4a")])
+player_orgasm_moves = Array[ExtResource("2_yk22e")]([SubResource("Resource_dk8ac")])
+metadata/_custom_type_script = "uid://coasviibakvjg"

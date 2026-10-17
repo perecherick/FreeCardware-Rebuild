@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ClothesSpiritEffect" format=3 uid="uid://capklln6trxy"]
+
+[ext_resource type="Script" uid="uid://bdu4vf1grdy1t" path="res://gd/cards/card_effects/clothes_spirit.gd" id="1_8fhin"]
+
+[resource]
+script = ExtResource("1_8fhin")
+damage_per_clothes = 0
+damage_per_torn_clothes = 0
+damage_per_panties = 50
+metadata/_custom_type_script = "uid://bdu4vf1grdy1t"

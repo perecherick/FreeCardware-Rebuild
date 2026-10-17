@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://b1nniy48x05h"]
+
+[ext_resource type="Script" uid="uid://bfo4yym74dbb6" path="res://gd/map/act_transition.gd" id="1_pctga"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="2_0w7lj"]
+
+[sub_resource type="Animation" id="Animation_pctga"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect/Label:theme_override_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mmp6g"]
+resource_name = "act_transition"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7333, 1.5333333, 1.7333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.7333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect/Label:theme_override_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.5333333, 1.7333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cpoll"]
+_data = {
+&"RESET": SubResource("Animation_pctga"),
+&"act_transition": SubResource("Animation_mmp6g")
+}
+
+[node name="ActTransition" type="Control" unique_id=188590972]
+visible = false
+z_index = 100
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_pctga")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1543290623]
+layout_mode = 0
+offset_left = 462.0
+offset_top = 432.0
+offset_right = 822.0
+offset_bottom = 622.0
+pivot_offset = Vector2(180, 95)
+color = Color(0, 0, 0, 0)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1562451451]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 360.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("2_0w7lj")
+theme_override_font_sizes/font_size = 120
+text = "ACT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=681403200]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_cpoll")

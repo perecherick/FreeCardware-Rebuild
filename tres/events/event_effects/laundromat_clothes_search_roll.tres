@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RandomEventEffect" format=3 uid="uid://bydiefnxdsnjf"]
+
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="1_ok0so"]
+[ext_resource type="Script" uid="uid://4d070gtwhlo0" path="res://gd/event/event_effects/random_effect.gd" id="2_4h4mc"]
+[ext_resource type="Resource" uid="uid://bvnoljfmsptqj" path="res://tres/events/event_set_value/laundromat_found_nothing.tres" id="2_fisje"]
+[ext_resource type="Resource" uid="uid://daa7a4j23o8fg" path="res://tres/events/event_set_value/laundromat_found_clothes.tres" id="3_qwaqa"]
+[ext_resource type="Resource" uid="uid://bde1sy0k2un7q" path="res://tres/events/event_set_value/laundromat_found_panties.tres" id="4_cxbh2"]
+
+[resource]
+script = ExtResource("2_4h4mc")
+effect_list = Array[ExtResource("1_ok0so")]([ExtResource("2_fisje"), ExtResource("2_fisje"), ExtResource("3_qwaqa"), ExtResource("4_cxbh2")])
+text_list = Array[StringName]([&"nothing", &"nothing", &"clothes", &"panties"])
+metadata/_custom_type_script = "uid://4d070gtwhlo0"

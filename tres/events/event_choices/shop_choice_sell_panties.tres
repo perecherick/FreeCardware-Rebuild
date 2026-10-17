@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EventChoice" format=3 uid="uid://c8dclsa3u12jh"]
+
+[ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="1_066up"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_l60x8"]
+[ext_resource type="Resource" uid="uid://ckrqgr4mmf2f2" path="res://tres/events/event_conditions/has_panties.tres" id="2_yxtj2"]
+[ext_resource type="Resource" uid="uid://badb0d2mwnmdv" path="res://tres/events/event_conditions/shop_condition_sell_panties_lewdness.tres" id="3_lrwvx"]
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="3_yxtj2"]
+[ext_resource type="Resource" uid="uid://4iac10s13q36" path="res://tres/events/event_effects/remove_panties.tres" id="5_mlei0"]
+[ext_resource type="Resource" uid="uid://dx0n134ngseng" path="res://tres/events/event_effects/shop_sell_panties_gold.tres" id="6_kjl1x"]
+
+[resource]
+script = ExtResource("3_yxtj2")
+text = "TID_SELL_PANTIES"
+conditions = Array[ExtResource("1_066up")]([ExtResource("2_yxtj2"), ExtResource("3_lrwvx")])
+effects = Array[ExtResource("2_l60x8")]([ExtResource("5_mlei0"), ExtResource("6_kjl1x")])
+metadata/_custom_type_script = "uid://caycj4xh6qpbk"

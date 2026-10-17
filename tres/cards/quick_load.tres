@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bea78aauvu1yn"]
+
+[ext_resource type="Script" uid="uid://dm5f1pfmxm1qf" path="res://gd/cards/card_effect.gd" id="1_wvegv"]
+[ext_resource type="Resource" uid="uid://cij7f760r0olh" path="res://tres/cards/card_effects/quick_load.tres" id="2_5v1n7"]
+[ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="2_shuik"]
+[ext_resource type="Script" uid="uid://c0l5rrxqmaadr" path="res://gd/sex/sex_data.gd" id="3_5v1n7"]
+[ext_resource type="Texture2D" uid="uid://61d3jmk2ma8s" path="res://img/cards/card/quick_load.png" id="3_wq3l1"]
+
+[resource]
+script = ExtResource("2_shuik")
+id = "quick_load"
+name = "TID_QUICK_LOAD_NAME"
+img = ExtResource("3_wq3l1")
+description = "TID_QUICK_LOAD_DESC"
+energy_cost = 1
+card_cost = 75
+card_effects = Array[ExtResource("1_wvegv")]([ExtResource("2_5v1n7")])
+misc = true
+card_type = 3
+target_type = 1
+metadata/_custom_type_script = "uid://dd0ln3fcnoq7e"

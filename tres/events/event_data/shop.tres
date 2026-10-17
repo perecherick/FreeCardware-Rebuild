@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EventData" format=3 uid="uid://c1tf8fclp0fj3"]
+
+[ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_v34ek"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_tn0ry"]
+[ext_resource type="Resource" uid="uid://dhn070qtrasol" path="res://tres/events/event_step/shop_step_0.tres" id="3_tn0ry"]
+
+[resource]
+script = ExtResource("1_v34ek")
+id = &"shop"
+steps = Array[ExtResource("2_tn0ry")]([ExtResource("3_tn0ry")])
+metadata/_custom_type_script = "uid://clolljx3cfc5f"

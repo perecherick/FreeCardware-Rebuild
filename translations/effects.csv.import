@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dkax8rjx2gnhe"
+
+[deps]
+
+files=["res://translations/effects.en.translation", "res://translations/effects.ja.translation", "res://translations/effects.zh.translation", "res://translations/effects.es.translation", "res://translations/effects.ko.translation", "res://translations/effects.ru.translation", "res://translations/effects.de.translation"]
+
+source_file="res://translations/effects.csv"
+dest_files=["res://translations/effects.en.translation", "res://translations/effects.ja.translation", "res://translations/effects.zh.translation", "res://translations/effects.es.translation", "res://translations/effects.ko.translation", "res://translations/effects.ru.translation", "res://translations/effects.de.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

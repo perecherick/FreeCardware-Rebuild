@@ -1,0 +1,413 @@
+keys,en,ja,zh,es,ko,ru,de
+CONTINUE_RUN,Continue Run,続きから,继续游戏,Continuar,계속하기,Продолжить,Fortsetzen
+NEW_RUN,New Run,新しく始める,开始新游戏,Nueva partida,새 게임,Новая игра,Neues Spiel
+QUIT,Quit,終了,退出,Salir,종료,Выйти,Beenden
+CREDITS,Credits,クレジット,制作人员,Créditos,크레딧,Титры,Mitwirkende
+SETTINGS,Settings,設定,设置,Ajustes,설정,Настройки,Einstellungen
+SET_MASTER_VOLUME,Master volume,全体音量,主音量,Volumen general,전체 음량,Общая громкость,Master-Lautstärke
+SET_MUSIC_VOLUME,Music volume,音楽の音量,音乐音量,Volumen de música,음악 음량,Громкость музыки,Musiklautstärke
+SET_SFX_VOLUME,SFX volume,効果音の音量,音效音量,Volumen de efectos,효과음 음량,Громкость эффектов,Effektlautstärke
+SET_SEX_VOLUME,Sex volume,セックス音量,性爱音量,Volumen sexual,성적 효과음 음량,Громкость развратных звуков,Sex-Lautstärke
+SET_SCREEN_MODE,Screen Mode,画面モード,屏幕模式,Modo de pantalla,화면 모드,Режим экрана,Bildschirmmodus
+SET_SCREEN_WINDOWED,Windowed,ウィンドウ,窗口模式,Ventana,창 모드,В окне,Fenster
+SET_SCREEN_FULLSCREEN,Fullscreen,フルスクリーン,全屏,Pantalla completa,전체 화면,Полноэкранный,Vollbild
+SET_SCREEN_BORDERLESS,Borderless,ボーダーレス,无边框,Sin bordes,테두리 없음,В окне без рамки,Rahmenlos
+SET_LANGUAGE,Language,言語,语言,Idioma,언어,Язык,Sprache
+SET_CHEAT_PLACEHOLDER,Cheat code here: ,チートコードはこちら: ,作弊码写这里: ,Código aquí: ,치트 코드 여기에: ,Чит-код сюда: ,Cheatcode hier: 
+SET_EXPERIMENTAL,Experimental settings:,実験的な設定:,实验性设置:,Ajustes experimentales:,실험적 설정:,Экспериментальные настройки:,Experimentelle Einstellungen:
+SET_USE_SILICONE_SPRITE,Use silicone sprite,シリコンスプライトを使う,使用硅胶精灵,Usar sprite de silicona,실리콘 스프라이트 사용,Показывать спрайт с силиконовой грудью,Silikon-Sprite verwenden
+MENU_BACK,Back,戻る,返回,Volver,뒤로,Назад,Zurück
+CREDITS_GAME_BY,A game by,制作,游戏制作,Un juego de,제작,Игра от,Ein Spiel von
+CREDITS_MODDED_BY,Modded by:,Mod制作:,Mod 制作:,Modificado por:,모드 제작:,Мод сделали:,Mod von:
+CREDITS_VA_PACKS,VA Packs:,音声パック:,语音包:,Paquetes de voz:,음성 팩:,Паки озвучки:,Voice-Packs:
+CREDITS_SECRET_CODE,Secret code:,秘密のコード:,秘密代码:,Código secreto:,비밀 코드:,Секретный код:,Geheimcode:
+TOGGLE_DEBUG,"SHOW/HIDE
+DEBUG MENU","デバッグメニュー
+表示/非表示","显示/隐藏
+调试菜单","MOSTRAR/OCULTAR
+MENÚ DE DEPURACIÓN","디버그 메뉴
+표시/숨기기","ПОКАЗАТЬ/СКРЫТЬ
+МЕНЮ ОТЛАДКИ","DEBUG-MENÜ
+EIN-/AUSBLENDEN"
+DEBUG_MENU,DEBUG MENU,デバッグメニュー,调试菜单,MENÚ DE DEPURACIÓN,디버그 메뉴,МЕНЮ ОТЛАДКИ,DEBUG-MENÜ
+ADD_CARD_TO_DECK,ADD CARD TO DECK,デッキにカードを追加,将卡牌加入卡组,AÑADIR CARTA AL MAZO,덱에 카드 추가,ДОБАВИТЬ КАРТУ В КОЛОДУ,KARTE ZUM DECK HINZUFÜGEN
+REMOVE_CARD_FROM_DECK,REMOVE CARD FROM DECK,デッキからカードを削除,从卡组移除卡牌,QUITAR CARTA DEL MAZO,덱에서 카드 제거,УДАЛИТЬ КАРТУ ИЗ КОЛОДЫ,KARTE AUS DEM DECK ENTFERNEN
+EVENT_MENU,ALL EVENTS,すべてのイベント,所有事件,TODOS LOS EVENTOS,모든 이벤트,ВСЕ СОБЫТИЯ,ALLE EREIGNISSE
+SEX_MENU,ALL SEX SCENES,すべてのセックスシーン,所有性爱场景,TODAS LAS ESCENAS SEXUALES,모든 섹스 장면,ВСЕ СЕКС-СЦЕНЫ,ALLE SEXSZENEN
+STATS_MENU,STATS MENU,ステータスメニュー,状态菜单,MENÚ DE ESTADÍSTICAS,스탯 메뉴,МЕНЮ СТАТОВ,STATUSMENÜ
+TOGGLE_CLOTHES,ADD/REMOVE CLOTHES,服を着せる/脱がす,添加/移除衣服,AÑADIR/QUITAR ROPA,옷 추가/제거,ДОБАВИТЬ/УБРАТЬ ОДЕЖДУ,KLEIDUNG AN-/AUSZIEHEN
+TOGGLE_TORN_CLOTHES,TORN/FIX CLOTHES,服を破る/直す,撕破/修复衣服,ROMPER/ARREGLAR ROPA,옷 찢기/수선,ПОРВАТЬ/ПОЧИНИТЬ ОДЕЖДУ,KLEIDUNG ZERREISSEN/REPARIEREN
+TOGGLE_PANTIES,ADD/REMOVE PANTIES,パンツを着せる/脱がす,添加/移除内裤,AÑADIR/QUITAR BRAGAS,팬티 추가/제거,ДОБАВИТЬ/УБРАТЬ ТРУСИКИ,HÖSCHEN AN-/AUSZIEHEN
+COMBAT_MENU,ENEMY MENU,敵メニュー,敌人菜单,MENÚ DE ENEMIGOS,적 메뉴,МЕНЮ ВРАГОВ,GEGNERMENÜ
+SUMMON_ENEMY,SUMMON ENEMY TO COMBAT,敵を戦闘に召喚,召唤敌人加入战斗,INVOCAR ENEMIGO AL COMBATE,전투에 적 소환,ДОБАВИТЬ ВРАГА В БОЙ,GEGNER IN DEN KAMPF RUFEN
+INSTAWIN_COMBAT,INSTAWIN COMBAT,戦闘に即勝利,立即赢得战斗,VICTORIA INSTANTÁNEA,전투 즉시 승리,МГНОВЕННАЯ ПОБЕДА,KAMPF SOFORT GEWINNEN
+STATUSES_MENU,"OPEN STATUSES MENU
+HOVER OVER THEM TO SEE THEIR EFFECTS
+↓↓↓↓↓↓↓↓↓↓↓↓↓","ステータスメニューを開く
+カーソルを合わせると効果を表示
+↓↓↓↓↓↓↓↓↓↓↓↓↓","打开状态菜单
+悬停查看效果
+↓↓↓↓↓↓↓↓↓↓↓↓↓","ABRIR MENÚ DE ESTADOS
+PASA EL CURSOR PARA VER SUS EFECTOS
+↓↓↓↓↓↓↓↓↓↓↓↓↓","상태 메뉴 열기
+마우스를 올려 효과 확인
+↓↓↓↓↓↓↓↓↓↓↓↓↓","ОТКРЫТЬ МЕНЮ ЭФФЕКТОВ
+НАВЕДИСЬ НА ЭФФЕКТ ЧТОБЫ УВИДЕТЬ ЕГО ОПИСАНИЕ
+↓↓↓↓↓↓↓↓↓↓↓↓↓","STATUSMENÜ ÖFFNEN
+MIT DER MAUS DARÜBER FAHREN UM EFFEKTE ZU SEHEN
+↓↓↓↓↓↓↓↓↓↓↓↓↓"
+NORMAL_RUN,Normal run,ノーマルラン,普通模式,Partida normal,일반 런,Обычный,Normaler Lauf
+PURE_RUN,Pure run,純潔ラン,纯洁模式,Partida pura,순수 런,Непорочный,Reiner Lauf
+LEWD_RUN,Lewd run,淫らなラン,淫荡模式,Partida lasciva,음란한 런,Развратный,Lüsterner Lauf
+RUN_DIFFICULTY,Difficulty,難易度,难度,Dificultad,난이도,Сложность,Schwierigkeit
+DIF_NORMAL,normal,ノーマル,普通,normal,보통,нормальная,normal
+DIF_HARD,hard,ハード,困难,difícil,어려움,сложная,schwer
+DIF_INSANE,insane,インセイン,疯狂,demente,광기,безумная,wahnsinnig
+IS_ENDLESS,Endless run,エンドレスラン,无尽模式,Partida infinita,무한 런,Бесконечный забег,Endloser Lauf
+NORMAL_RUN_DESCRIPTION,"No restrictions. Build any deck you can imagine, experiment, dominate and (if possible) have fun!","制限なし。思いつく限りのデッキを組み、試し、支配し、（できれば）楽しもう！","没有严格限制。组出你能想到的任何卡组，尽情实验、支配战局，并且（如果可以的话）玩得开心！","Sin restricciones. Crea cualquier mazo que puedas imaginar, experimenta, domina y (si es posible) diviértete.","제한 없음. 상상할 수 있는 어떤 덱이든 만들고, 실험하고, 지배하고, (가능하다면) 즐겨 봐!","Без строгих ограничений. Собирай любую колоду, экспериментируй, доминируй, и (по возможности) веселись!","Keine Einschränkungen. Baue jedes Deck, das du dir vorstellen kannst, experimentiere, dominiere und hab (wenn möglich) Spaß!"
+PURE_RUN_DESCRIPTION,"Hit, smash, make them regret that you crossed their path, and most importantly, try not to lose your chastity in this rotten world of perversions.
+
+Rules:
+Sex cards cannot be used.
+LP cards do not deal PP to enemies.
+Damage depends on lewdness points. While lewdness is below zero, damage is increased by 20%, but damage is reduced by 3% for each lewdness point, up to 50%.
+During any kind of sex, lewdness cannot drop below 0.
+The lewdness penalty during sex is increased from 1 to 2.
+Some events are unavailable.","殴れ、壊せ、君が彼らの行く手に現れたことを後悔させろ。そして何より、この腐りきった変態の世界で貞操を失わないように努めろ。
+
+ルール：
+セックスカードは使用できない。
+LPカードは敵にPPを与えない。
+与えるダメージはLewdness値に依存する。Lewdnessが0未満の間、ダメージは20%増加するが、Lewdness1ごとにダメージが3%減少し、最大50%まで減少する。
+あらゆるセックス中、Lewdnessは0未満にならない。
+セックス中のLewdnessペナルティが1から2に増加する。
+一部のイベントは利用できない。","打、砸，让他们后悔遇上了你，最重要的是，在这个腐朽的变态世界里，尽量别失去你的贞操。
+
+规则：
+不能使用性爱卡牌。
+LP卡牌不会对敌人造成PP。
+造成的伤害取决于lewdness点数。当lewdness低于0时，伤害提高20%，但每点lewdness会使伤害降低3%，最多降低50%。
+在任何性爱过程中，lewdness不能低于0。
+性爱期间的lewdness惩罚从1提高到2。
+部分事件不可用。","Golpea, destroza, haz que lamenten haberte encontrado en su camino y, sobre todo, intenta no perder tu castidad en este mundo podrido de perversiones.
+
+Reglas:
+No puedes usar cartas sexuales.
+Las cartas de LP no infligen PP a los enemigos.
+El daño infligido depende de los puntos de lewdness. Mientras lewdness esté por debajo de 0, el daño aumenta un 20%, pero se reduce un 3% por cada punto de lewdness, hasta un máximo del 50%.
+Durante cualquier tipo de sexo, lewdness no puede bajar de 0.
+La penalización de lewdness durante el sexo aumenta de 1 a 2.
+Algunos eventos no están disponibles.","때리고, 부수고, 네가 그들의 앞길에 나타난 걸 후회하게 만들어라. 그리고 무엇보다, 이 썩어빠진 변태들의 세계에서 순결을 잃지 않도록 노력해라.
+
+규칙:
+섹스 카드는 사용할 수 없다.
+LP 카드는 적에게 PP를 주지 않는다.
+주는 피해는 lewdness 수치에 따라 달라진다. lewdness가 0보다 낮으면 피해가 20% 증가하지만, lewdness 1당 피해가 3%씩 감소하며 최대 50%까지 감소한다.
+어떤 종류의 섹스 중에도 lewdness는 0 아래로 내려가지 않는다.
+섹스 중 lewdness 패널티가 1에서 2로 증가한다.
+일부 이벤트는 이용할 수 없다.","Бей, круши, заставь их пожалеть, что ты попался им на пути, и, самое главное, постарайся не потерять целомудрие в этом прогнившем мире извращений.
+
+Правила:
+Нельзя использовать sex-карты.
+LP-карты не наносят врагам PP.
+Наносимый урон зависит от очков lewdness. Пока lewdness ниже нуля, наносимый урон увеличен на 20%, но урон уменьшается на 3% за каждое очко lewdness, вплоть до 50%.
+Пока идёт любой вид секса, очки lewdness не могут опуститься ниже 0.
+Штраф очков lewdness во время секса увеличен с 1 до 2.
+Некоторые события недоступны.","Schlag zu, zertrümmere alles, lass sie bereuen, dass du ihnen in die Quere gekommen bist, und vor allem: versuch, in dieser verkommenen Welt der Perversionen deine Keuschheit nicht zu verlieren.
+
+Regeln:
+Sex-Karten können nicht verwendet werden.
+LP-Karten verursachen bei Gegnern kein PP.
+Der verursachte Schaden hängt von den lewdness-Punkten ab. Solange lewdness unter 0 liegt, ist der Schaden um 20% erhöht, aber der Schaden sinkt um 3% pro lewdness-Punkt, bis maximal 50%.
+Während jeder Art von Sex kann lewdness nicht unter 0 fallen.
+Die lewdness-Strafe während Sex wird von 1 auf 2 erhöht.
+Einige Events sind nicht verfügbar."
+LEWD_RUN_DESCRIPTION,"Violence is never the answer. Why fight when you can have a good time?
+
+Rules:
+You cannot deal direct damage, but damage is still dealt while the enemy is orgasming.
+You cannot use cards that only deal damage.
+Some events are available without requirements.","暴力は決して解決策じゃない。楽しく過ごせるなら、どうして戦う必要がある？
+
+ルール：
+直接ダメージを与えることはできない。ただし、敵がオーガズム状態の間はダメージが発生する。
+ダメージだけを与えるカードは使用できない。
+一部のイベントは条件なしで利用できる。","暴力从来都不是答案。既然可以快乐地共度时光，为什么还要打架呢？
+
+规则：
+不能直接造成伤害，但敌人处于orgasming状态时仍会受到伤害。
+不能使用只造成伤害的卡牌。
+部分事件无需条件即可触发。","La violencia nunca es la respuesta. ¿Para qué pelear si podemos pasar un buen rato?
+
+Reglas:
+No puedes infligir daño directo, pero el daño aún se aplica mientras el enemigo está en orgasming.
+No puedes usar cartas que solo infligen daño.
+Algunos eventos están disponibles sin requisitos.","폭력은 절대 답이 아니야. 즐거운 시간을 보낼 수 있는데 왜 싸워?
+
+규칙:
+직접 피해를 줄 수는 없지만, 적이 orgasming 상태일 때는 여전히 피해가 들어간다.
+오직 피해만 주는 카드는 사용할 수 없다.
+일부 이벤트는 조건 없이 이용할 수 있다.","Насилие — никогда не выход. Зачем драться, если можно весело провести время?
+
+Правила:
+Нельзя нанести урон напрямую, но урон всё ещё наносится, когда враг находится в состоянии orgasming.
+Нельзя использовать карты, которые только наносят урон.
+Некоторые события доступны без условий.","Gewalt ist nie die Antwort. Warum kämpfen, wenn man auch eine gute Zeit haben kann?
+
+Regeln:
+Du kannst keinen direkten Schaden verursachen, aber Schaden wird weiterhin verursacht, während der Gegner im Orgasming-Status ist.
+Du kannst keine Karten verwenden, die nur Schaden verursachen.
+Einige Events sind ohne Voraussetzungen verfügbar."
+NORMAL_NORMAL_RUN_DESCRIPTION,"Sometimes 1 additional enemy may appear on floor 2, and 2 additional enemies may appear on floor 3
+Starting from floor 3, mini-bosses may appear on the map
+Path length to the boss - 18","2階で追加の敵が1体出現することがあり、3階では追加の敵が2体出現することがある
+3階からマップにミニボスが出現することがある
+ボスまでの道の長さ - 18","第2层有时会出现1个额外敌人，第3层有时会出现2个额外敌人
+从第3层开始，地图上可能出现小Boss
+到Boss的路径长度 - 18","A veces puede aparecer 1 enemigo adicional en el piso 2, y 2 enemigos adicionales en el piso 3
+A partir del piso 3, pueden aparecer minibosses en el mapa
+Longitud del camino hasta el jefe - 18","2층에서 추가 적 1명이 가끔 등장하고, 3층에서는 추가 적 2명이 등장할 수 있음
+3층부터 지도에 미니보스가 등장할 수 있음
+보스까지의 경로 길이 - 18","Иногда на 2 этаже появляется 1 дополнительный враг, а на 3 этаже — 2 дополнительных врага
+С 3 этажа на карте могут появляться мини-боссы
+Длина пути к боссу - 18","Manchmal erscheint 1 zusätzlicher Gegner auf Etage 2, und 2 zusätzliche Gegner können auf Etage 3 erscheinen
+Ab Etage 3 können Minibosse auf der Karte erscheinen
+Weglänge bis zum Boss - 18"
+NORMAL_HARD_RUN_DESCRIPTION,"Additional enemies appear more often on floors 2 and 3
+Starting from floor 2, mini-bosses may appear on the map
+Path length to the boss - 20","2階と3階で追加の敵がより頻繁に出現する
+2階からマップにミニボスが出現することがある
+ボスまでの道の長さ - 20","第2层和第3层会更频繁出现额外敌人
+从第2层开始，地图上可能出现小Boss
+到Boss的路径长度 - 20","Los enemigos adicionales aparecen con más frecuencia en los pisos 2 y 3
+A partir del piso 2, pueden aparecer minibosses en el mapa
+Longitud del camino hasta el jefe - 20","2층과 3층에서 추가 적이 더 자주 등장함
+2층부터 지도에 미니보스가 등장할 수 있음
+보스까지의 경로 길이 - 20","Дополнительные враги на 2 и 3 этажах появляются чаще
+Со 2 этажа на карте могут появляться мини-боссы
+Длина пути к боссу - 20","Zusätzliche Gegner erscheinen häufiger auf Etage 2 und 3
+Ab Etage 2 können Minibosse auf der Karte erscheinen
+Weglänge bis zum Boss - 20"
+NORMAL_INSANE_RUN_DESCRIPTION,"An additional enemy may appear as early as floor 1
+Starting from floor 2, a second additional enemy may appear, and on floor 3, at least 1 additional enemy is guaranteed to appear
+Starting from floor 2, mini-bosses may appear
+Enemy HP and PP are increased by 20%
+Rewards for defeated enemies are reduced by 25%
+Path length to the boss - 22","追加の敵は1階から出現することがある
+2階から2体目の追加の敵が出現することがあり、3階では最低1体の追加の敵が必ず出現する
+2階からミニボスが出現することがある
+敵のHPとPPが20%増加する
+倒した敵からの報酬が25%減少する
+ボスまでの道の長さ - 22","额外敌人最早可能从第1层出现
+从第2层开始，可能出现第2个额外敌人，第3层必定至少出现1个额外敌人
+从第2层开始，可能出现小Boss
+敌人的HP和PP提高20%
+击败敌人的奖励减少25%
+到Boss的路径长度 - 22","Puede aparecer un enemigo adicional desde el piso 1
+A partir del piso 2, puede aparecer un segundo enemigo adicional, y en el piso 3 aparece al menos 1 enemigo adicional garantizado
+A partir del piso 2, pueden aparecer minibosses
+El HP y PP de los enemigos aumentan un 20%
+Las recompensas por enemigos derrotados se reducen un 25%
+Longitud del camino hasta el jefe - 22","추가 적은 1층부터 등장할 수 있음
+2층부터 두 번째 추가 적이 등장할 수 있고, 3층에서는 최소 1명의 추가 적이 반드시 등장함
+2층부터 미니보스가 등장할 수 있음
+적의 HP와 PP가 20% 증가함
+쓰러뜨린 적의 보상이 25% 감소함
+보스까지의 경로 길이 - 22","Дополнительный враг может появиться уже с 1 этажа
+Со 2 этажа может появиться второй дополнительный враг, а на 3 этаже гарантированно появляется минимум 1 дополнительный враг
+Со 2 этажа могут появляться мини-боссы
+Здоровье и PP врагов увеличены на 20%
+Награда за побеждённых врагов уменьшена на 25%
+Длина пути к боссу - 22","Ein zusätzlicher Gegner kann bereits ab Etage 1 erscheinen
+Ab Etage 2 kann ein zweiter zusätzlicher Gegner erscheinen, und auf Etage 3 erscheint garantiert mindestens 1 zusätzlicher Gegner
+Ab Etage 2 können Minibosse erscheinen
+HP und PP der Gegner sind um 20% erhöht
+Belohnungen für besiegte Gegner sind um 25% reduziert
+Weglänge bis zum Boss - 22"
+PURE_NORMAL_RUN_DESCRIPTION,"Sometimes 1 additional enemy may appear on floor 2, and 2 additional enemies may appear on floor 3
+Starting from floor 3, mini-bosses may appear on the map
+Path length to the boss - 20","2階で追加の敵が1体出現することがあり、3階では追加の敵が2体出現することがある
+3階からマップにミニボスが出現することがある
+ボスまでの道の長さ - 20","第2层有时会出现1个额外敌人，第3层有时会出现2个额外敌人
+从第3层开始，地图上可能出现小Boss
+到Boss的路径长度 - 20","A veces puede aparecer 1 enemigo adicional en el piso 2, y 2 enemigos adicionales en el piso 3
+A partir del piso 3, pueden aparecer minibosses en el mapa
+Longitud del camino hasta el jefe - 20","2층에서 추가 적 1명이 가끔 등장하고, 3층에서는 추가 적 2명이 등장할 수 있음
+3층부터 지도에 미니보스가 등장할 수 있음
+보스까지의 경로 길이 - 20","Иногда на 2 этаже появляется 1 дополнительный враг, а на 3 этаже — 2 дополнительных врага
+С 3 этажа на карте могут появляться мини-боссы
+Длина пути к боссу - 20","Manchmal erscheint 1 zusätzlicher Gegner auf Etage 2, und 2 zusätzliche Gegner können auf Etage 3 erscheinen
+Ab Etage 3 können Minibosse auf der Karte erscheinen
+Weglänge bis zum Boss - 20"
+PURE_HARD_RUN_DESCRIPTION,"Additional enemies appear more often on floors 2 and 3
+Enemies appear with lustful intent more often
+Starting from floor 2, mini-bosses may appear on the map
+Path length to the boss - 22","2階と3階で追加の敵がより頻繁に出現する
+敵が淫らな意図を持って出現しやすくなる
+2階からマップにミニボスが出現することがある
+ボスまでの道の長さ - 22","第2层和第3层会更频繁出现额外敌人
+敌人更常带着淫欲意图出现
+从第2层开始，地图上可能出现小Boss
+到Boss的路径长度 - 22","Los enemigos adicionales aparecen con más frecuencia en los pisos 2 y 3
+Los enemigos aparecen con intención lujuriosa más a menudo
+A partir del piso 2, pueden aparecer minibosses en el mapa
+Longitud del camino hasta el jefe - 22","2층과 3층에서 추가 적이 더 자주 등장함
+적이 음란한 의도를 가지고 더 자주 등장함
+2층부터 지도에 미니보스가 등장할 수 있음
+보스까지의 경로 길이 - 22","Дополнительные враги на 2 и 3 этажах появляются чаще
+Противники чаще появляются с похотливым намерением
+Со 2 этажа на карте могут появляться мини-боссы
+Длина пути к боссу - 22","Zusätzliche Gegner erscheinen häufiger auf Etage 2 und 3
+Gegner erscheinen häufiger mit lüsterner Absicht
+Ab Etage 2 können Minibosse auf der Karte erscheinen
+Weglänge bis zum Boss - 22"
+PURE_INSANE_RUN_DESCRIPTION,"An additional enemy may appear as early as floor 1
+Starting from floor 2, a second additional enemy may appear, and from floor 3, at least 1 additional enemy is guaranteed to appear
+Enemies appear with lustful intent much more often
+Starting from floor 2, mini-bosses may appear
+Enemy HP and PP are increased by 15%
+Rewards for defeated enemies are reduced by 25%
+At the end of each turn, enemies recover 10% of their health
+Path length to the boss - 24","追加の敵は1階から出現することがある
+2階から2体目の追加の敵が出現することがあり、3階からは最低1体の追加の敵が必ず出現する
+敵が淫らな意図を持って出現する確率が大幅に上がる
+2階からミニボスが出現することがある
+敵のHPとPPが15%増加する
+倒した敵からの報酬が25%減少する
+各ターン終了時、敵は体力の10%を回復する
+ボスまでの道の長さ - 24","额外敌人最早可能从第1层出现
+从第2层开始，可能出现第2个额外敌人，从第3层开始必定至少出现1个额外敌人
+敌人会更频繁地带着淫欲意图出现
+从第2层开始，可能出现小Boss
+敌人的HP和PP提高15%
+击败敌人的奖励减少25%
+每回合结束时，敌人恢复10%生命值
+到Boss的路径长度 - 24","Puede aparecer un enemigo adicional desde el piso 1
+A partir del piso 2, puede aparecer un segundo enemigo adicional, y desde el piso 3 aparece al menos 1 enemigo adicional garantizado
+Los enemigos aparecen con intención lujuriosa mucho más a menudo
+A partir del piso 2, pueden aparecer minibosses
+El HP y PP de los enemigos aumentan un 15%
+Las recompensas por enemigos derrotados se reducen un 25%
+Al final de cada turno, los enemigos recuperan un 10% de su salud
+Longitud del camino hasta el jefe - 24","추가 적은 1층부터 등장할 수 있음
+2층부터 두 번째 추가 적이 등장할 수 있고, 3층부터는 최소 1명의 추가 적이 반드시 등장함
+적이 음란한 의도를 가지고 훨씬 더 자주 등장함
+2층부터 미니보스가 등장할 수 있음
+적의 HP와 PP가 15% 증가함
+쓰러뜨린 적의 보상이 25% 감소함
+매 턴 종료 시 적이 체력의 10%를 회복함
+보스까지의 경로 길이 - 24","Дополнительный враг может появиться уже с 1 этажа
+Со 2 этажа может появиться второй дополнительный враг, а с 3 этажа гарантированно появляется минимум 1 дополнительный враг
+Противники значительно чаще появляются с похотливым намерением
+Со 2 этажа могут появляться мини-боссы
+Здоровье и PP врагов увеличены на 15%
+Награда за побеждённых врагов уменьшена на 25%
+В конце каждого хода враги восстанавливают 10% здоровья
+Длина пути к боссу - 24","Ein zusätzlicher Gegner kann bereits ab Etage 1 erscheinen
+Ab Etage 2 kann ein zweiter zusätzlicher Gegner erscheinen, und ab Etage 3 erscheint garantiert mindestens 1 zusätzlicher Gegner
+Gegner erscheinen deutlich häufiger mit lüsterner Absicht
+Ab Etage 2 können Minibosse erscheinen
+HP und PP der Gegner sind um 15% erhöht
+Belohnungen für besiegte Gegner sind um 25% reduziert
+Am Ende jedes Zuges stellen Gegner 10% ihrer Gesundheit wieder her
+Weglänge bis zum Boss - 24"
+LEWD_NORMAL_RUN_DESCRIPTION,"Sometimes 1 additional enemy may appear on floor 2, and 2 additional enemies may appear on floor 3
+Starting from floor 3, mini-bosses may appear on the map
+Path length to the boss - 20","2階で追加の敵が1体出現することがあり、3階では追加の敵が2体出現することがある
+3階からマップにミニボスが出現することがある
+ボスまでの道の長さ - 20","第2层有时会出现1个额外敌人，第3层有时会出现2个额外敌人
+从第3层开始，地图上可能出现小Boss
+到Boss的路径长度 - 20","A veces puede aparecer 1 enemigo adicional en el piso 2, y 2 enemigos adicionales en el piso 3
+A partir del piso 3, pueden aparecer minibosses en el mapa
+Longitud del camino hasta el jefe - 20","2층에서 추가 적 1명이 가끔 등장하고, 3층에서는 추가 적 2명이 등장할 수 있음
+3층부터 지도에 미니보스가 등장할 수 있음
+보스까지의 경로 길이 - 20","Иногда на 2 этаже появляется 1 дополнительный враг, а на 3 этаже — 2 дополнительных врага
+С 3 этажа на карте могут появляться мини-боссы
+Длина пути к боссу - 20","Manchmal erscheint 1 zusätzlicher Gegner auf Etage 2, und 2 zusätzliche Gegner können auf Etage 3 erscheinen
+Ab Etage 3 können Minibosse auf der Karte erscheinen
+Weglänge bis zum Boss - 20"
+LEWD_HARD_RUN_DESCRIPTION,"Additional enemies appear more often on floors 2 and 3
+Aggressive enemies appear more often
+Starting from floor 2, mini-bosses may appear on the map
+Path length to the boss - 22","2階と3階で追加の敵がより頻繁に出現する
+攻撃的な敵が出現しやすくなる
+2階からマップにミニボスが出現することがある
+ボスまでの道の長さ - 22","第2层和第3层会更频繁出现额外敌人
+攻击性敌人更常出现
+从第2层开始，地图上可能出现小Boss
+到Boss的路径长度 - 22","Los enemigos adicionales aparecen con más frecuencia en los pisos 2 y 3
+Los enemigos agresivos aparecen más a menudo
+A partir del piso 2, pueden aparecer minibosses en el mapa
+Longitud del camino hasta el jefe - 22","2층과 3층에서 추가 적이 더 자주 등장함
+공격적인 적이 더 자주 등장함
+2층부터 지도에 미니보스가 등장할 수 있음
+보스까지의 경로 길이 - 22","Дополнительные враги на 2 и 3 этажах появляются чаще
+Агрессивные противники появляются чаще
+Со 2 этажа на карте могут появляться мини-боссы
+Длина пути к боссу - 22","Zusätzliche Gegner erscheinen häufiger auf Etage 2 und 3
+Aggressive Gegner erscheinen häufiger
+Ab Etage 2 können Minibosse auf der Karte erscheinen
+Weglänge bis zum Boss - 22"
+LEWD_INSANE_RUN_DESCRIPTION,"An additional enemy may appear as early as floor 1
+Starting from floor 2, a second additional enemy may appear, and from floor 3, at least 1 additional enemy is guaranteed to appear
+Aggressive enemies appear much more often
+Starting from floor 2, mini-bosses may appear
+Enemy HP and PP are increased by 15%
+Rewards for defeated enemies are reduced by 25%
+At the end of each turn, enemies reduce their PP by 10%
+Path length to the boss - 24","追加の敵は1階から出現することがある
+2階から2体目の追加の敵が出現することがあり、3階からは最低1体の追加の敵が必ず出現する
+攻撃的な敵が大幅に出現しやすくなる
+2階からミニボスが出現することがある
+敵のHPとPPが15%増加する
+倒した敵からの報酬が25%減少する
+各ターン終了時、敵のPPが10%減少する
+ボスまでの道の長さ - 24","额外敌人最早可能从第1层出现
+从第2层开始，可能出现第2个额外敌人，从第3层开始必定至少出现1个额外敌人
+攻击性敌人出现得更加频繁
+从第2层开始，可能出现小Boss
+敌人的HP和PP提高15%
+击败敌人的奖励减少25%
+每回合结束时，敌人的PP减少10%
+到Boss的路径长度 - 24","Puede aparecer un enemigo adicional desde el piso 1
+A partir del piso 2, puede aparecer un segundo enemigo adicional, y desde el piso 3 aparece al menos 1 enemigo adicional garantizado
+Los enemigos agresivos aparecen mucho más a menudo
+A partir del piso 2, pueden aparecer minibosses
+El HP y PP de los enemigos aumentan un 15%
+Las recompensas por enemigos derrotados se reducen un 25%
+Al final de cada turno, los enemigos reducen su PP un 10%
+Longitud del camino hasta el jefe - 24","추가 적은 1층부터 등장할 수 있음
+2층부터 두 번째 추가 적이 등장할 수 있고, 3층부터는 최소 1명의 추가 적이 반드시 등장함
+공격적인 적이 훨씬 더 자주 등장함
+2층부터 미니보스가 등장할 수 있음
+적의 HP와 PP가 15% 증가함
+쓰러뜨린 적의 보상이 25% 감소함
+매 턴 종료 시 적의 PP가 10% 감소함
+보스까지의 경로 길이 - 24","Дополнительный враг может появиться уже с 1 этажа
+Со 2 этажа может появиться второй дополнительный враг, а с 3 этажа гарантированно появляется минимум 1 дополнительный враг
+Агрессивные противники появляются значительно чаще
+Со 2 этажа могут появляться мини-боссы
+Здоровье и PP врагов увеличены на 15%
+Награда за побеждённых врагов уменьшена на 25%
+В конце каждого хода враги уменьшают свои PP на 10%
+Длина пути к боссу - 24","Ein zusätzlicher Gegner kann bereits ab Etage 1 erscheinen
+Ab Etage 2 kann ein zweiter zusätzlicher Gegner erscheinen, und ab Etage 3 erscheint garantiert mindestens 1 zusätzlicher Gegner
+Aggressive Gegner erscheinen deutlich häufiger
+Ab Etage 2 können Minibosse erscheinen
+HP und PP der Gegner sind um 15% erhöht
+Belohnungen für besiegte Gegner sind um 25% reduziert
+Am Ende jedes Zuges reduzieren Gegner ihre PP um 10%
+Weglänge bis zum Boss - 24"
+TID_LEWDNESS_COUNT,Lewdness: {lewd},淫乱度: {lewd},淫乱度: {lewd},Lascivia: {lewd},음란도: {lewd},Развратность: {lewd},Lüsternheit: {lewd}
+TID_ORGASM_COUNT,Orgasms: {orgasm},絶頂回数: {orgasm},高潮次数: {orgasm},Orgasmos: {orgasm},절정 횟수: {orgasm},Оргазмы: {orgasm},Orgasmen: {orgasm}
+TID_DECK,Deck,デッキ,牌组,Mazo,덱,Колода,Deck
+TID_WIN,Victory,勝利,胜利,Victoria,승리,Победа,Sieg
+TID_THX_VERY_MUCH,Thank you very much!,本当にありがとうございます！,非常感谢！,¡Muchas gracias!,정말 감사합니다!,Большое спасибо!,Vielen Dank!
+TID_PLAY_ANOTHER,Play Again,もう一度プレイ,再来一局,Jugar de nuevo,다시 플레이,Сыграть ещё раз,Noch einmal spielen
+TID_MAIN_MENU,Main Menu,メインメニュー,主菜单,Menú principal,메인 메뉴,Главное меню,Hauptmenü
+TID_END_TURN,End Turn,ターン終了,结束回合,Terminar turno,턴 종료,Завершить ход,Zug beenden
+TID_DECK_COUNT,Deck: {count},デッキ：{count},牌组：{count},Mazo: {count},덱: {count},Колода: {count},Deck: {count}
+TID_DISCARD_COUNT,Discard: {count},捨て札：{count},弃牌堆：{count},Descarte: {count},버린 카드: {count},Сброс: {count},Ablage: {count}
+TID_CHARACTER_SELECT,Select Character,キャラクターを選択,选择角色,Seleccionar personaje,캐릭터 선택하기,Выбрать персонажа,Charakter auswählen
+TID_STARTING_DECK,Starting Deck,初期デッキ,初始牌组,Mazo inicial,시작 덱,Стартовая колода,Startdeck
+TID_START_RUN,Start run,ランを開始,开始游戏,Iniciar partida,런 시작,Начать забег,Run starten

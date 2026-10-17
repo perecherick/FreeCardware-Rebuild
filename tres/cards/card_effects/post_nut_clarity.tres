@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PostNutClarityEffect" format=3 uid="uid://bm2v05jaufqlu"]
+
+[ext_resource type="Script" uid="uid://w2tsub57ll8h" path="res://gd/cards/card_effects/post_nut_clarity.gd" id="1_m18m5"]
+
+[resource]
+script = ExtResource("1_m18m5")
+energy = 2
+metadata/_custom_type_script = "uid://w2tsub57ll8h"

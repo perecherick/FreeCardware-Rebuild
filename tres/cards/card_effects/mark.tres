@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ApplyEnemyEffect" format=3 uid="uid://wkrchr6wlt34"]
+
+[ext_resource type="Resource" uid="uid://di0auu47aalsk" path="res://tres/enemies/effects/mark.tres" id="1_c33on"]
+[ext_resource type="Script" uid="uid://b3dr863gyclqw" path="res://gd/cards/card_effects/apply_enemy_effects.gd" id="1_pd416"]
+
+[resource]
+script = ExtResource("1_pd416")
+effect = ExtResource("1_c33on")
+metadata/_custom_type_script = "uid://b3dr863gyclqw"

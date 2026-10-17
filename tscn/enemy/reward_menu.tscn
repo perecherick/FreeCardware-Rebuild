@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://dh083d5b1lpyv"]
+
+[ext_resource type="Script" uid="uid://d3wsraoxaea2o" path="res://gd/reward_menu.gd" id="1_tdfqj"]
+[ext_resource type="PackedScene" uid="uid://dg4uitjqffpta" path="res://tscn/cards/card.tscn" id="2_cmrct"]
+[ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="3_eshl1"]
+[ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="4_yva4b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cme8h"]
+bg_color = Color(0.1882353, 0.14117648, 0.34901962, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mb4tv"]
+bg_color = Color(0.28235295, 0.21568628, 0.5411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iya5f"]
+bg_color = Color(0.29411766, 0.28627452, 0.5019608, 1)
+
+[sub_resource type="Animation" id="Animation_tdfqj"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_cmrct"]
+resource_name = "reward_appear"
+length = 0.13333334
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(1080, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eshl1"]
+_data = {
+&"RESET": SubResource("Animation_tdfqj"),
+&"reward_appear": SubResource("Animation_cmrct")
+}
+
+[node name="RewardMenu" type="Control" unique_id=1222436777]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_tdfqj")
+card_scene = ExtResource("2_cmrct")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1620802839]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 1264.0
+offset_bottom = 1048.0
+color = Color(0.49019608, 0.2627451, 0.4392157, 1)
+
+[node name="Continue" type="Button" parent="." unique_id=1649298452]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 975.0
+offset_top = 933.0
+offset_right = 1156.0
+offset_bottom = 975.0
+theme_override_fonts/font = ExtResource("3_eshl1")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_cme8h")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mb4tv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iya5f")
+text = "TID_CONTINUE"
+
+[node name="Choose" type="Label" parent="." unique_id=210616982]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 94.0
+offset_right = 1188.0
+offset_bottom = 154.0
+theme_override_fonts/font = ExtResource("4_yva4b")
+theme_override_font_sizes/font_size = 40
+text = "TID_CHOOSE_CARD_MENU"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Pickup" type="Label" parent="." unique_id=1979672491]
+visible = false
+layout_mode = 0
+offset_left = 132.0
+offset_top = 44.0
+offset_right = 1188.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(1, 0.78039217, 0.84705883, 1)
+theme_override_fonts/font = ExtResource("4_yva4b")
+theme_override_font_sizes/font_size = 32
+text = "TID_PANTIES_PICKED_UP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cards" type="HBoxContainer" parent="." unique_id=1005302355]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 132.0
+offset_top = 414.0
+offset_right = 659.0
+offset_bottom = 581.0
+scale = Vector2(2, 2)
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1741509890]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_eshl1")
+
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]

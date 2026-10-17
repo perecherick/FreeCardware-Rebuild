@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LimitEffect" format=3 uid="uid://ccg26bcc45mvp"]
+
+[ext_resource type="Script" uid="uid://clwkrjr85wnnv" path="res://gd/cards/card_effects/limits.gd" id="1_ry30g"]
+
+[resource]
+script = ExtResource("1_ry30g")
+min_pp = 3
+max_pp = 8
+min_lp = 3
+max_lp = 8
+metadata/_custom_type_script = "uid://clwkrjr85wnnv"

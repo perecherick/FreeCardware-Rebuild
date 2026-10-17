@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://bqmp3dcoqugeu"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_jrkbo"]
+
+[resource]
+script = ExtResource("1_jrkbo")
+id = "creampie"
+name = "TID_CREAMPIE"
+description = "TID_CREAMPIE_DESC"
+lewdness = 7
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"

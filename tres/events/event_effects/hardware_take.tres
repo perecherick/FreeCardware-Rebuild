@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TakeHardware" format=3 uid="uid://df4tn4lu00lbx"]
+
+[ext_resource type="Script" uid="uid://dtwoak15sn0qs" path="res://gd/event/event_effects/take_hardware.gd" id="1_cdb7h"]
+
+[resource]
+script = ExtResource("1_cdb7h")
+metadata/_custom_type_script = "uid://dtwoak15sn0qs"

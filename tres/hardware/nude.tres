@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://dkdo1lrxsqgvx"]
+
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_sqmnd"]
+
+[resource]
+script = ExtResource("1_sqmnd")
+id = "nude"
+name = "TID_NUDE"
+description = "TID_NUDE_DESC"
+color = "purple"
+lewdness = 5
+metadata/_custom_type_script = "uid://cdt11w1g8lgws"
