@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventConditionalStep" format=3 uid="uid://bklxrt7sk7w3w"]
+
+[ext_resource type="Resource" uid="uid://dje0xxffdrmbj" path="res://tres/events/event_conditions/no_panties.tres" id="1_os5o5"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_75ljw"]
+
+[resource]
+script = ExtResource("2_75ljw")
+condition = ExtResource("1_os5o5")
+next_step = &"tollbooth_step_no_pabies"
+metadata/_custom_type_script = "uid://b5lem4i7qg8w4"

@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_gvhnj"]
 [ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="3_rchon"]
 [ext_resource type="Texture2D" uid="uid://c0csjwe1r7jvn" path="res://img/events/hardware/tile000.png" id="3_ts1fq"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="4_k8kwh"]
 [ext_resource type="Texture2D" uid="uid://cojkdb0v85tpf" path="res://img/events/hardware/tile001.png" id="4_kdeoe"]
 [ext_resource type="Texture2D" uid="uid://rdxmjk73dvj7" path="res://img/events/hardware/tile002.png" id="5_4g3ie"]
 [ext_resource type="Resource" uid="uid://bnc3uv3vev66r" path="res://tres/events/event_effects/hardware_random.tres" id="5_rchon"]
@@ -26,6 +27,7 @@ script = ExtResource("3_gvhnj")
 id = &"hardware_step_0"
 text = "TID_HARDWARE_DESC"
 frames = Array[Texture2D]([ExtResource("3_ts1fq"), ExtResource("4_kdeoe"), ExtResource("5_4g3ie"), ExtResource("6_rchon"), ExtResource("7_k8kwh"), ExtResource("8_3fbcc"), ExtResource("9_cordo"), ExtResource("10_vo6ny"), ExtResource("11_1pwka"), ExtResource("12_7t8a6"), ExtResource("13_hcj60"), ExtResource("14_1jhbb"), ExtResource("15_n3n8v"), ExtResource("16_4uw6i")])
+music = &"event_1"
 effects = Array[ExtResource("2_vgqf0")]([ExtResource("5_rchon")])
 choices = Array[ExtResource("1_rs7wx")]([ExtResource("2_4g3ie"), ExtResource("3_rchon")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

@@ -20,7 +20,7 @@ scale = Vector2(4, 4)
 unique_name_in_owner = true
 visible = false
 z_index = 10
-position = Vector2(1458, 624)
+position = Vector2(1322, 472)
 scale = Vector2(4, 4)
 
 [node name="CombatVisualAnimator" type="Node" parent="." unique_id=2102217266 node_paths=PackedStringArray("visual_root")]

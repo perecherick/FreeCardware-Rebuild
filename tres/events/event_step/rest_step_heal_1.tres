@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://bmsoeo2qgdgkp"]
 
 [ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_4prfe"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_1frgk"]
 [ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_3pw7l"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_dx46p"]
 [ext_resource type="Resource" uid="uid://c37l7yrr6unda" path="res://tres/events/event_effects/rest_heal.tres" id="3_1frgk"]
@@ -40,5 +41,6 @@ script = ExtResource("2_dx46p")
 id = &"rest_step_heal_1"
 text = "TID_REST_HEAL_1"
 frames = Array[Texture2D]([ExtResource("3_h7epy"), ExtResource("4_1frgk"), ExtResource("5_olnhi"), ExtResource("6_mh6kh"), ExtResource("7_4aiqp"), ExtResource("8_0wsl7"), ExtResource("9_u03sn"), ExtResource("10_kkv8l"), ExtResource("11_53aju"), ExtResource("12_7cq20"), ExtResource("13_uwxi5"), ExtResource("14_v2uf1"), ExtResource("15_h1hvi"), ExtResource("16_wuyvy"), ExtResource("17_mesfq"), ExtResource("18_0y7a6"), ExtResource("19_ia3ms"), ExtResource("20_qrv83"), ExtResource("21_qf8ig"), ExtResource("22_rbohh"), ExtResource("23_w7tay"), ExtResource("24_48dfj"), ExtResource("25_5uj1j"), ExtResource("26_agaqs"), ExtResource("27_07p4q"), ExtResource("28_qm381"), ExtResource("29_tyaqy"), ExtResource("30_3j2tj"), ExtResource("31_kjviu"), ExtResource("32_c52o4")])
+music = &"event_success"
 effects = Array[ExtResource("2_3pw7l")]([ExtResource("3_1frgk")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SetEventValue" format=3 uid="uid://d071tm0ylmw7v"]
+
+[ext_resource type="Script" uid="uid://b817wdnfiblhn" path="res://gd/event/event_effects/set_event_values.gd" id="1_7btex"]
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="2_tw4m3"]
+[ext_resource type="Resource" uid="uid://xcyq8p3qvyd3" path="res://tres/events/event_stringname/cum_drink_spilled.tres" id="3_tw4m3"]
+
+[resource]
+script = ExtResource("1_7btex")
+values = Array[ExtResource("2_tw4m3")]([ExtResource("3_tw4m3")])
+metadata/_custom_type_script = "uid://b817wdnfiblhn"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventRandomInt" format=3 uid="uid://cu2he2tu0k6lu"]
+
+[ext_resource type="Script" uid="uid://bnj6l7anl6r70" path="res://gd/event/event_effects/event_random_int.gd" id="1_82t3m"]
+
+[resource]
+script = ExtResource("1_82t3m")
+key = &"bribe"
+min_int = 130
+max_int = 170
+metadata/_custom_type_script = "uid://bnj6l7anl6r70"

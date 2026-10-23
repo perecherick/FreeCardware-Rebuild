@@ -13,5 +13,6 @@ script = ExtResource("4_4o1ea")
 id = &"streaming_room_step_0"
 text = "TID_FOUND_STREAMING_ROOM"
 loop = false
+music = &"event_0"
 choices = Array[ExtResource("1_lnx06")]([ExtResource("2_4o1ea"), ExtResource("3_2efnm"), ExtResource("4_cc3n2")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

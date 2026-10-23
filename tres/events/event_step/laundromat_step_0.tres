@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dvtf3rbswaqf6" path="res://img/events/laundromat/laundromat.png" id="3_ojli5"]
 [ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="4_e8y7o"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_nekbp"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="5_gspxu"]
 [ext_resource type="Resource" uid="uid://bydiefnxdsnjf" path="res://tres/events/event_effects/laundromat_clothes_search_roll.tres" id="6_e8y7o"]
 
 [resource]
@@ -14,6 +15,7 @@ script = ExtResource("4_nekbp")
 id = &"laundromat_step_0"
 text = "TID_ARRIVE_AT_LAUNDRONAT"
 frames = Array[Texture2D]([ExtResource("3_ojli5")])
+music = &"event_0"
 effects = Array[ExtResource("2_uq670")]([ExtResource("6_e8y7o")])
 choices = Array[ExtResource("1_5cj3m")]([ExtResource("2_ojli5"), ExtResource("3_nekbp"), ExtResource("4_e8y7o")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

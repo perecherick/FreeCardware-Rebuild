@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EventConditionalStep" format=3 uid="uid://dw1glf0dsm3hs"]
+
+[ext_resource type="Resource" uid="uid://caw5jf1vqmjk6" path="res://tres/events/event_conditions/cum_drink_spilled.tres" id="1_43pyx"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_xuh3s"]
+
+[resource]
+script = ExtResource("1_xuh3s")
+condition = ExtResource("1_43pyx")
+next_step = &"cum_drink_step_spill"
+metadata/_custom_type_script = "uid://b5lem4i7qg8w4"

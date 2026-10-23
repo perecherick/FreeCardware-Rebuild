@@ -411,3 +411,4 @@ TID_DISCARD_COUNT,Discard: {count},捨て札：{count},弃牌堆：{count},Desca
 TID_CHARACTER_SELECT,Select Character,キャラクターを選択,选择角色,Seleccionar personaje,캐릭터 선택하기,Выбрать персонажа,Charakter auswählen
 TID_STARTING_DECK,Starting Deck,初期デッキ,初始牌组,Mazo inicial,시작 덱,Стартовая колода,Startdeck
 TID_START_RUN,Start run,ランを開始,开始游戏,Iniciar partida,런 시작,Начать забег,Run starten
+TID_ARTIST,Artist,アーティスト,画师,Artista,아티스트,Художник,Künstler

@@ -1,0 +1,65 @@
+[gd_resource type="AudioStreamInteractive" format=3 uid="uid://cuxxtgixiv100"]
+
+[ext_resource type="AudioStream" uid="uid://csk3f4dleumuc" path="res://audio/sex/blowjob/gag_0.wav" id="1_2crkd"]
+[ext_resource type="AudioStream" uid="uid://cxntqj2cxu46j" path="res://audio/sex/blowjob/gag_1.wav" id="2_38twd"]
+[ext_resource type="AudioStream" uid="uid://bw1gu221121vo" path="res://audio/sex/blowjob/satisfied_sigh.wav" id="3_kyrsc"]
+[ext_resource type="AudioStream" uid="uid://dl3e4pvvq728i" path="res://audio/sex/breathing/breathing--01.wav" id="4_x5c3w"]
+[ext_resource type="AudioStream" uid="uid://dlnhq8tt57p6e" path="res://audio/sex/breathing/breathing--02.wav" id="5_gs5n7"]
+[ext_resource type="AudioStream" uid="uid://dywb1khulns3g" path="res://audio/sex/breathing/breathing--11.wav" id="6_7v1xt"]
+[ext_resource type="AudioStream" uid="uid://1a47lytlsriq" path="res://audio/sex/breathing/breathing--03.wav" id="7_w4l75"]
+[ext_resource type="AudioStream" uid="uid://bbivy8bdfmp86" path="res://audio/sex/breathing/breathing--04.wav" id="8_cylrb"]
+[ext_resource type="AudioStream" uid="uid://dehtto2pjceve" path="res://audio/sex/breathing/breathing--05.wav" id="9_gpw2k"]
+[ext_resource type="AudioStream" uid="uid://b3u5701et2kj7" path="res://audio/sex/breathing/breathing--06.wav" id="10_ihosf"]
+[ext_resource type="AudioStream" uid="uid://d21ads1dpq51l" path="res://audio/sex/breathing/breathing--07.wav" id="11_j1y4o"]
+[ext_resource type="AudioStream" uid="uid://cx0fdf2puwvib" path="res://audio/sex/breathing/breathing--08.wav" id="12_rf8sn"]
+[ext_resource type="AudioStream" uid="uid://b7vw3xqkq86ox" path="res://audio/sex/breathing/breathing--09.wav" id="13_cc2sv"]
+[ext_resource type="AudioStream" uid="uid://c2qc8m2s0x5mh" path="res://audio/sex/breathing/breathing--10.wav" id="14_rmbvc"]
+[ext_resource type="AudioStream" uid="uid://i4g8jb0ac6o" path="res://audio/sex/cum/cum.wav" id="15_1ud8f"]
+[ext_resource type="AudioStream" uid="uid://bg2gb336be5qj" path="res://audio/sex/plap.wav" id="16_fyxfg"]
+[ext_resource type="AudioStream" uid="uid://c6c7bk84bva0b" path="res://audio/sex/blowjob/suckles.wav" id="17_1uki0"]
+[ext_resource type="AudioStream" uid="uid://x5p25re7lk6e" path="res://audio/sex/cum/orgasm.wav" id="18_fhb2n"]
+[ext_resource type="AudioStream" uid="uid://cb77ism5y2pse" path="res://audio/sex/fingering1.wav" id="19_38twd"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_yqh2p"]
+streams_count = 11
+stream_0/stream = ExtResource("4_x5c3w")
+stream_1/stream = ExtResource("5_gs5n7")
+stream_2/stream = ExtResource("7_w4l75")
+stream_3/stream = ExtResource("8_cylrb")
+stream_4/stream = ExtResource("9_gpw2k")
+stream_5/stream = ExtResource("10_ihosf")
+stream_6/stream = ExtResource("11_j1y4o")
+stream_7/stream = ExtResource("12_rf8sn")
+stream_8/stream = ExtResource("13_cc2sv")
+stream_9/stream = ExtResource("14_rmbvc")
+stream_10/stream = ExtResource("6_7v1xt")
+
+[resource]
+clip_count = 9
+clip_0/name = &"gag_0"
+clip_0/stream = ExtResource("1_2crkd")
+clip_0/auto_advance = 0
+clip_1/name = &"gag_1"
+clip_1/stream = ExtResource("2_38twd")
+clip_1/auto_advance = 0
+clip_2/name = &"satisfied_sigh"
+clip_2/stream = ExtResource("3_kyrsc")
+clip_2/auto_advance = 0
+clip_3/name = &"breathing"
+clip_3/stream = SubResource("AudioStreamRandomizer_yqh2p")
+clip_3/auto_advance = 0
+clip_4/name = &"cum"
+clip_4/stream = ExtResource("15_1ud8f")
+clip_4/auto_advance = 0
+clip_5/name = &"plap"
+clip_5/stream = ExtResource("16_fyxfg")
+clip_5/auto_advance = 0
+clip_6/name = &"suckles"
+clip_6/stream = ExtResource("17_1uki0")
+clip_6/auto_advance = 0
+clip_7/name = &"orgasm"
+clip_7/stream = ExtResource("18_fhb2n")
+clip_7/auto_advance = 0
+clip_8/name = &"fingering"
+clip_8/stream = ExtResource("19_38twd")
+clip_8/auto_advance = 0

@@ -9,6 +9,8 @@
 [ext_resource type="Resource" uid="uid://726ljuh3vkg2" path="res://tres/events/event_choices/shop_choice_fix_clothes.tres" id="4_rf05b"]
 [ext_resource type="PackedScene" uid="uid://djqqj66bxo8yt" path="res://tscn/events/shop.tscn" id="6_26jmj"]
 [ext_resource type="Resource" uid="uid://cvy47jgpa1eha" path="res://tres/events/event_choices/shop_choice_remove_card.tres" id="6_y1iwc"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="8_ldo0r"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="10_7n5ok"]
 
 [resource]
 script = ExtResource("2_ee2ea")
@@ -16,5 +18,6 @@ id = &"shop_step_0"
 text = "TID_FOUND_SHOP"
 custom_scene = ExtResource("6_26jmj")
 loop = false
+music = &"event_1"
 choices = Array[ExtResource("1_7ls1f")]([ExtResource("2_20mnl"), ExtResource("3_gv8j3"), ExtResource("3_efne3"), ExtResource("4_rf05b"), ExtResource("6_y1iwc"), ExtResource("3_20mnl")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

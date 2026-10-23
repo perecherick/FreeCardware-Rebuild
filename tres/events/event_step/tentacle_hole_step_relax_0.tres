@@ -12,4 +12,5 @@ id = &"tentacle_hole_step_relax"
 text = "TID_RELAX"
 frames = Array[Texture2D]([ExtResource("4_wgwe4")])
 loop = false
+music = &"event_success"
 metadata/_custom_type_script = "uid://d023vifri6y0k"

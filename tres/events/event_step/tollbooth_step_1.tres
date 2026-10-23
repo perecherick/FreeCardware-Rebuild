@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_nrx83"]
 [ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_72ecp"]
+[ext_resource type="Resource" uid="uid://bklxrt7sk7w3w" path="res://tres/events/event_conditional_choice/tollbooth_no_panties.tres" id="3_0o5vr"]
 [ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_2orot"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_0o5vr"]
 [ext_resource type="Texture2D" uid="uid://1fx20bbr1scy" path="res://img/events/tollbooth/gate_with_elf.png" id="4_72ecp"]
@@ -13,4 +14,5 @@ text = "TID_TOLLBOOTH_1"
 frames = Array[Texture2D]([ExtResource("4_72ecp")])
 loop = false
 next_step = &"tollbooth_step_2"
+conditional_next_steps = Array[ExtResource("2_72ecp")]([ExtResource("3_0o5vr")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

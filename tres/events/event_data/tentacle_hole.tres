@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="EventData" format=3 uid="uid://qs7y83r41gcq"]
 
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_3iah6"]
 [ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_fcfob"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_n0cd0"]
 [ext_resource type="Resource" uid="uid://dohp8cp1vulbl" path="res://tres/events/event_step/tentacle_hole_step_0.tres" id="3_rp1nf"]
@@ -15,5 +16,6 @@
 [resource]
 script = ExtResource("1_fcfob")
 id = &"tentacle_hole"
-steps = Array[ExtResource("2_n0cd0")]([ExtResource("3_rp1nf"), ExtResource("4_3iah6"), ExtResource("5_vta0a"), ExtResource("6_gll0f"), ExtResource("7_bou1d"), ExtResource("8_ywhxe"), ExtResource("9_6acr1"), ExtResource("10_estye"), ExtResource("11_d5873")])
+steps = Array[ExtResource("2_n0cd0")]([ExtResource("4_3iah6"), ExtResource("5_vta0a"), ExtResource("6_gll0f"), ExtResource("7_bou1d"), ExtResource("8_ywhxe"), ExtResource("9_6acr1"), ExtResource("10_estye"), ExtResource("11_d5873")])
+starting_step = ExtResource("3_rp1nf")
 metadata/_custom_type_script = "uid://clolljx3cfc5f"

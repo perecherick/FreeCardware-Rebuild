@@ -12,5 +12,6 @@ id = &"tollbooth_step_win_0"
 text = "TID_TOLLBOOTH_WIN_0"
 frames = Array[Texture2D]([ExtResource("4_imkx3")])
 loop = false
+music = &"event_success"
 next_step = &"tollbooth_step_win_1"
 metadata/_custom_type_script = "uid://d023vifri6y0k"

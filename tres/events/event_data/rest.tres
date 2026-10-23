@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="EventData" format=3 uid="uid://bxida1yehphy1"]
 
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_5u4dh"]
 [ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_vhyd6"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_fv648"]
 [ext_resource type="Resource" uid="uid://coyhdjh5md7bk" path="res://tres/events/event_step/rest_step_0.tres" id="3_fv648"]
@@ -11,5 +12,6 @@
 [resource]
 script = ExtResource("1_vhyd6")
 id = &"rest"
-steps = Array[ExtResource("2_fv648")]([ExtResource("3_fv648"), ExtResource("4_m2bwy"), ExtResource("5_5u4dh"), ExtResource("6_lrb6y"), ExtResource("7_8ti7v")])
+steps = Array[ExtResource("2_fv648")]([ExtResource("4_m2bwy"), ExtResource("5_5u4dh"), ExtResource("6_lrb6y"), ExtResource("7_8ti7v")])
+starting_step = ExtResource("3_fv648")
 metadata/_custom_type_script = "uid://clolljx3cfc5f"

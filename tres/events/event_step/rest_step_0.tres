@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://r3of2htpxdp0" path="res://tres/events/event_choices/rest_choice_heal.tres" id="2_f68ve"]
 [ext_resource type="Resource" uid="uid://dnnw0nfuk0dm3" path="res://tres/events/event_choices/rest_choice_max_hp.tres" id="3_fggpq"]
 [ext_resource type="Resource" uid="uid://dv83gsjttpjv1" path="res://tres/events/event_choices/rest_choice_max_lp.tres" id="4_nsx53"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="5_nsx53"]
 [ext_resource type="Texture2D" uid="uid://bp1ajhj1phq82" path="res://img/events/rest/rest.png" id="6_fggpq"]
 
 [resource]
@@ -14,5 +15,6 @@ id = &"rest_step_0"
 text = "TID_FOUND_REST"
 frames = Array[Texture2D]([ExtResource("6_fggpq")])
 loop = false
+music = &"event_1"
 choices = Array[ExtResource("1_nt63h")]([ExtResource("2_f68ve"), ExtResource("3_fggpq"), ExtResource("4_nsx53")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

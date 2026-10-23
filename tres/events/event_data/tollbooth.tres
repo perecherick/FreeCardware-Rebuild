@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="EventData" format=3 uid="uid://cawsl6sh27j6n"]
 
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_abq1q"]
 [ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_tgv64"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_jji63"]
 [ext_resource type="Resource" uid="uid://cb87xwf0167fh" path="res://tres/events/event_step/tollbooth_step_0.tres" id="3_w5mo0"]
@@ -16,9 +17,11 @@
 [ext_resource type="Resource" uid="uid://bfrwv28okwcrb" path="res://tres/events/event_step/tollbooth_step_refuse_2.tres" id="14_adlhn"]
 [ext_resource type="Resource" uid="uid://cac3mduues8o8" path="res://tres/events/event_step/tollbooth_step_win_0.tres" id="15_xirt5"]
 [ext_resource type="Resource" uid="uid://dvf7kfbdcglag" path="res://tres/events/event_step/tollbooth_step_win_1.tres" id="16_vqvgi"]
+[ext_resource type="Resource" uid="uid://nk6rlsuo1u4l" path="res://tres/events/event_step/tollbooth_step_no_panties.tres" id="17_8kdvw"]
 
 [resource]
 script = ExtResource("1_tgv64")
 id = &"tollbooth"
-steps = Array[ExtResource("2_jji63")]([ExtResource("3_w5mo0"), ExtResource("4_h8h7l"), ExtResource("5_nmmra"), ExtResource("6_jkl4p"), ExtResource("7_5jpya"), ExtResource("8_8kdvw"), ExtResource("9_abq1q"), ExtResource("7_aofxs"), ExtResource("8_423wu"), ExtResource("9_5jpya"), ExtResource("10_8kdvw"), ExtResource("14_adlhn"), ExtResource("15_xirt5"), ExtResource("16_vqvgi")])
+steps = Array[ExtResource("2_jji63")]([ExtResource("4_h8h7l"), ExtResource("5_nmmra"), ExtResource("6_jkl4p"), ExtResource("7_5jpya"), ExtResource("8_8kdvw"), ExtResource("9_abq1q"), ExtResource("7_aofxs"), ExtResource("8_423wu"), ExtResource("9_5jpya"), ExtResource("10_8kdvw"), ExtResource("14_adlhn"), ExtResource("15_xirt5"), ExtResource("16_vqvgi"), ExtResource("17_8kdvw")])
+starting_step = ExtResource("3_w5mo0")
 metadata/_custom_type_script = "uid://clolljx3cfc5f"

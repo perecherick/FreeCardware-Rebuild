@@ -15,7 +15,7 @@ func setup(
 ) -> void:
 	choice_data = choice
 
-	text = tr(choice.text)
+	text = tr(choice.text).format(event.values)
 	disabled = !choice.is_available(player, event)
 
 func _on_pressed() -> void:

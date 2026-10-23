@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://baa3bviwgp8ug"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_lfo6t"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_m834j"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_67k4t"]
+[ext_resource type="Resource" uid="uid://b14ewelhyo834" path="res://tres/events/event_effects/bukkake.tres" id="4_lfo6t"]
+[ext_resource type="Texture2D" uid="uid://l1lwy5c7mmwb" path="res://img/events/cum_drink/drinking cum.png" id="5_ju85o"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="6_v3bfg"]
+
+[resource]
+script = ExtResource("6_v3bfg")
+id = &"cum_drink_step_spill"
+text = "TID_MYSTERY_DRINK_SPILL"
+frames = Array[Texture2D]([ExtResource("5_ju85o")])
+loop = false
+effects = Array[ExtResource("3_67k4t")]([ExtResource("4_lfo6t")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

@@ -3,8 +3,14 @@
 [ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_pgjny"]
 [ext_resource type="Script" uid="uid://bgsistha02amp" path="res://gd/event/event_condition.gd" id="2_wpf41"]
 [ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_jj7bk"]
+[ext_resource type="Resource" uid="uid://cp3xuhrt5s58j" path="res://tres/events/event_conditions/tollbooth_enough_gold.tres" id="3_t87aq"]
 [ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="4_t87aq"]
+[ext_resource type="Resource" uid="uid://ca4ur7ri2n4nj" path="res://tres/events/event_effects/tollbooth_bribe.tres" id="5_sgu74"]
 
 [resource]
 script = ExtResource("4_t87aq")
+text = "TID_BRIBE"
+next_step = &"tollbooth_step_bribe"
+conditions = Array[ExtResource("2_wpf41")]([ExtResource("3_t87aq")])
+effects = Array[ExtResource("3_jj7bk")]([ExtResource("5_sgu74")])
 metadata/_custom_type_script = "uid://caycj4xh6qpbk"

@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="EventData" format=3 uid="uid://c76s1yjqvmleq"]
 
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_0pu6x"]
 [ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_eo8xp"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_32m5f"]
 [ext_resource type="Resource" uid="uid://cd5ljlpjyh8rd" path="res://tres/events/event_step/swimming_step_0.tres" id="3_e2aj8"]
@@ -9,5 +10,6 @@
 [resource]
 script = ExtResource("1_eo8xp")
 id = &"swimming"
-steps = Array[ExtResource("2_32m5f")]([ExtResource("3_e2aj8"), ExtResource("4_0pu6x"), ExtResource("5_un04d")])
+steps = Array[ExtResource("2_32m5f")]([ExtResource("4_0pu6x"), ExtResource("5_un04d")])
+starting_step = ExtResource("3_e2aj8")
 metadata/_custom_type_script = "uid://clolljx3cfc5f"

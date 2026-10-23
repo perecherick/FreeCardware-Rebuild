@@ -5,5 +5,5 @@ exports/
 *.translation
 *.tmp
 img/
-sfx/
+audio/
 fonts/

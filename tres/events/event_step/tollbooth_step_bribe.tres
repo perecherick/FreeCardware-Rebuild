@@ -8,8 +8,8 @@
 
 [resource]
 script = ExtResource("5_dmoq4")
-id = &"tollbooth_step_bribe_0"
-text = "TID_TOLLBOOTH_BRIBE_0"
+id = &"tollbooth_step_bribe"
+text = "TID_TOLLBOOTH_BRIBE"
 frames = Array[Texture2D]([ExtResource("4_ea4lw")])
 loop = false
 metadata/_custom_type_script = "uid://d023vifri6y0k"

@@ -43,7 +43,7 @@ visible = false
 
 [node name="Clothes" type="Sprite2D" parent="Clothes" unique_id=1392556559]
 visible = false
-z_index = 1
+z_index = 2
 
 [node name="Panties" type="Node2D" parent="." unique_id=1445022870]
 

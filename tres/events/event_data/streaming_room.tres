@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="EventData" format=3 uid="uid://dp2485jut4xib"]
 
 [ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_j06d8"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_r5fe8"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_mvh4p"]
 [ext_resource type="Resource" uid="uid://bkih83ejfgirc" path="res://tres/events/event_step/streaming_room_step_0.tres" id="3_xxiie"]
 [ext_resource type="Resource" uid="uid://cjtbbm1b230ud" path="res://tres/events/event_step/streaming_room_step_lewd.tres" id="4_r5fe8"]
@@ -10,5 +11,6 @@
 [resource]
 script = ExtResource("1_j06d8")
 id = &"streaming_room"
-steps = Array[ExtResource("2_mvh4p")]([ExtResource("3_xxiie"), ExtResource("4_r5fe8"), ExtResource("5_oyc3w"), ExtResource("6_rlq6b")])
+steps = Array[ExtResource("2_mvh4p")]([ExtResource("4_r5fe8"), ExtResource("5_oyc3w"), ExtResource("6_rlq6b")])
+starting_step = ExtResource("3_xxiie")
 metadata/_custom_type_script = "uid://clolljx3cfc5f"

@@ -7,16 +7,43 @@ var enabled: bool = OS.is_debug_build()
 var log_file: FileAccess
 
 func _ready() -> void:
-	if !enabled:
+	if enabled: start_logger()
+
+func start_logger() -> void:
+	var date: Dictionary = Time.get_datetime_dict_from_system()
+	var file_name: String = "debug-%04d-%02d-%02d_%02d-%02d-%02d.log" % [
+		date.year,
+		date.month,
+		date.day,
+		date.hour,
+		date.minute,
+		date.second
+	]
+	var dir: String = "user://logs/"
+	
+	DirAccess.make_dir_recursive_absolute(dir)
+	
+	log_file = FileAccess.open(dir + file_name, FileAccess.WRITE)
+	
+	if log_file == null:
+		enabled = false
+		push_error("Failed to create debug log file")
 		return
 	
-	log_file = FileAccess.open("user://debug.log", FileAccess.WRITE)
+	enabled = true
 	info("Debug logger started")
+
+func end_logger() -> void:
+	if enabled:
+		info("Debug logger finished")
+		enabled = false
+		log_file.close()
+		log_file = null
 
 func info(message: Variant, color: Color = Color.WHITE) -> void:
 	if !enabled:
 		return
-
+	
 	var line: String = "[%s] %s" % [
 		Time.get_time_string_from_system(),
 		str(message)
@@ -43,5 +70,4 @@ func error(message: Variant) -> void:
 	if !enabled:
 		return
 	
-	push_error(str(message))
 	info("ERROR: " + str(message), Color.RED)

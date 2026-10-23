@@ -121,6 +121,8 @@ func take_lp(amount: int) -> void:
 		start_orgasm()
 	
 	lp_changed.emit(lp, max_lp)
+	if RandomNumberGenerator.new().randi_range(0, 3) == 3:
+		AudioManager.play_sex_sound(&"breathing")
 
 func add_lp(amount: int) -> void:
 	lp = clampi(lp + amount, 0, max_lp)
@@ -128,6 +130,8 @@ func add_lp(amount: int) -> void:
 		lp = 0
 		start_orgasm()
 	lp_changed.emit(lp, max_lp)
+	if RandomNumberGenerator.new().randi_range(0, 3) == 3:
+		AudioManager.play_sex_sound(&"breathing")
 
 func reduce_lp(amount: int) -> void:
 	lp = clampi(lp - amount, 0, max_lp)
@@ -238,6 +242,22 @@ func apply_sex(
 	DebugLogger.info(
 		"Sex changed: %s" % sex_type.id
 	)
+	
+	match sex_type.sex_type:
+		sex_type.SexType.ORAL:
+			match sex_state:
+				2:
+					AudioManager.play_sex_sound(&"suckles")
+				3, 5:
+					AudioManager.play_sex_sound(&"gag_0")
+				4:
+					AudioManager.play_sex_sound(&"gag_1")
+		sex_type.SexType.VAGINAL, sex_type.SexType.ANAL, sex_type.SexType.MANUAL:
+			match sex_state:
+				2:
+					AudioManager.play_sex_sound(&"fingering")
+				3, 4, 5:
+					AudioManager.play_sex_sound(&"plap")
 
 func exit_sex() -> void:
 	if !in_sex:
@@ -260,6 +280,7 @@ func start_orgasm() -> void:
 	change_max_lp(1)
 	energy_changed.emit(energy, max_energy)
 	orgasm.emit()
+	AudioManager.play_sex_sound(&"orgasm")
 
 func consume_orgasm_turn() -> void:
 	if orgasm_skip_left <= 0:

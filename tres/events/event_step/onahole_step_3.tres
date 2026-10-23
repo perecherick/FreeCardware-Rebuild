@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_wv206"]
 [ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_4fgvi"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_jnd8l"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_jnd8l"]
 
 [resource]
@@ -9,4 +10,5 @@ script = ExtResource("3_jnd8l")
 id = &"onahole_step_3"
 text = "TID_TAKE_ONAHOLE"
 loop = false
+music = &"event_success"
 metadata/_custom_type_script = "uid://d023vifri6y0k"

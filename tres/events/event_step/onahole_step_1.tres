@@ -5,6 +5,7 @@
 [ext_resource type="Resource" uid="uid://cm40utt6u7pwe" path="res://tres/events/event_choices/onahole_choice_continue.tres" id="2_f0pby"]
 [ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="3_161e1"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_f0pby"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="4_161e1"]
 
 [resource]
 script = ExtResource("3_f0pby")

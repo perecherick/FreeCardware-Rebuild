@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="EventData" format=3 uid="uid://bcl7j8go54vma"]
 
 [ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_lufpk"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_mmicv"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_68xa0"]
 [ext_resource type="Resource" uid="uid://dklohdcgbhhq2" path="res://tres/events/event_step/onahole_step_0.tres" id="3_64dsq"]
 [ext_resource type="Resource" uid="uid://sjip6ebe0ycb" path="res://tres/events/event_step/onahole_step_1.tres" id="4_q3kh4"]
@@ -19,5 +20,6 @@
 [resource]
 script = ExtResource("1_lufpk")
 id = &"onahole"
-steps = Array[ExtResource("2_68xa0")]([ExtResource("3_64dsq"), ExtResource("4_q3kh4"), ExtResource("5_e2055"), ExtResource("7_4dqr4"), ExtResource("7_uoq35"), ExtResource("8_mqs1x"), ExtResource("9_mmicv"), ExtResource("10_fww1h"), ExtResource("11_l3tum"), ExtResource("12_362uv"), ExtResource("13_xtmgm"), ExtResource("8_umhsh"), ExtResource("15_mqs1x")])
+steps = Array[ExtResource("2_68xa0")]([ExtResource("4_q3kh4"), ExtResource("5_e2055"), ExtResource("7_4dqr4"), ExtResource("7_uoq35"), ExtResource("8_mqs1x"), ExtResource("9_mmicv"), ExtResource("10_fww1h"), ExtResource("11_l3tum"), ExtResource("12_362uv"), ExtResource("13_xtmgm"), ExtResource("8_umhsh"), ExtResource("15_mqs1x")])
+starting_step = ExtResource("3_64dsq")
 metadata/_custom_type_script = "uid://clolljx3cfc5f"

@@ -31,6 +31,9 @@ func update_credits():
 @nubaleen
 
 [b]%s[/b]
+@please_just_love_me
+
+[b]%s[/b]
 @OpenNSFWSP
 @chiyo1000nights
 MonsterBox
@@ -41,6 +44,7 @@ gelbana[/center]""" % [
 		tr("CREDITS"),
 		tr("CREDITS_GAME_BY"),
 		tr("CREDITS_MODDED_BY"),
+		tr("TID_ARTIST"),
 		tr("CREDITS_VA_PACKS"),
 		tr("CREDITS_SECRET_CODE")
 	]

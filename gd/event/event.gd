@@ -52,7 +52,7 @@ func _start_event() -> void:
 	current_frame = 0
 	frame_timer.stop()
 	
-	show_step(event_data.steps[0])
+	show_step(event_data.get_starting_step(player, self))
 
 func show_step(step: EventStep) -> void:
 	var previous_step: EventStep = current_step
@@ -80,6 +80,7 @@ func show_step(step: EventStep) -> void:
 			_show_step_animation(step)
 
 	_show_step_choices(step)
+	step.play_event_audio()
 
 func _is_same_animation(
 	first: EventStep,
@@ -87,42 +88,42 @@ func _is_same_animation(
 ) -> bool:
 	if first == null or second == null:
 		return false
-
+	
 	if first.frames.size() != second.frames.size():
 		return false
-
+	
 	if first.fps != second.fps:
 		return false
-
+	
 	if first.loop != second.loop:
 		return false
-
+	
 	for i: int in first.frames.size():
 		if first.frames[i] != second.frames[i]:
 			return false
-
+	
 	return true
 
 func _show_step_animation(step: EventStep) -> void:
 	frame_timer.stop()
 	current_frame = 0
-
+	
 	if step.frames.is_empty():
 		event_image.texture = null
 		return
-
+	
 	event_image.texture = step.frames[0]
-
+	
 	if step.frames.size() == 1:
 		return
-
+	
 	if step.fps <= 0.0:
 		DebugLogger.error(
 			"Event step '%s' has invalid FPS: %s"
 			% [step.id, step.fps]
 		)
 		return
-
+	
 	frame_timer.wait_time = 1.0 / step.fps
 	frame_timer.start()
 
@@ -131,7 +132,7 @@ func _on_frame_timer_timeout() -> void:
 		DebugLogger.error("Frame timer running without current EventStep")
 		frame_timer.stop()
 		return
-
+	
 	if current_step.frames.is_empty():
 		DebugLogger.error(
 			"Frame timer running on EventStep '%s' without frames"
@@ -139,9 +140,9 @@ func _on_frame_timer_timeout() -> void:
 		)
 		frame_timer.stop()
 		return
-
+	
 	current_frame += 1
-
+	
 	if current_frame >= current_step.frames.size():
 		if current_step.loop:
 			current_frame = 0
@@ -149,7 +150,7 @@ func _on_frame_timer_timeout() -> void:
 			current_frame = current_step.frames.size() - 1
 			frame_timer.stop()
 			return
-
+	
 	event_image.texture = current_step.frames[current_frame]
 
 func _show_step_choices(step: EventStep) -> void:

@@ -25,10 +25,10 @@ layout_mode = 0
 offset_left = 460.0
 offset_top = 130.0
 offset_right = 1460.0
-offset_bottom = 830.0
+offset_bottom = 781.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CreditsContainer" unique_id=105090369]
-custom_minimum_size = Vector2(0, 615)
+custom_minimum_size = Vector2(0, 750)
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("1_dmcpd")
 theme_override_fonts/bold_font = ExtResource("1_dmcpd")

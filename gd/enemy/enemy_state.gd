@@ -202,6 +202,7 @@ func start_orgasm() -> void:
 
 	effects_changed.emit()
 	orgasm.emit()
+	AudioManager.play_sex_sound(&"cum")
 
 func get_disable_effect() -> EffectState:
 	for effect: EffectState in effects:

@@ -12,6 +12,7 @@ signal hide_debug_menu
 @onready var screen_size: OptionButton = %ScreenSizeButton
 @onready var language_button: OptionButton = %LanguageSelectButton
 @onready var discord_button: CheckButton = %DiscordButton
+@onready var debug_button: CheckButton = %DebugButton
 
 func _ready() -> void:
 	apply_settings_to_ui()
@@ -27,6 +28,7 @@ func apply_settings_to_ui() -> void:
 		screen_size.select(SettingsPreload.screen_size)
 	language_button.select(SettingsPreload.locale)
 	discord_button.set_pressed_no_signal(SettingsPreload.discord_activity)
+	debug_button.set_pressed_no_signal(DebugLogger.enabled)
 
 func _on_credits_button_pressed() -> void:
 	show_credits.emit()
@@ -56,9 +58,10 @@ func _on_sex_slider_value_changed(value: float) -> void:
 func _on_screen_mode_button_item_selected(index: int) -> void:
 	SettingsPreload.screen_mode = index
 	SettingsPreload.apply_screen_mode()
+	
 	if index == 1:
 		screen_size.disabled = true
-	else:
+	else: 
 		screen_size.disabled = false
 
 func _on_screen_size_button_item_selected(index: int) -> void:
@@ -81,14 +84,10 @@ func _on_cheats_line_edit_text_changed(new_text: String) -> void:
 		_: hide_debug_menu.emit()
 
 func auto_button_select() -> void:
-	if !is_visible_in_tree():
-		return
-	
-	master_slider.grab_focus()
+	if is_visible_in_tree(): master_slider.grab_focus()
 
 func _on_visibility_changed() -> void:
-	if visible:
-		call_deferred("auto_button_select")
+	if visible: call_deferred("auto_button_select")
 
 func _on_check_button_toggled(toggled_on: bool) -> void:
 	SettingsPreload.discord_activity = toggled_on
@@ -97,3 +96,15 @@ func _on_check_button_toggled(toggled_on: bool) -> void:
 		DiscordActivity.set_status("TID_MAIN_MENU")
 	else:
 		DiscordActivity.kill_activity()
+
+func _on_debug_button_toggled(toggled_on: bool) -> void:
+	if toggled_on: 
+		DebugLogger.start_logger()
+	else: 
+		DebugLogger.end_logger()
+
+func _on_sfx_slider_drag_ended(_value_changed: bool) -> void:
+	AudioManager.play_sound(&"hit")
+
+func _on_sex_slider_drag_ended(_value_changed: bool) -> void:
+	AudioManager.play_sex_sound(&"gag_1")

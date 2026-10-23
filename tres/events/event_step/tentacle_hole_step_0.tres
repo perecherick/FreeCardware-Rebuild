@@ -30,5 +30,6 @@ script = ExtResource("4_cm7ku")
 id = &"tentacle_hole_step_0"
 text = "TID_FALL_IN_HOLE"
 frames = Array[Texture2D]([ExtResource("4_lauyi"), ExtResource("5_46hr8"), ExtResource("6_52nb5"), ExtResource("7_nx6ft"), ExtResource("8_3gy5p"), ExtResource("9_u40gv"), ExtResource("10_gq4mj"), ExtResource("11_jiacg"), ExtResource("12_62lr3"), ExtResource("13_ix6d0"), ExtResource("14_3353c"), ExtResource("15_41uv3"), ExtResource("16_1wio7"), ExtResource("17_d7ka3"), ExtResource("18_qr4jn"), ExtResource("19_7dxbn"), ExtResource("20_lhitc"), ExtResource("21_67fqm")])
+music = &"event_0"
 choices = Array[ExtResource("1_c832h")]([ExtResource("2_52nb5"), ExtResource("3_nx6ft")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

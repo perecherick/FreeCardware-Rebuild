@@ -68,6 +68,7 @@ func start_run() -> void:
 	map.generate_map(mode, difficulty, act)
 	map.visible = true
 	DiscordActivity.set_run_status(act, mode, difficulty)
+	AudioManager.play_music(&"start_run")
 	run_started.emit(player)
 
 func _on_map_act_completed() -> void:
@@ -260,13 +261,14 @@ func _on_combat_won() -> void:
 	)
 	
 	player.apply_after_combat_hardware()
+	AudioManager.play_music(&"run")
 
 func _on_reward_card_picked(card: CardData) -> void:
 	if card == null:
 		return
-
+	
 	player.add_card(card)
-
+	
 	DebugLogger.info(
 		"Card added to player deck: %s"
 		% card.resource_path
@@ -280,7 +282,7 @@ func _on_reward_continue_pressed() -> void:
 func _get_combat_gold_reward() -> int:
 	match current_location_type:
 		"enemy":
-			return randi_range(100, 100)
+			return randi_range(15, 40)
 		"mini_boss":
 			return randi_range(25, 60)
 		"boss":
@@ -335,6 +337,7 @@ func get_random_event() -> EventData:
 func _leave_event() -> void:
 	event_menu.hide()
 	map.show()
+	AudioManager.play_music(&"run")
 
 func _open_event(event: EventData) -> void:
 	if event == null:

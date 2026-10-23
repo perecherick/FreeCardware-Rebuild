@@ -52,7 +52,6 @@ func setup(
 
 @warning_ignore("shadowed_variable_base_class")
 func _set_name(name: String) -> void:
-	DebugLogger.info("Card name set: %s" % name)
 	card_name.text = tr(name)
 	if tr(name).length() > 10:
 		card_name.add_theme_font_size_override("font_size", 12)
@@ -123,11 +122,9 @@ func _set_hover_description(preview: CardPreview) -> void:
 	card_description.text = tr(description).format(format_values)
 
 func _set_image(img: Texture) -> void:
-	DebugLogger.info("Card image set: %s" % img)
 	card_texture.texture = img
 
 func set_energy_cost(cost: int) -> void:
-	DebugLogger.info("Card cost set: %d" % cost)
 	card_energy_cost.text = str(cost)
 
 func set_available(value: bool) -> void:

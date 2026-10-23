@@ -5,11 +5,14 @@
 [ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_bjliv"]
 [ext_resource type="Texture2D" uid="uid://beemcl8k5cty3" path="res://img/events/tollbooth/gate.png" id="4_1gys1"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_a855i"]
+[ext_resource type="Resource" uid="uid://cu2he2tu0k6lu" path="res://tres/events/event_effects/tollbooth_bribe_roll.tres" id="4_bjliv"]
 
 [resource]
 script = ExtResource("4_a855i")
 id = &"tollbooth_step_0"
 text = "TID_TOLLBOOTH_0"
 frames = Array[Texture2D]([ExtResource("4_1gys1")])
+music = &"event_0"
 next_step = &"tollbooth_step_1"
+effects = Array[ExtResource("3_bjliv")]([ExtResource("4_bjliv")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

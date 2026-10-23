@@ -11,5 +11,6 @@
 script = ExtResource("4_80nk8")
 id = &"swimming_step_0"
 text = "TID_FOUND_SWIMMING_POOL"
+music = &"event_0"
 choices = Array[ExtResource("1_vkgtp")]([ExtResource("2_3ceuu"), ExtResource("3_80nk8")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

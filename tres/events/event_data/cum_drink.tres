@@ -1,14 +1,20 @@
 [gd_resource type="Resource" script_class="EventData" format=3 uid="uid://d4hwtsglhotb4"]
 
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_fd3dm"]
 [ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_ohqsj"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_0j68k"]
+[ext_resource type="Resource" uid="uid://dj3i2khmhbivu" path="res://tres/events/event_conditional_choice/cum_drink.tres" id="2_w3fbu"]
 [ext_resource type="Resource" uid="uid://cciwol57ceqna" path="res://tres/events/event_step/cum_drink_step_0.tres" id="3_0j68k"]
-[ext_resource type="Resource" uid="uid://dl0vrhqwedyii" path="res://tres/events/event_step/cum_drink_sip_0.tres" id="4_3e5qg"]
-[ext_resource type="Resource" uid="uid://dkh5rkbk0arkh" path="res://tres/events/event_step/cum_drink_another_sip.tres" id="6_fd3dm"]
-[ext_resource type="Resource" uid="uid://hjjcc5ixmcjs" path="res://tres/events/event_step/cum_drink_chug.tres" id="8_rseab"]
+[ext_resource type="Resource" uid="uid://dlgq0o0olr72t" path="res://tres/events/event_step/cum_drink_step_mystery_0.tres" id="6_3e5qg"]
+[ext_resource type="Resource" uid="uid://vmpoa4hdeqov" path="res://tres/events/event_step/cum_drink_step_1.tres" id="7_uoyev"]
+[ext_resource type="Resource" uid="uid://1vd7a8sl6ccx" path="res://tres/events/event_step/cum_drink_step_mystery_1.tres" id="8_06ee7"]
+[ext_resource type="Resource" uid="uid://ct5weihywdv7c" path="res://tres/events/event_step/cum_drink_step_mystery_2.tres" id="9_rseab"]
+[ext_resource type="Resource" uid="uid://baa3bviwgp8ug" path="res://tres/events/event_step/cum_drink_step_spill.tres" id="10_ilmk6"]
 
 [resource]
 script = ExtResource("1_ohqsj")
 id = &"cum_drink"
-steps = Array[ExtResource("2_0j68k")]([ExtResource("3_0j68k"), ExtResource("4_3e5qg"), ExtResource("8_rseab"), ExtResource("6_fd3dm")])
+steps = Array[ExtResource("2_0j68k")]([ExtResource("3_0j68k"), ExtResource("7_uoyev"), ExtResource("8_06ee7"), ExtResource("9_rseab"), ExtResource("10_ilmk6")])
+starting_step = ExtResource("6_3e5qg")
+conditional_starting_steps = Array[ExtResource("1_fd3dm")]([ExtResource("2_w3fbu")])
 metadata/_custom_type_script = "uid://clolljx3cfc5f"

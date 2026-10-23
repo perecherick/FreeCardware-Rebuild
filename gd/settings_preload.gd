@@ -95,11 +95,7 @@ func apply_audio() -> void:
 
 func set_bus_volume(bus_name: String, value: float) -> void:
 	var bus_index: int = AudioServer.get_bus_index(bus_name)
-
-	if bus_index == -1:
-		DebugLogger.warning("Audio bus not found: %s" % bus_name)
-		return
-
+	
 	AudioServer.set_bus_volume_db(bus_index, linear_to_db(value))
 
 func load_character() -> void:

@@ -24,7 +24,9 @@ class_name Main
 @onready var player_sprite: PlayerSprite = $MainHud/PlayerHud/PlayerSprite
 
 func _ready() -> void:
-	debug_menu.show()
+	if OS.is_debug_build():
+		debug_menu.show()
+	
 	loss_menu.go_to_main_menu.connect(show_main_menu)
 	main_hud.pause.connect(toggle_pause_menu_visible)
 	character_selection.hide_character_selection.connect(hide_character_selection)
@@ -52,6 +54,7 @@ func show_main_menu() -> void:
 	pause_menu.visible = false
 	main_menu.visible = true
 	DiscordActivity.set_status("TID_MAIN_MENU")
+	AudioManager.play_music(&"main_menu")
 
 func show_credits() -> void:
 	credits.visible = true

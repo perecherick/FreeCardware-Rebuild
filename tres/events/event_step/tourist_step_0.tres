@@ -26,5 +26,6 @@ script = ExtResource("4_s35qf")
 id = &"tourist_step_0"
 text = "TID_TOURIST_0"
 frames = Array[Texture2D]([ExtResource("4_0phwd"), ExtResource("5_wlpx1"), ExtResource("6_lw4v8"), ExtResource("7_qti7d"), ExtResource("8_ivbrm"), ExtResource("9_h4gwx"), ExtResource("10_07qjg"), ExtResource("11_yfics"), ExtResource("12_icv3d"), ExtResource("13_lux3b"), ExtResource("14_p23it"), ExtResource("15_fqsvg"), ExtResource("16_dg3on"), ExtResource("17_3qaey"), ExtResource("18_4p4ct"), ExtResource("19_l58f4")])
+music = &"event_0"
 next_step = &"tourist_step_1"
 metadata/_custom_type_script = "uid://d023vifri6y0k"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StringNamePair" format=3 uid="uid://c4hxj4qpcd5dd"]
+
+[ext_resource type="Script" uid="uid://ctxp58gvugpnr" path="res://gd/event/event_effects/stringname_pair.gd" id="1_dnqtf"]
+
+[resource]
+script = ExtResource("1_dnqtf")
+key = &"charging_station_hack"
+value = &"gold"
+metadata/_custom_type_script = "uid://ctxp58gvugpnr"

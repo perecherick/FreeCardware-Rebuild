@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RandomEventEffect" format=3 uid="uid://k280vot3llu6"]
+
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="1_d0yp3"]
+[ext_resource type="Resource" uid="uid://dg4tr2eoe07mu" path="res://tres/events/event_set_value/charging_station_hack_gold.tres" id="2_htuox"]
+[ext_resource type="Script" uid="uid://4d070gtwhlo0" path="res://gd/event/event_effects/random_effect.gd" id="2_mnndr"]
+[ext_resource type="Resource" uid="uid://bqlk0jt5pgvva" path="res://tres/events/event_set_value/charging_station_hack_lp.tres" id="3_8omvj"]
+
+[resource]
+script = ExtResource("2_mnndr")
+effect_list = Array[ExtResource("1_d0yp3")]([ExtResource("2_htuox"), ExtResource("3_8omvj")])
+text_list = Array[StringName]([&"gold", &"lp"])
+metadata/_custom_type_script = "uid://4d070gtwhlo0"

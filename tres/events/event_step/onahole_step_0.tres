@@ -5,11 +5,13 @@
 [ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_ybhre"]
 [ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="3_87tkn"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_odht7"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="4_87tkn"]
 
 [resource]
 script = ExtResource("3_odht7")
 id = &"onahole_step_0"
 text = "TID_ONAHOLE_0"
 loop = false
+music = &"event_0"
 choices = Array[ExtResource("1_helu0")]([ExtResource("2_odht7"), ExtResource("3_87tkn")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

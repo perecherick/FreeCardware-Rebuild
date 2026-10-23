@@ -13,6 +13,7 @@ id = &"tentacle_hole_step_4"
 text = "TID_STRUGGLE_2"
 frames = Array[Texture2D]([ExtResource("4_3m7sx")])
 loop = false
+music = &"event_success"
 next_step = &"tentacle_hole_step_5"
 effects = Array[ExtResource("3_qfdya")]([ExtResource("4_6qrp4")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

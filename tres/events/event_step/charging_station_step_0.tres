@@ -7,12 +7,14 @@
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="3_prnua"]
 [ext_resource type="Resource" uid="uid://b764kw1gb8ycc" path="res://tres/events/event_choices/charging_station_hack.tres" id="4_uf1aq"]
 [ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="5_fqatc"]
-[ext_resource type="Resource" uid="uid://bydiefnxdsnjf" path="res://tres/events/event_effects/laundromat_clothes_search_roll.tres" id="7_f0x7k"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="6_uf1aq"]
+[ext_resource type="Resource" uid="uid://k280vot3llu6" path="res://tres/events/event_effects/charging_station_hack_roll.tres" id="8_uf1aq"]
 
 [resource]
 script = ExtResource("3_prnua")
 id = &"charging_station_step_0"
 text = "TID_FOUND_CHARGING_STATION"
-effects = Array[ExtResource("2_g56ib")]([ExtResource("7_f0x7k")])
+music = &"event_0"
+effects = Array[ExtResource("2_g56ib")]([ExtResource("8_uf1aq")])
 choices = Array[ExtResource("1_0q2s6")]([ExtResource("2_kyfbk"), ExtResource("3_f0x7k"), ExtResource("4_uf1aq"), ExtResource("5_fqatc")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

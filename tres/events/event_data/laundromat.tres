@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="EventData" format=3 uid="uid://bvyy2vh653t7o"]
 
 [ext_resource type="Script" uid="uid://clolljx3cfc5f" path="res://gd/event/event_data.gd" id="1_gps5y"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="1_ms2ag"]
 [ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="2_254ir"]
 [ext_resource type="Resource" uid="uid://baxso6odetwe3" path="res://tres/events/event_step/laundromat_look_for_clothes.tres" id="3_bmr1x"]
 [ext_resource type="Resource" uid="uid://bekeaiosd10p1" path="res://tres/events/event_step/laundromat_step_0.tres" id="4_iw4h2"]
@@ -18,5 +19,6 @@
 [resource]
 script = ExtResource("1_gps5y")
 id = &"laundromat"
-steps = Array[ExtResource("2_254ir")]([ExtResource("4_iw4h2"), ExtResource("3_bmr1x"), ExtResource("5_5ad5h"), ExtResource("6_jng06"), ExtResource("6_iw4h2"), ExtResource("6_p0b70"), ExtResource("11_3wrbq"), ExtResource("5_sjt4u"), ExtResource("8_vbgmv"), ExtResource("9_3wrbq"), ExtResource("10_vbgmv"), ExtResource("14_jng06")])
+steps = Array[ExtResource("2_254ir")]([ExtResource("3_bmr1x"), ExtResource("5_5ad5h"), ExtResource("6_jng06"), ExtResource("6_iw4h2"), ExtResource("6_p0b70"), ExtResource("11_3wrbq"), ExtResource("5_sjt4u"), ExtResource("8_vbgmv"), ExtResource("9_3wrbq"), ExtResource("10_vbgmv"), ExtResource("14_jng06")])
+starting_step = ExtResource("4_iw4h2")
 metadata/_custom_type_script = "uid://clolljx3cfc5f"

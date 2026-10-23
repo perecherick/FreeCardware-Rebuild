@@ -11,6 +11,7 @@ script = ExtResource("3_3f6b7")
 id = &"panty_gamble_step_0"
 text = "TID_SPOT_GREMLIN"
 loop = false
+music = &"event_0"
 next_step = &"panty_gamble_dissapointed"
 conditional_next_steps = Array[ExtResource("2_3f6b7")]([ExtResource("3_bg38i")])
 metadata/_custom_type_script = "uid://d023vifri6y0k"

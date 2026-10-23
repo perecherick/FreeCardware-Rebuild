@@ -86,6 +86,7 @@ func start_combat(
 	
 	combat_hud.setup(player)
 	start_player_turn()
+	AudioManager.play_music(&"battle")
 
 func draw_cards(amount: int) -> void:
 	var drawn: int = 0
@@ -215,6 +216,7 @@ func _perform_enemy_move(
 
 	for action: MoveData in move.actions:
 		_execute_enemy_action(enemy_view, action)
+		AudioManager.play_sound(&"hit")
 
 		if player.hp <= 0:
 			return
@@ -489,6 +491,7 @@ func _play_card_on_enemy(
 	_handle_enemy_death(enemy_view)
 	
 	_on_player_energy_changed()
+	AudioManager.play_sound(&"hit")
 
 func _play_card_on_player(
 	card: CardData,
@@ -676,9 +679,9 @@ func _on_enemy_orgasm_over(enemy: EnemyState) -> void:
 	if player.active_enemy != enemy:
 		return
 
-	sex_animation.finish_orgasm(
-		player.sex_state
-	)
+	#sex_animation.finish_orgasm(
+		#player.sex_state
+	#)
 
 func _apply_card_effects(
 	card: CardData,

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://1vd7a8sl6ccx"]
+
+[ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_hu0tc"]
+[ext_resource type="Resource" uid="uid://j5u0r6a2qbxi" path="res://tres/events/event_choices/drink_cum_choice_another_sip.tres" id="2_tddaw"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_ud5pw"]
+[ext_resource type="Resource" uid="uid://dyf060sp2sgdf" path="res://tres/events/event_choices/leave.tres" id="3_fllnp"]
+[ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="3_iqyx5"]
+[ext_resource type="Script" uid="uid://d023vifri6y0k" path="res://gd/event/event_step.gd" id="4_tddaw"]
+[ext_resource type="Texture2D" uid="uid://l1lwy5c7mmwb" path="res://img/events/cum_drink/drinking cum.png" id="6_4hj8s"]
+[ext_resource type="Resource" uid="uid://cjoqc2c4835rm" path="res://tres/events/event_effects/cum_drink_spill_roll.tres" id="6_fllnp"]
+
+[resource]
+script = ExtResource("4_tddaw")
+id = &"cum_drink_step_mystery_1"
+text = "TID_MYSTERY_DRINK_1"
+frames = Array[Texture2D]([ExtResource("6_4hj8s")])
+loop = false
+sex_sound = &"gag_0"
+effects = Array[ExtResource("3_iqyx5")]([ExtResource("6_fllnp")])
+choices = Array[ExtResource("1_hu0tc")]([ExtResource("2_tddaw"), ExtResource("3_fllnp")])
+metadata/_custom_type_script = "uid://d023vifri6y0k"

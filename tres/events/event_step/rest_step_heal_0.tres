@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="EventStep" format=3 uid="uid://kwwlcia02rva"]
 
 [ext_resource type="Script" uid="uid://caycj4xh6qpbk" path="res://gd/event/event_choice.gd" id="1_54tr7"]
+[ext_resource type="Script" uid="uid://b5lem4i7qg8w4" path="res://gd/event/event_conditional_step.gd" id="2_lsl4d"]
 [ext_resource type="Script" uid="uid://cp30fgur2mpa5" path="res://gd/event/event_effect.gd" id="2_yge5c"]
 [ext_resource type="Texture2D" uid="uid://dx1t6h0a2505n" path="res://img/events/rest/heal/tile000.png" id="3_lsl4d"]
 [ext_resource type="Texture2D" uid="uid://bxyt1ax162i3o" path="res://img/events/rest/heal/tile001.png" id="4_lr07q"]

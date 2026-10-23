@@ -17,6 +17,10 @@ config/icon="uid://1xpv2g37ciqr"
 config/macos_native_icon="res://img/icons/icon.icns"
 config/windows_native_icon="res://img/icons/icon.ico"
 
+[audio]
+
+buses/default_bus_layout="uid://by6smvh5nic0p"
+
 [autoload]
 
 SettingsPreload="*uid://ktr6hh5bjulm"
@@ -26,6 +30,7 @@ EnemyLibrary="*uid://dxbk2i2hj2u6t"
 DiscordActivity="*uid://01rja77q8hr2"
 EventLibrary="*uid://hm11i2hsk27y"
 SexLibrary="*uid://cftu44xus7klg"
+AudioManager="*uid://bwoxkh2h4icbx"
 
 [display]
 
