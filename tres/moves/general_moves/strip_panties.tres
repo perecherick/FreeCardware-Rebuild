@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EnemyMove" format=3 uid="uid://16u4gi8w1r47"]
+
+[ext_resource type="Script" uid="uid://bh106js5jebrk" path="res://gd/enemy/moves/move_data.gd" id="1_joxpa"]
+[ext_resource type="Resource" uid="uid://c1q0d5snrodoq" path="res://tres/moves/move_data/strip_panties.tres" id="2_8x8qo"]
+[ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_odukc"]
+
+[resource]
+script = ExtResource("2_odukc")
+intent = "TID_STRIP"
+actions = Array[ExtResource("1_joxpa")]([ExtResource("2_8x8qo")])
+metadata/_custom_type_script = "uid://uc301mr4sl08"

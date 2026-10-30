@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cplggl5ukrrdo" path="res://img/background/Alley_2_sized.png" id="1_0q2xw"]
 [ext_resource type="Script" uid="uid://31017q4m43is" path="res://gd/characters/character_data.gd" id="1_nie6r"]
 [ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="3_ntb2e"]
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="4_fl8lf"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="4_fl8lf"]
 [ext_resource type="Resource" uid="uid://dy4yog4vallty" path="res://tres/cards/tentacle_inside.tres" id="5_kpt8x"]
 [ext_resource type="Resource" uid="uid://jwdfnjsuotot" path="res://tres/hardware/succubus_mark.tres" id="5_ntb2e"]
 [ext_resource type="Resource" uid="uid://cqmelf54nwhs6" path="res://tres/cards/blowjob.tres" id="5_vd7au"]

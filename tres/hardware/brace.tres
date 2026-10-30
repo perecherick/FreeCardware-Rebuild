@@ -1,6 +1,8 @@
 [gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://ddu85vo6ohkg7"]
 
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_mhocl"]
+[ext_resource type="Script" uid="uid://co5sn2hc5b48d" path="res://gd/hardware/hardware_effects.gd" id="1_026u0"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="1_mhocl"]
+[ext_resource type="Resource" uid="uid://dxuejwjwlm1aj" path="res://tres/hardware/hardware_effects/brace.tres" id="2_jpu5m"]
 
 [resource]
 script = ExtResource("1_mhocl")
@@ -8,4 +10,5 @@ id = "brace"
 name = "TID_BRACE"
 description = "TID_BRACE_DESC"
 color = "aqua"
+effects = Array[ExtResource("1_026u0")]([ExtResource("2_jpu5m")])
 metadata/_custom_type_script = "uid://cdt11w1g8lgws"

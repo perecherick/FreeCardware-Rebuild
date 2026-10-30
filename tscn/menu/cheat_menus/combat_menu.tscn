@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bf6neeifax0bg"]
+
+[ext_resource type="PackedScene" uid="uid://fcermrhselry" path="res://tscn/menu/cheat_menus/cheat_submenu_template.tscn" id="1_hhoye"]
+[ext_resource type="Script" uid="uid://ouxywbxyb0c7" path="res://combat_menu.gd" id="2_qfg6g"]
+
+[node name="CombatMenu" unique_id=71860582 instance=ExtResource("1_hhoye")]
+script = ExtResource("2_qfg6g")
+
+[node name="Label" parent="ColorRect" parent_id_path=PackedInt32Array(523543793) index="0" unique_id=1399750212]
+text = "TID_START_COMBAT"

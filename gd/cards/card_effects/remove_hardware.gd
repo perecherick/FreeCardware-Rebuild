@@ -4,13 +4,12 @@ extends CardEffect
 
 @export var hardwares: Array[HardwareData]
 
-@warning_ignore("unused_parameter")
 func apply(
 	combat: Combat,
-	card: CardData,
-	enemy: EnemyState = null,
-	spent_energy: int = 0,
-	preview: CardPreview = null
+	_card: CardData,
+	_enemy: EnemyState = null,
+	_spent_energy: int = 0,
+	_preview: CardPreview = null
 ) -> void:
 	for hardware: HardwareData in hardwares:
 		if hardware == null:

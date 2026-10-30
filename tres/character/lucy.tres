@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b6bkcoru5x64n" path="res://img/background/Alley_1_sized.png" id="1_pgd1v"]
 [ext_resource type="Script" uid="uid://dd0ln3fcnoq7e" path="res://gd/cards/card_data.gd" id="3_juq85"]
 [ext_resource type="Resource" uid="uid://dsujb3dmh24yq" path="res://tres/cards/strike.tres" id="4_juq85"]
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="4_s7ueg"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="4_s7ueg"]
 [ext_resource type="Resource" uid="uid://4d050h1vo73s" path="res://tres/cards/touch.tres" id="5_pdh0t"]
 [ext_resource type="Resource" uid="uid://c3cb3x8syb8nh" path="res://tres/cards/shove.tres" id="6_xjghh"]
 [ext_resource type="Resource" uid="uid://dm6xu8fci20hm" path="res://tres/hardware/virgin.tres" id="8_juq85"]

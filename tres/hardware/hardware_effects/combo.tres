@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="OnEndTurnHardwareEffect" format=3 uid="uid://cdhcti5yv3684"]
+
+[ext_resource type="Script" uid="uid://2fqdg6tf4bby" path="res://gd/hardware/hardware_effects/on_end_turn.gd" id="1_a88dy"]
+
+[resource]
+script = ExtResource("1_a88dy")
+required_card_id = "chain_strike"
+metadata/_custom_type_script = "uid://2fqdg6tf4bby"

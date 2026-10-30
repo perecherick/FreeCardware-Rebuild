@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EventAddHardware" format=3 uid="uid://yufds6ld432m"]
 
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_2pcmp"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="1_2pcmp"]
 [ext_resource type="Script" uid="uid://cx8vxvyghxwxv" path="res://gd/event/event_effects/add_hardware.gd" id="2_cpxu5"]
 [ext_resource type="Resource" uid="uid://c6u6653t22jbt" path="res://tres/hardware/linked_pussy.tres" id="2_j37qa"]
 

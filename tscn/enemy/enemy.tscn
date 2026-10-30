@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="2_gcg8i"]
 [ext_resource type="FontFile" uid="uid://bwn8f7xlu3q4q" path="res://fonts/ark-pixel-16px-proportional-latin.ttf" id="3_dkh6o"]
 [ext_resource type="Texture2D" uid="uid://p5760bgvhk3y" path="res://img/enemies/enemy_selection_border.png" id="4_ovw7n"]
-[ext_resource type="Script" uid="uid://b7n2wf1a3t7v8" path="res://gd/combat_visual_animator.gd" id="6_dkh6o"]
+[ext_resource type="Script" uid="uid://b7n2wf1a3t7v8" path="res://gd/combat/combat_visual_animator.gd" id="6_dkh6o"]
 
 [node name="Enemy" type="Node2D" unique_id=219881952]
 script = ExtResource("1_gcg8i")

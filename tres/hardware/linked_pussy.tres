@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://c6u6653t22jbt"]
 
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_yy4wb"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="1_yy4wb"]
 
 [resource]
 script = ExtResource("1_yy4wb")

@@ -56,7 +56,7 @@ var panties_removed: bool:
 	set(value):
 		if panties_removed == value:
 			return
-
+		
 		panties_removed = value
 		_on_panties_state_changed()
 
@@ -96,25 +96,50 @@ func setup(data: CharacterData) -> void:
 	sex_initiator = SexInitiator.NONE
 	orgasm_skip_left = 0
 
-func take_damage(amount: int) -> void:
+func take_damage(amount: int) -> bool:
+	if amount <= 0: return false
+	
+	var event: PlayerTakeDamageEvent = PlayerTakeDamageEvent.new(self, amount)
+	GameEvents.player_take_damage.emit(event)
+	
+	if event.is_cancelled() or event.amount <= 0: return false
+	
+	hp = clampi(hp - event.amount, 0, max_hp)
+	hp_changed.emit(hp, max_hp)
+	return true
+
+func take_orgasm_damage(amount: int) -> void:
+	if amount <= 0: return
+	
 	hp = clampi(hp - amount, 0, max_hp)
 	hp_changed.emit(hp, max_hp)
 
 func heal(amount: int) -> void:
+	if amount <= 0: return
+	
+	var event: PlayerHealEvent = PlayerHealEvent.new(self, amount)
+	GameEvents.player_heal.emit(event)
+	
+	if event.is_cancelled() or event.hp <= 0: return
+	
 	hp = clampi(hp + amount, 0, max_hp)
 	hp_changed.emit(hp, max_hp)
 
 func take_lp(amount: int) -> void:
-	if amount <= 0:
-		return
+	if amount <= 0: return
+	
+	var event: PlayerTakeLPEvent = PlayerTakeLPEvent.new(self, amount)
+	GameEvents.player_take_lp.emit(event)
+	
+	if event.is_cancelled() or event.amount <= 0: return
 	
 	var total_amount: int = (
-		amount * 2 if is_orgasming() else amount
+		event.amount * 2 if is_orgasming() else event.amount
 	)
 	
 	lp = clampi(lp + total_amount, 0, max_lp)
 	if is_orgasming():
-		take_damage(amount)
+		take_orgasm_damage(event.amount)
 	
 	if lp >= max_lp:
 		lp = 0
@@ -134,6 +159,13 @@ func add_lp(amount: int) -> void:
 		AudioManager.play_sex_sound(&"breathing")
 
 func reduce_lp(amount: int) -> void:
+	if amount <= 0: return
+	
+	var event: PlayerReduceLPEvent = PlayerReduceLPEvent.new(self, amount)
+	GameEvents.player_reduce_lp.emit(event)
+	
+	if event.is_cancelled() or event.lp <= 0: return
+	
 	lp = clampi(lp - amount, 0, max_lp)
 	lp_changed.emit(lp, max_lp)
 
@@ -363,17 +395,6 @@ func get_hardware_count(id: String) -> int:
 			count += 1
 
 	return count
-
-func apply_after_combat_hardware() -> void:
-	for item: HardwareData in hardware:
-		if item.hp_after_combat > 0:
-			heal(item.hp_after_combat)
-		elif item.hp_after_combat < 0:
-			take_damage(-item.hp_after_combat)
-		if item.lp_after_combat > 0:
-			take_lp(item.lp_after_combat)
-		elif item.lp_after_combat < 0:
-			reduce_lp(-item.lp_after_combat)
 
 func end_orgasm() -> void:
 	if !is_orgasming():

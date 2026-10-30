@@ -1,6 +1,8 @@
 [gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://dm6xu8fci20hm"]
 
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_bwy66"]
+[ext_resource type="Script" uid="uid://co5sn2hc5b48d" path="res://gd/hardware/hardware_effects.gd" id="1_2t8nq"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="1_bwy66"]
+[ext_resource type="Resource" uid="uid://ewhsc2socf8p" path="res://tres/hardware/hardware_effects/virgin.tres" id="2_74fwu"]
 
 [resource]
 script = ExtResource("1_bwy66")
@@ -9,6 +11,5 @@ name = "TID_VIRGIN_NAME"
 description = "TID_VIRGIN_DESC"
 color = "pink"
 lewdness = -3
-hp_after_combat = 3
-lp_after_combat = -2
+effects = Array[ExtResource("1_2t8nq")]([ExtResource("2_74fwu")])
 metadata/_custom_type_script = "uid://cdt11w1g8lgws"

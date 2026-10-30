@@ -36,6 +36,7 @@ func _ready() -> void:
 	credits.show_settings.connect(toggle_settings)
 	win_menu.go_to_main_menu.connect(show_main_menu)
 	debug_menu.event_requested.connect(run_manager.open_debug_event)
+	debug_menu.combat_menu.debug_combat_request.connect(run_manager.start_debug_combat)
 	run_manager.run_started.connect(debug_menu.setup_player)
 	debug_menu.setup()
 	

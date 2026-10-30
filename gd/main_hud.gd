@@ -1,5 +1,5 @@
 # My dear LewdTheMoon, if by any chance you're reading this, 
-# please contact me, i've got something to tell, you my guy :3
+# please contact me, i've got something to tell you, my guy :3
 extends Control
 
 signal pause

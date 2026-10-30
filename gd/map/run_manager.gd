@@ -11,6 +11,7 @@ signal run_started(player: PlayerState)
 @onready var hud: Control = $"../PlayerHud"
 @onready var combat_scene: Combat = $"../Combat"
 @onready var event_combat_scene: EventCombat = $"../EventCombat"
+@onready var debug_combat_scene: DebugCombat = $"../DebugCombat"
 @onready var deck: Deck = $"../Deck"
 @onready var card_hand: Control = $"../Combat/CardHand"
 @onready var reward_menu: RewardMenu = $"../RewardMenu"
@@ -42,6 +43,8 @@ func _ready() -> void:
 	event_menu.start_event_combat.connect(_start_event_combat)
 	event_combat_scene.event_combat_won.connect(_event_combat_won)
 	event_combat_scene.event_combat_lost.connect(_event_combat_lost)
+	debug_combat_scene.debug_combat_won.connect(_on_debug_combat_won)
+	debug_combat_scene.debug_combat_lost.connect(_on_debug_combat_lost)
 
 func start_run() -> void:
 	act = 1
@@ -170,6 +173,11 @@ func _start_event_combat(
 		player_lose_move
 	)
 
+func start_debug_combat(enemy: EnemyData) -> void:
+	map.hide()
+	debug_combat_scene.show()
+	debug_combat_scene.start_combat([enemy], player)
+
 func _start_combat(combat_enemies: Array[EnemyData]) -> void:
 	map.hide()
 	combat_scene.show()
@@ -260,7 +268,6 @@ func _on_combat_won() -> void:
 		3
 	)
 	
-	player.apply_after_combat_hardware()
 	AudioManager.play_music(&"run")
 
 func _on_reward_card_picked(card: CardData) -> void:
@@ -364,3 +371,15 @@ func _event_combat_lost() -> void:
 	event_combat_scene.hide()
 	event_menu.show()
 	event_menu.go_to_step(event_lose_step)
+
+func _on_debug_combat_won() -> void:
+	debug_combat_scene.hide()
+	map.show()
+	AudioManager.play_music(&"run")
+
+func _on_debug_combat_lost() -> void:
+	debug_combat_scene.hide()
+	map.show()
+	player.heal(player.max_hp)
+	player.reduce_lp(player.max_lp)
+	AudioManager.play_music(&"run")

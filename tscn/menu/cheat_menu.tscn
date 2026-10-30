@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://v4bs46amubnm" path="res://tscn/menu/cheat_menus/event_menu.tscn" id="3_ce0q4"]
 [ext_resource type="PackedScene" uid="uid://d0bptx4btfwra" path="res://tscn/menu/remove_card.tscn" id="4_bo2um"]
 [ext_resource type="PackedScene" uid="uid://da445nxt04k4o" path="res://tscn/menu/cheat_menus/sex_menu.tscn" id="6_osd7h"]
+[ext_resource type="PackedScene" uid="uid://tr54e3mr3ls7" path="res://tscn/menu/cheat_menus/hardware_menu.tscn" id="7_4jcvh"]
+[ext_resource type="PackedScene" uid="uid://bf6neeifax0bg" path="res://tscn/menu/cheat_menus/combat_menu.tscn" id="8_4wxit"]
 
 [node name="DebugMenu" type="Control" unique_id=995641294]
 z_index = 3001
@@ -130,7 +132,7 @@ size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("1_qcgr4")
 text = "INSTAWIN_COMBAT"
 
-[node name="StatusesMenu" type="Button" parent="DebugMenu" unique_id=1159566080]
+[node name="HardwareMenu" type="Button" parent="DebugMenu" unique_id=1159566080]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("1_qcgr4")
@@ -161,6 +163,16 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 1
 
+[node name="HardwareMenu" parent="SubMenus" unique_id=1607384383 instance=ExtResource("7_4jcvh")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[node name="CombatMenu" parent="SubMenus" unique_id=241224130 instance=ExtResource("8_4wxit")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
 [connection signal="pressed" from="ToggleMenu" to="." method="_on_toggle_menu_pressed"]
 [connection signal="pressed" from="DebugMenu/AddCard" to="." method="_on_add_card_pressed"]
 [connection signal="pressed" from="DebugMenu/RemoveCard" to="." method="_on_remove_card_pressed"]
@@ -169,5 +181,7 @@ layout_mode = 1
 [connection signal="pressed" from="DebugMenu/ClothesContainer/ClothesToggle" to="." method="_on_clothes_toggle_pressed"]
 [connection signal="pressed" from="DebugMenu/ClothesContainer/TornToggle" to="." method="_on_torn_toggle_pressed"]
 [connection signal="pressed" from="DebugMenu/ClothesContainer/PantiesToggle" to="." method="_on_panties_toggle_pressed"]
+[connection signal="pressed" from="DebugMenu/CombatContainer/CombatMenu" to="." method="_on_combat_menu_pressed"]
+[connection signal="pressed" from="DebugMenu/HardwareMenu" to="." method="_on_hardware_menu_pressed"]
 [connection signal="card_selected" from="SubMenus/AddCard" to="." method="_on_add_card_card_selected"]
 [connection signal="event_selected" from="SubMenus/EventMenu" to="." method="_on_event_menu_event_selected"]

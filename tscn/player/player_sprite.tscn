@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b1mpriwwjas5a" path="res://tscn/player/standart_sprite.tscn" id="1_davce"]
 [ext_resource type="PackedScene" uid="uid://bbafjvg7n2sf2" path="res://tscn/sex/sex_animation.tscn" id="2_fmyes"]
 [ext_resource type="Texture2D" uid="uid://c2ijpgpdm3wow" path="res://img/main/selection_border.png" id="5_1uwbt"]
-[ext_resource type="Script" uid="uid://b7n2wf1a3t7v8" path="res://gd/combat_visual_animator.gd" id="5_2ib1l"]
+[ext_resource type="Script" uid="uid://b7n2wf1a3t7v8" path="res://gd/combat/combat_visual_animator.gd" id="5_2ib1l"]
 
 [node name="PlayerSprite" type="Node2D" unique_id=1479569717]
 script = ExtResource("1_25ch4")

@@ -13,6 +13,8 @@ config_version=5
 config/name="Free Cardware: Rebuild"
 run/main_scene="uid://c6xs05vwdl5gk"
 config/features=PackedStringArray("4.7", "Mobile")
+boot_splash/bg_color=Color(0.1882353, 0.14117648, 0.34901962, 1)
+boot_splash/show_image=false
 config/icon="uid://1xpv2g37ciqr"
 config/macos_native_icon="res://img/icons/icon.icns"
 config/windows_native_icon="res://img/icons/icon.ico"
@@ -31,6 +33,8 @@ DiscordActivity="*uid://01rja77q8hr2"
 EventLibrary="*uid://hm11i2hsk27y"
 SexLibrary="*uid://cftu44xus7klg"
 AudioManager="*uid://bwoxkh2h4icbx"
+HardwareLibrary="*uid://c2fqfxk2rpla"
+GameEvents="*uid://eudpl34ne0k8"
 
 [display]
 

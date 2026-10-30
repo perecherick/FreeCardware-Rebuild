@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b42lcmpk0fand" path="res://gd/enemy/enemy_effects.gd" id="1_bpajo"]
 [ext_resource type="Script" uid="uid://uc301mr4sl08" path="res://gd/enemy/moves/enemy_move.gd" id="2_h26ia"]
 [ext_resource type="Script" uid="uid://coasviibakvjg" path="res://gd/enemy/enemy_data.gd" id="3_a38rd"]
+[ext_resource type="Resource" uid="uid://16u4gi8w1r47" path="res://tres/moves/general_moves/strip_panties.tres" id="3_qw7f2"]
 [ext_resource type="Texture2D" uid="uid://bigowwhlym35m" path="res://img/enemies/default/cashier.png" id="4_h26ia"]
 
 [resource]
@@ -11,4 +12,8 @@ id = "cashier"
 name = "TID_CASHIER"
 texture = ExtResource("4_h26ia")
 type = 1
+max_hp = 4
+starting_hp = 4
+max_pp = 5
+move_list = Array[ExtResource("2_h26ia")]([ExtResource("3_qw7f2")])
 metadata/_custom_type_script = "uid://coasviibakvjg"

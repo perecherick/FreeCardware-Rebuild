@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ope6qcxaug2t"]
 
 [ext_resource type="FontFile" uid="uid://dbipp61low5s7" path="res://fonts/ark-pixel-10px-proportional-latin.ttf" id="1_6l8ij"]
-[ext_resource type="Script" uid="uid://cwcsna6a5e8xj" path="res://gd/combat_hud.gd" id="1_jwdsw"]
+[ext_resource type="Script" uid="uid://cwcsna6a5e8xj" path="res://gd/combat/combat_hud.gd" id="1_jwdsw"]
 [ext_resource type="Texture2D" uid="uid://ctdsgpew8fegl" path="res://img/combat/battery.png" id="2_jwdsw"]
 [ext_resource type="FontFile" uid="uid://cwbe5yl77w44q" path="res://fonts/ark-pixel-12px-proportional-latin.ttf" id="3_uawha"]
 

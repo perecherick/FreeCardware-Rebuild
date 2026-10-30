@@ -1,6 +1,8 @@
 [gd_resource type="Resource" script_class="HardwareData" format=3 uid="uid://bk3o48gibs5s6"]
 
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_d1ue6"]
+[ext_resource type="Script" uid="uid://co5sn2hc5b48d" path="res://gd/hardware/hardware_effects.gd" id="1_6orvm"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="1_d1ue6"]
+[ext_resource type="Resource" uid="uid://cdhcti5yv3684" path="res://tres/hardware/hardware_effects/combo.tres" id="2_gf5qe"]
 
 [resource]
 script = ExtResource("1_d1ue6")
@@ -10,4 +12,5 @@ description = "TID_COMBO_DESC"
 color = "aqua"
 stackable = true
 max_stacks = 6
+effects = Array[ExtResource("1_6orvm")]([ExtResource("2_gf5qe")])
 metadata/_custom_type_script = "uid://cdt11w1g8lgws"

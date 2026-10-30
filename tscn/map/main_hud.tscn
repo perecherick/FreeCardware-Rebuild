@@ -10,10 +10,12 @@
 [ext_resource type="PackedScene" uid="uid://b1nniy48x05h" path="res://tscn/map/act_transition.tscn" id="7_y7q06"]
 [ext_resource type="PackedScene" uid="uid://6ktdr8542kyk" path="res://tscn/menu/win_menu.tscn" id="8_ddys3"]
 [ext_resource type="Script" uid="uid://b1tlhngnvrbpp" path="res://gd/map/run_manager.gd" id="8_y7qvq"]
+[ext_resource type="Script" uid="uid://bfg1mvx4ug8fq" path="res://gd/hardware/hardware_event_handler.gd" id="10_oyogf"]
 [ext_resource type="PackedScene" uid="uid://c7vvw0afgrgsu" path="res://tscn/events/event.tscn" id="10_ti46d"]
 [ext_resource type="PackedScene" uid="uid://dbecwa46hx73i" path="res://tscn/enemy/combat.tscn" id="10_yn4ww"]
 [ext_resource type="PackedScene" uid="uid://c33rc7dbc47sg" path="res://tscn/events/event_combat.tscn" id="12_3hqxc"]
 [ext_resource type="PackedScene" uid="uid://secol7qy8wte" path="res://tscn/cards/deck.tscn" id="13_gof0q"]
+[ext_resource type="PackedScene" uid="uid://bqnhyeusrncbl" path="res://tscn/menu/cheat_menus/debug_combat.tscn" id="13_uqvgu"]
 [ext_resource type="PackedScene" uid="uid://dh083d5b1lpyv" path="res://tscn/enemy/reward_menu.tscn" id="16_ht1dd"]
 
 [node name="MainHud" type="Control" unique_id=135217630]
@@ -57,6 +59,9 @@ layout_mode = 1
 [node name="RunManager" type="Node" parent="." unique_id=670328114]
 script = ExtResource("8_y7qvq")
 
+[node name="HardwareEventHandler" type="Node" parent="." unique_id=941743339]
+script = ExtResource("10_oyogf")
+
 [node name="Event" parent="." unique_id=109770575 instance=ExtResource("10_ti46d")]
 visible = false
 layout_mode = 1
@@ -67,6 +72,10 @@ z_index = 10
 layout_mode = 1
 
 [node name="EventCombat" parent="." unique_id=2051383950 instance=ExtResource("12_3hqxc")]
+visible = false
+layout_mode = 1
+
+[node name="DebugCombat" parent="." unique_id=195721087 instance=ExtResource("13_uqvgu")]
 visible = false
 layout_mode = 1
 

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EventRemoveHardware" format=3 uid="uid://cs8bqh4vbffp5"]
 
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_q0bqy"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="1_q0bqy"]
 [ext_resource type="Resource" uid="uid://dm008sm6hqdsk" path="res://tres/hardware/bukkake.tres" id="2_2leba"]
 [ext_resource type="Script" uid="uid://b4yglowggla6f" path="res://gd/event/event_effects/remove_hardware.gd" id="2_rh2sn"]
 [ext_resource type="Resource" uid="uid://bqmp3dcoqugeu" path="res://tres/hardware/creampie.tres" id="3_1t5e0"]

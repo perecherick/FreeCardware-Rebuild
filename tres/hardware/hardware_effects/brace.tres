@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="CancelDamageHardwareEffect" format=3 uid="uid://dxuejwjwlm1aj"]
+
+[ext_resource type="Script" uid="uid://b8t3tar0klpmq" path="res://gd/hardware/hardware_effects/cancel_damage.gd" id="1_7vud8"]
+
+[resource]
+script = ExtResource("1_7vud8")
+metadata/_custom_type_script = "uid://b8t3tar0klpmq"

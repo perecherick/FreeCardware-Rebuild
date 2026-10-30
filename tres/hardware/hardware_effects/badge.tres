@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="CancelStripPantiesHardwareEffect" format=3 uid="uid://cfliof2b4ofmh"]
+
+[ext_resource type="Script" uid="uid://bw0d67hiknccr" path="res://gd/hardware/hardware_effects/cancel_strip_panties.gd" id="1_olyob"]
+
+[resource]
+script = ExtResource("1_olyob")
+metadata/_custom_type_script = "uid://bw0d67hiknccr"

@@ -15,7 +15,7 @@ func _ready() -> void:
 			continue
 		
 		if events.has(event.id):
-			DebugLogger.error("Duplicate EventData id: %s" % event.id)
+			DebugLogger.warning("Duplicate EventData id: %s" % event.id)
 			continue
 		
 		events[event.id] = event

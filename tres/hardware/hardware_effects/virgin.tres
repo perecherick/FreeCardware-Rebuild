@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="HardwareAfterCombatEffect" format=3 uid="uid://ewhsc2socf8p"]
+
+[ext_resource type="Script" uid="uid://dbn1mcygtry8a" path="res://gd/hardware/hardware_effects/change_stats_after_combat.gd" id="1_pjuji"]
+
+[resource]
+script = ExtResource("1_pjuji")
+health_change = 3
+lp_change = -2
+metadata/_custom_type_script = "uid://dbn1mcygtry8a"

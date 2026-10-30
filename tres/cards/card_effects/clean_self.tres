@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CleanSelfEffect" format=3 uid="uid://yuqnkaxxhi8u"]
 
-[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware.gd" id="1_qo4su"]
+[ext_resource type="Script" uid="uid://cdt11w1g8lgws" path="res://gd/hardware/hardware_data.gd" id="1_qo4su"]
 [ext_resource type="Script" uid="uid://cfnnfwpelok2e" path="res://gd/cards/card_effects/clean_self.gd" id="2_o0xs6"]
 [ext_resource type="Resource" uid="uid://dm008sm6hqdsk" path="res://tres/hardware/bukkake.tres" id="2_xd7rr"]
 [ext_resource type="Resource" uid="uid://ke0wcl648yeh" path="res://tres/hardware/facial.tres" id="3_i83lt"]

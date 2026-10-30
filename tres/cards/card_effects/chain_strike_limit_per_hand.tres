@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="HandLimitEffect" format=3 uid="uid://dpl4ubb8hilli"]
-
-[ext_resource type="Script" uid="uid://cwyc2ud38mpjw" path="res://gd/cards/card_effects/hand_limit.gd" id="1_egohg"]
-
-[resource]
-script = ExtResource("1_egohg")
-max_in_hand = 1
-metadata/_custom_type_script = "uid://cwyc2ud38mpjw"

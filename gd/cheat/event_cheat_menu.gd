@@ -13,9 +13,6 @@ func setup() -> void:
 	)
 	
 	for event: EventData in event_list:
-		if event == null:
-			continue
-		
 		var button: Button = Button.new()
 		
 		button.text = event.id.capitalize()

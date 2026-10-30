@@ -9,6 +9,8 @@ signal event_requested(event: EventData)
 @onready var add_card_menu: AddCardMenu = %AddCard
 @onready var remove_card_menu: RemoveCard = %RemoveCard
 @onready var sex_menu: SexMenu = %SexMenu
+@onready var hardware_menu: HardwareMenu = %HardwareMenu
+@onready var combat_menu: CombatMenu = %CombatMenu
 
 var player: PlayerState
 
@@ -78,3 +80,9 @@ func _on_add_card_card_selected(card: CardData) -> void:
 
 func _on_event_menu_event_selected(event: EventData) -> void:
 	event_requested.emit(event)
+
+func _on_hardware_menu_pressed() -> void:
+	_toggle_sub_menu(hardware_menu)
+
+func _on_combat_menu_pressed() -> void:
+	_toggle_sub_menu(combat_menu)

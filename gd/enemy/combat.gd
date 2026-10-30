@@ -31,8 +31,8 @@ var discard_pile: Array[CardData]
 var is_player_turn: bool
 var combat_finished: bool
 
-var played_cards_this_turn: Dictionary[String, int] 
-var drawn_cards_this_turn: Dictionary[String, int] 
+var played_cards_this_turn: Dictionary[String, int]
+var drawn_cards_this_turn: Dictionary[String, int]
 
 func start_combat(
 	enemies: Array[EnemyData],
@@ -143,8 +143,6 @@ func start_player_turn() -> void:
 	is_player_turn = true
 	if !player.is_orgasming():
 		player.reset_energy()
-	if player.has_hardware("brace"):
-		player.remove_hardware("brace")
 	combat_hud.set_end_turn_enabled(true)
 	
 	drawn_cards_this_turn.clear()
@@ -159,6 +157,9 @@ func end_player_turn() -> void:
 
 	is_player_turn = false
 	combat_hud.set_end_turn_enabled(false)
+	
+	var event: PlayerEndTurnEvent = PlayerEndTurnEvent.new(player, self)
+	GameEvents.player_end_turn.emit(event)
 
 	var remaining_cards: Array[CardData] = card_hand.take_all_cards()
 	discard_pile.append_array(remaining_cards)
@@ -256,10 +257,7 @@ func _execute_enemy_action(
 	var enemy: EnemyState = enemy_view.enemy_state
 	
 	if action.damage > 0:
-		if player.has_hardware("brace"):
-			player.remove_hardware("brace")
-		else:
-			player.take_damage(action.damage)
+		if player.take_damage(action.damage):
 			player_sprite.play_damage_hit()
 	
 	if action.pp > 0:
@@ -291,7 +289,16 @@ func _execute_enemy_action(
 		_remove_player_clothes()
 	
 	if action.strip_panties:
-		_strip_player_panties()
+		var event: EnemyMoveStripPantiesEvent = EnemyMoveStripPantiesEvent.new(
+			enemy,
+			action,
+			player
+		)
+		
+		GameEvents.enemy_move_strip_panties.emit(event)
+		
+		if !event.is_cancelled():
+			player.strip_panties()
 	
 	enemy_view.play_cast()
 
@@ -580,9 +587,6 @@ func _tear_player_clothes() -> void:
 func _remove_player_clothes() -> void:
 	player.remove_clothes()
 
-func _strip_player_panties() -> void:
-	player.strip_panties()
-
 func _on_player_orgasm() -> void:
 	for child: Node in enemies_root.get_children():
 		var enemy_view: EnemyView = child
@@ -840,6 +844,9 @@ func _finish_combat(result: COMBAT_RESULT) -> void:
 	
 	clear_enemy_target()
 	clear_player_target()
+	
+	var event: CombatEndEvent = CombatEndEvent.new(self, result)
+	GameEvents.combat_end.emit(event)
 	
 	match result:
 		COMBAT_RESULT.WIN:
